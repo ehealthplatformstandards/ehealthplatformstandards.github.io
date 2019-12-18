@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="observation2"/>
+  <meta>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient hard of hearing, left ear.</div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="exam"/>
+      <display value="Exam"/>
+    </coding>
+    <text value="Examination"/>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="15188001:{363698007=89644007}"/>
+    </coding>
+    <text value="Hard of hearing left ear"/>
+  </code>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="1999-07-02"/>
+  <performer>
+    <reference value="Practitioner/564654654"/>
+    <display value="K. Pulaski"/>
+  </performer>
+</Observation>

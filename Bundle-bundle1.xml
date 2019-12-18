@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundle1"/>
+  <meta>
+    <lastUpdated value="2019-07-24T01:43:30Z"/>
+  </meta>
+  <type value="transaction"/>
+  <entry>
+    <fullUrl value="urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9"/>
+    <resource>
+      <Practitioner>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2019-07-01T13:30:55.864+00:00"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Katherine<b>Pulaski</b></div>
+            <table class="hapiPropertyTable">
+              <tbody>
+                <tr>
+                  <td>Identifier</td>
+                  <td>79121137740</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>
+                    <span>Grimbergen</span>
+                    <span>BE </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Date of birth</td>
+                  <td>
+                    <span>11 December 1979</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>
+          <value value="79121137740"/>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+          <value value="18749704477"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Pulaski"/>
+          <given value="Katherine"/>
+          <suffix value="MD"/>
+        </name>
+        <telecom>
+          <system value="phone"/>
+          <value value="022675198"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="katherine.pulaski@enterprisehospital.be"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="fax"/>
+          <value value="022675209"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <use value="home"/>
+          <line value="Jupiterlaan 5">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Jupiterlaan"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="5"/>
+            </extension>
+          </line>
+          <city value="Grimbergen"/>
+          <postalCode value="1853"/>
+          <country value="BE"/>
+        </address>
+        <gender value="female"/>
+        <birthDate value="1979-12-11"/>
+      </Practitioner>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Practitioner"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220"/>
+    <resource>
+      <Organization>
+        <id value="47300"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2019-07-01T13:30:55.864+00:00"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
+            <div class="hapiHeaderText">Enterprise Hospital<b/></div>
+            <table class="hapiPropertyTable">
+              <tbody>
+                <tr>
+                  <td>Identifier</td>
+                  <td>0425.222.333</td>
+                </tr>
+                <tr>
+                  <td>Address</td>
+                  <td>
+                    <span>Brussel </span>
+                    <span>BE</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td/>
+                  <td>
+                    <span/>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </text>
+        <identifier>
+          <use value="official"/>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="PRN"/>
+              <display value="Provider Number"/>
+            </coding>
+          </type>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe"/>
+          <value value="0425.222.333"/>
+        </identifier>
+        <identifier>
+          <use value="official"/>
+          <system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/nihdi"/>
+          <value value="999999999"/>
+        </identifier>
+        <active value="true"/>
+        <type>
+          <coding>
+            <system value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"/>
+            <code value="orghospital"/>
+          </coding>
+        </type>
+        <name value="Enterprise Hospital Ziekenhuis"/>
+        <telecom>
+          <system value="phone"/>
+          <value value="+322675199"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/language">
+            <valueCode value="nl"/>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="Vulcansstraat 120, 1000 Brussel"/>
+          <line value="Vulcansstraat 120">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Vulcansstraat"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="120"/>
+            </extension>
+          </line>
+          <city value="Brussel"/>
+          <postalCode value="1000"/>
+          <country value="BE"/>
+        </address>
+        <address>
+          <extension url="http://hl7.org/fhir/StructureDefinition/language">
+            <valueCode value="fr"/>
+          </extension>
+          <use value="work"/>
+          <type value="both"/>
+          <text value="120, Rue des Vulcans, 1000 Bruxelles"/>
+          <line value="120, Rue des Vulcans">
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+              <valueString value="Rue des Vulcans"/>
+            </extension>
+            <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+              <valueString value="120"/>
+            </extension>
+          </line>
+          <city value="Bruxelles"/>
+          <postalCode value="1000"/>
+          <country value="BE"/>
+        </address>
+      </Organization>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Organization"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8cf2c41f-988e-40b8-8832-cad4f10803f5"/>
+    <resource>
+      <Provenance>
+        <id value="example"/>
+        <meta>
+          <versionId value="1"/>
+          <lastUpdated value="2019-06-27T08:39:24+02:00"/>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Practitioner record created on 27-June 2019 by Enterprise Ziekenhuis Hospital.</div>
+        </text>
+        <target>
+          <reference value="urn:uuid:8df87da3-5c85-4bea-8996-33b364a0eea9"/>
+        </target>
+        <recorded value="2019-06-27T08:39:24+02:00"/>
+        <reason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HOPERAT"/>
+            <display value="Healthcare Operations"/>
+          </coding>
+        </reason>
+        <activity>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+            <code value="CREATE"/>
+          </coding>
+        </activity>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+            </coding>
+          </type>
+          <who>
+            <reference value="urn:uuid:2a971dd8-b621-4a74-b984-ca2a7a619220"/>
+            <display value="Enterprise Hospital Ziekenhuis"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+    <request>
+      <method value="POST"/>
+      <url value="Provenance"/>
+    </request>
+  </entry>
+</Bundle>

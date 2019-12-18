@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>HL7.BE.CORE\Artifacts - FHIR v4.0.1</title>
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+  
+    <link href="fhir.css" rel="stylesheet"/>
+      
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet"/>
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+  
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+  </head>
+  <body>
+
+
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <div id="hl7-nav">
+          <a id="standards-logo" no-external="true" href="index.html">
+            <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
+          </a>
+        </div>
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.0.0 - Published</p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+    
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+    
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li><a href="index.html">IG Home</a></li>
+  <li><a href="guidance.html">Guidance</a></li>
+  <li><a href="toc.html">Table of Contents</a></li>
+  <li><a href="artifacts.html">Artifact Index</a></li>
+ 
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Support<b class="caret">
+      </b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">FHIR Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a target="_blank" href="http://hl7.org/fhirpath">FHIRPath Spec <img src="external.png" style="text-align: baseline"/></a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+</ul>      
+
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->  
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts</b></li>
+        </ul>  
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles (v1.0.0). See the <a href="changes.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts</h2>
+  
+  <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <div class="itoc">
+      <p>Artifact Packages</p>
+      <p class="link">-
+            <a href="#1">Core Profiles</a>
+      </p>
+      <p class="link">-
+            <a href="#2">Conditions</a>
+      </p>
+      <p class="link">-
+            <a href="#3">Terminology</a>
+      </p>
+      <p class="link">-
+            <a href="#4">Examples</a>
+      </p>
+   </div>
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Core Profiles </h3>
+   <p>Core resources to be reused in other resources</p>
+   <p>
+      <table>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-patient.html" title="StructureDefinition/be-patient">Patient core BE profile</a>
+               </td>
+               <td>The Core BE profile for Patient</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-practitioner.html" title="StructureDefinition/be-practitioner">Practitioner core BE profile</a>
+               </td>
+               <td>The Core BE profile for Practitioner</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-observationcodeableconcept.html"
+                     title="StructureDefinition/be-observationcodeableconcept">Observation codeable concept core BE profile</a>
+               </td>
+               <td>The Core BE profile for Observation codeable concept</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-provenance.html" title="StructureDefinition/be-provenance">Provenance core BE profile</a>
+               </td>
+               <td>The Core BE profile for Provenance</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-organization.html" title="StructureDefinition/be-organization">Organization core BE profile</a>
+               </td>
+               <td>The Core BE profile for Organization</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-address.html" title="StructureDefinition/be-address">Address core BE profile</a>
+               </td>
+               <td>The Core BE profile for Address</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-practitionerrole.html"
+                     title="StructureDefinition/be-practitionerrole">Practitioner Role core BE profile</a>
+               </td>
+               <td>The Core BE profile for Practitioner Role</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="2"> </a>
+   <h3>Conditions </h3>
+   <p>Resource profiles defined for conditions</p>
+   <p>
+      <table>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-allergyintolerance.html"
+                     title="StructureDefinition/be-allergyintolerance">Allergy Intolerance core BE profile</a>
+               </td>
+               <td>The Core BE profile for Allergy Intolerance</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-observation.html" title="StructureDefinition/be-observation">Observation core BE profile</a>
+               </td>
+               <td>The Core BE profile for Observation</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="3"> </a>
+   <h3>Terminology </h3>
+   <p>Terminology resources - ValueSets and CodeSystems</p>
+   <p>
+      <table>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-exposureroute.html" title="ValueSet/be-exposureroute">Valueset exposureroute</a>
+               </td>
+               <td>The valueset for exposureroute</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-causativeagent.html"
+                     title="ValueSet/be-causativeagent">Valueset causative agent</a>
+               </td>
+               <td>The valueset for causative agent</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-civilstate.html" title="ValueSet/be-civilstate">Valueset civil state</a>
+               </td>
+               <td>The valueset for civil state</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-contactperson.html" title="ValueSet/be-contactperson">Valueset contact person</a>
+               </td>
+               <td>The valueset for contact person</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-riskmanifestation.html"
+                     title="ValueSet/be-riskmanifestation">Valueset risk manifestation</a>
+               </td>
+               <td>The valueset for risk manifestation</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-allergyintolerancecode.html"
+                     title="ValueSet/be-allergyintolerancecode">Valueset allergy intolerance code</a>
+               </td>
+               <td>The valueset for the code for allergy/intolerance</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="valueset-be-noallergy.html" title="ValueSet/be-noallergy">Valueset no allergies</a>
+               </td>
+               <td>The valueset for the code for no allergies</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="cd-hcparty.html" title="CodeSystem/cd-hcparty">Codesystem CD-HCPARTY</a>
+               </td>
+               <td>The CD-HCPARTY codesystem</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="cd-civilstate.html" title="CodeSystem/cd-civilstate">Codesystem CD-CIVILSTATE</a>
+               </td>
+               <td>The CD-CIVILSTATE codesystem</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="cd-contact-person.html" title="CodeSystem/cd-contact-person">Codesystem CD-CONTACT-PERSON</a>
+               </td>
+               <td>The CD-CONTACT-PERSON codesystem</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="cd-fed-country.html" title="CodeSystem/cd-fed-country">Codesystem CD-FED-COUNTRY</a>
+               </td>
+               <td>The CD-FED-COUNTRY codesystem</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-ehp.html" title="NamingSystem/be-ehp">NamingSystem EHP</a>
+               </td>
+               <td>The EHP naming system</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-cbe.html" title="NamingSystem/be-cbe">NamingSystem CBE</a>
+               </td>
+               <td>The CBE naming system</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-ssin.html" title="NamingSystem/be-ssin">NamingSystem SSIN</a>
+               </td>
+               <td>The SSIN naming system</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="be-nihdi.html" title="NamingSystem/be-nihdi">NamingSystem NIHDI</a>
+               </td>
+               <td>The NIHDI naming system</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="4"> </a>
+   <h3>Examples </h3>
+   <p>Examples for the different resources</p>
+   <p>
+      <table>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">  •  <a href="patient1.html" title="Patient/patient1">Patient1</a>
+               </td>
+               <td>Patient</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="patient2.html" title="Patient/patient2">Patient2</a>
+               </td>
+               <td>Patient with logical identifier for GP</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="practitioner1.html" title="Practitioner/practitioner1">Practitioner1</a>
+               </td>
+               <td>Practitioner</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="organization1.html" title="Organization/organization1">Organization1</a>
+               </td>
+               <td>Organization</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="practitionerrole1.html"
+                     title="PractitionerRole/practitionerrole1">PractitionerRole1</a>
+               </td>
+               <td>PractitionerRole</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="observation1.html" title="Observation/observation1">Observation1</a>
+               </td>
+               <td>Observation heart rate</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="observation2.html" title="Observation/observation2">Observation2</a>
+               </td>
+               <td>Observation hard of hearing</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="allergyintolerance1.html"
+                     title="AllergyIntolerance/allergyintolerance1">AllergyIntolerance1</a>
+               </td>
+               <td>Food allergy</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="allergyintolerance2.html"
+                     title="AllergyIntolerance/allergyintolerance2">AllergyIntolerance2</a>
+               </td>
+               <td>Pollen allergy with multiple reactions</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="provenance1.html" title="Provenance/provenance1">Provenance1</a>
+               </td>
+               <td>Provenance</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">  •  <a href="bundle1.html" title="Bundle/bundle1">Bundle1</a>
+               </td>
+               <td>Bundle transaction upload with provenance of creation of practitioner</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+      <div class="inner-wrapper">
+        <p>
+		<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
+				<img  alt="belgium.be" src="assets/images/logo-be.png"/>
+			</a>
+			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
+				<img height="50" alt="Welcome on ehealth website" src="assets/images/logo-ehealth.png"/>
+			</a>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package hl7.be.core#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 19, 2019 00:18+0100">2019-12-19</span>
+          <br/>
+		  <span>
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
+          </span>
+       
+			
+		</p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/fhir.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

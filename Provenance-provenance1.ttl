@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Provenance/provenance1> a fhir:Provenance;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "provenance1"];
+  fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-06-27T08:39:24+02:00"^^xsd:dateTime ];
+     fhir:Meta.profile [
+       fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance";
+       fhir:index 0;
+       fhir:link <https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Practitioner record created on 27-June 2019 by Enterprise Ziekenhuis Hospital.</div>"
+  ];
+  fhir:Provenance.target [
+     fhir:index 0;
+     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/2/_history/1>;
+     fhir:Reference.reference [ fhir:value "Practitioner/2/_history/1" ]
+  ];
+  fhir:Provenance.recorded [ fhir:value "2019-06-27T08:39:24+02:00"^^xsd:dateTime];
+  fhir:Provenance.reason [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-ActReason" ];
+       fhir:Coding.code [ fhir:value "HOPERAT" ];
+       fhir:Coding.display [ fhir:value "Healthcare Operations" ]
+     ]
+  ];
+  fhir:Provenance.activity [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-DataOperation" ];
+       fhir:Coding.code [ fhir:value "CREATE" ]
+     ]
+  ];
+  fhir:Provenance.agent [
+     fhir:index 0;
+     fhir:Provenance.agent.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/provenance-participant-type" ];
+         fhir:Coding.code [ fhir:value "author" ]
+       ]
+     ];
+     fhir:Provenance.agent.who [
+       fhir:link <https://www.anotherfhirserver.be/fhir/Organization/02>;
+       fhir:Reference.reference [ fhir:value "https://www.anotherfhirserver.be/fhir/Organization/02" ];
+       fhir:Reference.display [ fhir:value "Enterprise Hospital Ziekenhuis" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.ehealth.fgov.be/standards/fhir/Provenance/provenance1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

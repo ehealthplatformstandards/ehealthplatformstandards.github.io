@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.be.core"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>Core IG</h2><p>The official URL for this implementation guide is: </p><pre>https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core</pre><div><p>The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium</p>
+</div></div>
+  </text>
+  <url value="https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/hl7.be.core"/>
+  <version value="1.0.0"/>
+  <name value="Core IG"/>
+  <title value="The Core Belgian Federal FHIR Profiles"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-12-19T00:18:49+01:00"/>
+  <publisher value="eHealth Platform"/>
+  <contact>
+    <telecom>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
+    </telecom>
+  </contact>
+  <description value="The Core Belgian Profiles provide the essential and common requirement for FHIR implementations in Belgium"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="hl7.be.core"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <definition>
+    <grouping id="logicalmodels">
+      <name value="Logical Models"/>
+      <description value="The common Belgian Logical Models - these can be mapped to KMEHR and FHIR"/>
+    </grouping>
+    <grouping id="core">
+      <name value="Core Profiles"/>
+      <description value="Core resources to be reused in other resources"/>
+    </grouping>
+    <grouping>
+      <name value="Conditions"/>
+      <description value="Conditions and findings about patients"/>
+    </grouping>
+    <grouping id="communication">
+      <name value="Communication"/>
+      <description value="Communication and Care Coordination"/>
+    </grouping>
+    <grouping id="condition">
+      <name value="Conditions"/>
+      <description value="Resource profiles defined for conditions"/>
+    </grouping>
+    <grouping id="medication">
+      <name value="Medication"/>
+      <description value="Resource profiles defined for medication"/>
+    </grouping>
+    <grouping id="documents">
+      <name value="Documents"/>
+      <description value="Documents curated extracts of information - they represent a set of information for a given context at a given time."/>
+    </grouping>
+    <grouping id="terminology">
+      <name value="Terminology"/>
+      <description value="Terminology resources - ValueSets and CodeSystems"/>
+    </grouping>
+    <grouping id="examples">
+      <name value="Examples"/>
+      <description value="Examples for the different resources"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-allergyintolerance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-allergyintolerance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Allergy Intolerance core BE profile"/>
+      <description value="The Core BE profile for Allergy Intolerance"/>
+      <groupingId value="condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-patient.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-patient"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient core BE profile"/>
+      <description value="The Core BE profile for Patient"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-practitioner.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-practitioner"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Practitioner core BE profile"/>
+      <description value="The Core BE profile for Practitioner"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-observation.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-observation"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Observation core BE profile"/>
+      <description value="The Core BE profile for Observation"/>
+      <groupingId value="condition"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-observationcodeableconcept.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-observationcodeableconcept"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Observation codeable concept core BE profile"/>
+      <description value="The Core BE profile for Observation codeable concept"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-provenance.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-provenance"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Provenance core BE profile"/>
+      <description value="The Core BE profile for Provenance"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-organization.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-organization"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Organization core BE profile"/>
+      <description value="The Core BE profile for Organization"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:complex-type"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-address.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-address"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Address core BE profile"/>
+      <description value="The Core BE profile for Address"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="patient1.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient1"/>
+      <description value="Patient"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="patient2.html"/>
+      </extension>
+      <reference>
+        <reference value="Patient/patient2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Patient2"/>
+      <description value="Patient with logical identifier for GP"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="practitioner1.html"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/practitioner1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Practitioner1"/>
+      <description value="Practitioner"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="organization1.html"/>
+      </extension>
+      <reference>
+        <reference value="Organization/organization1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Organization1"/>
+      <description value="Organization"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="PractitionerRole"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="practitionerrole1.html"/>
+      </extension>
+      <reference>
+        <reference value="PractitionerRole/practitionerrole1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="PractitionerRole1"/>
+      <description value="PractitionerRole"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="observation1.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Observation1"/>
+      <description value="Observation heart rate"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="observation2.html"/>
+      </extension>
+      <reference>
+        <reference value="Observation/observation2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Observation2"/>
+      <description value="Observation hard of hearing"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="allergyintolerance1.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergyintolerance1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="AllergyIntolerance1"/>
+      <description value="Food allergy"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="AllergyIntolerance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="allergyintolerance2.html"/>
+      </extension>
+      <reference>
+        <reference value="AllergyIntolerance/allergyintolerance2"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="AllergyIntolerance2"/>
+      <description value="Pollen allergy with multiple reactions"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="provenance1.html"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/provenance1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Provenance1"/>
+      <description value="Provenance"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="bundle1.html"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/bundle1"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Bundle1"/>
+      <description value="Bundle transaction upload with provenance of creation of practitioner"/>
+      <exampleCanonical value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization"/>
+      <groupingId value="examples"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-practitionerrole.html"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/be-practitionerrole"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Practitioner Role core BE profile"/>
+      <description value="The Core BE profile for Practitioner Role"/>
+      <groupingId value="core"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-exposureroute.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-exposureroute"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset exposureroute"/>
+      <description value="The valueset for exposureroute"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-causativeagent.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-causativeagent"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset causative agent"/>
+      <description value="The valueset for causative agent"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-civilstate.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-civilstate"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset civil state"/>
+      <description value="The valueset for civil state"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-contactperson.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-contactperson"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset contact person"/>
+      <description value="The valueset for contact person"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-riskmanifestation.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-riskmanifestation"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset risk manifestation"/>
+      <description value="The valueset for risk manifestation"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-allergyintolerancecode.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-allergyintolerancecode"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset allergy intolerance code"/>
+      <description value="The valueset for the code for allergy/intolerance"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="valueset-be-noallergy.html"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/be-noallergy"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Valueset no allergies"/>
+      <description value="The valueset for the code for no allergies"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cd-hcparty.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-hcparty"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Codesystem CD-HCPARTY"/>
+      <description value="The CD-HCPARTY codesystem"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cd-civilstate.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-civilstate"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Codesystem CD-CIVILSTATE"/>
+      <description value="The CD-CIVILSTATE codesystem"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cd-contact-person.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-contact-person"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Codesystem CD-CONTACT-PERSON"/>
+      <description value="The CD-CONTACT-PERSON codesystem"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="cd-fed-country.html"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cd-fed-country"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="Codesystem CD-FED-COUNTRY"/>
+      <description value="The CD-FED-COUNTRY codesystem"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-ehp.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-ehp"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NamingSystem EHP"/>
+      <description value="The EHP naming system"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-cbe.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-cbe"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NamingSystem CBE"/>
+      <description value="The CBE naming system"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-ssin.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-ssin"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NamingSystem SSIN"/>
+      <description value="The SSIN naming system"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="be-nihdi.html"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/be-nihdi"/>
+      </reference>
+      <fhirVersion value="4.0.1"/>
+      <name value="NamingSystem NIHDI"/>
+      <description value="The NIHDI naming system"/>
+      <groupingId value="terminology"/>
+    </resource>
+    <page>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <nameUrl value="index.html"/>
+        <title value="BE Core Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="conventions.html"/>
+        <title value="Conventions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="downloads.html"/>
+        <title value="Useful Downloads"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="changes.html"/>
+        <title value="IG Change History"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="guidance.html"/>
+        <title value="Guidance"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-qa"/>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code value="path-temp"/>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code value="path-output"/>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code value="path-suppressed-warnings"/>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code value="template-html"/>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code value="template-md"/>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code value="apply-contact"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-context"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-copyright"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-jurisdiction"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-license"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-publisher"/>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code value="apply-version"/>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

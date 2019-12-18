@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="provenance1"/>
+  <meta>
+    <versionId value="1"/>
+    <lastUpdated value="2019-06-27T08:39:24+02:00"/>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Practitioner record created on 27-June 2019 by Enterprise Ziekenhuis Hospital.</div>
+  </text>
+  <target>
+    <reference value="Practitioner/2/_history/1"/>
+  </target>
+  <recorded value="2019-06-27T08:39:24+02:00"/>
+  <reason>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+      <code value="HOPERAT"/>
+      <display value="Healthcare Operations"/>
+    </coding>
+  </reason>
+  <activity>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+      <code value="CREATE"/>
+    </coding>
+  </activity>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="https://www.anotherfhirserver.be/fhir/Organization/02"/>
+      <display value="Enterprise Hospital Ziekenhuis"/>
+    </who>
+  </agent>
+</Provenance>
