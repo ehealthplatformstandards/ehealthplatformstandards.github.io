@@ -2,10 +2,10 @@
 =========================================
 
 err = 54, warn = 2, info = 4
-IG Publisher Version: v1.0.24-SNAPSHOT Out of date - current version is v1.0.25-SNAPSHOT
-Generated Thu Dec 19 00:19:57 CET 2019. FHIR version 4.0.1 for hl7.be.core#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+IG Publisher Version: v1.0.27-SNAPSHOT
+Generated Thu Dec 19 09:15:16 CET 2019. FHIR version 4.0.1 for hl7.be.core#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 217 / 1
+ Build Errors : 217 / 0
  C:\Users\EH074\Documents\GitHub\onlyTest\input\ImplementationGuide-be-core : 13 / 1
  C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\allergyintolerance-allergyintolerance1 : 3 / 0
  C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\allergyintolerance-allergyintolerance2 : 3 / 0
@@ -44,7 +44,6 @@ Generated Thu Dec 19 00:19:57 CET 2019. FHIR version 4.0.1 for hl7.be.core#1.0.0
  C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-riskmanifestation : 0 / 0
 </table>
 == n/a ==
-WARNING: The IGPublisher used is not up-to-date.  Published content might not be properly checked and/or rendered.
 ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
 ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.json.html: The html source does not contain the publish box
 ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.ttl.html: The html source does not contain the publish box
