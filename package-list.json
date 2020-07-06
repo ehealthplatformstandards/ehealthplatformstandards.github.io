@@ -12,7 +12,7 @@
  },
     {
       "version": "1.0.0",
-      "date": "2019",
+      "date": "2019-12-01",
       "desc": "Released version",
       "path": "https://ehealthplatformstandards.github.io",
 	  "fhir-version": "4.0.1",
