@@ -3,7 +3,7 @@
  "list" : [{
   "version" : "1.0.0",
   "path" : "https://ehealthplatformstandards.github.io/package.tgz",
-  "status: "published",
+  "status": "published",
   "current" : true
  }]
 }
