@@ -14,7 +14,7 @@
       "version": "1.0.0",
       "date": "2019-12-01",
       "desc": "Released version",
-      "path": "https://ehealthplatformstandards.github.io",
+      "path": "https://ehealthplatformstandards.github.io/1.0.0",
 	    "status": "release",
 	     "sequence": "1",
 	    "fhirversion": "4.0.1"
