@@ -5,7 +5,7 @@
  "list" : [
   {
   "version" : "1.0.0",
-  "path" : "https://ehealthplatformstandards.github.io/1.0.0",
+  "path" : "https://ehealthplatformstandards.github.io/#1.0.0",
   "status": "published",
   "current" : true
  }
