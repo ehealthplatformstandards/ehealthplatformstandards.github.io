@@ -1,9 +1,13 @@
 {
  "package-id" : "BeCoreImplementationGuide",
- "list" : [{
+ "title": "BeCoreImplementationGuide",
+ "canonical": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide",
+ "list" : [
+  {
   "version" : "1.0.0",
-  "path" : "https://ehealthplatformstandards.github.io/",
+  "path" : "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/BeCoreImplementationGuide/1.0.0",
   "status": "published",
   "current" : true
- }]
+ }
+ ]
 }
