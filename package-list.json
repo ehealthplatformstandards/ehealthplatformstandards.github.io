@@ -1,0 +1,9 @@
+{
+ "package-id" : "BeCoreImplementationGuide",
+ "list" : [{
+  "version" : "1.0.0",
+  "path" : "https://ehealthplatformstandards.github.io/",
+  "status" : "current",
+  "current" : true
+ }]
+}
