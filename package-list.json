@@ -3,6 +3,13 @@
  "title": "BeCoreImplementationGuide",
  "canonical": "https://ehealthplatformstandards.github.io",
   "list":[
+	  {
+   "version" : "current",
+   "desc" : "Continuous Integration Build (latest in version control)",
+   "path" : "https://ehealthplatformstandards.github.io",
+   "status" : "ci-build",
+   "current" : true
+ },
     {
       "version": "1.0.0",
       "date": "2019",
