@@ -9,6 +9,8 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "organization1"];
   fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-07-01T13:30:55.864+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
        fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization";
        fhir:index 0;
@@ -17,7 +19,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: Provider Number: 0425.222.333 (OFFICIAL), Medical License number: 999999999 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes: {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty orghospital}\">hospital</span></p><p><b>name</b>: Enterprise Hospital Ziekenhuis</p><p><b>telecom</b>: ph: 322675199(WORK)</p><p><b>address</b>: </p><ul><li>Vulcansstraat 120, 1000 Brussel(WORK)</li><li>120, Rue des Vulcans, 1000 Bruxelles(WORK)</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div class=\"hapiHeaderText\">Enterprise Hospital<b/></div>\n      <table class=\"hapiPropertyTable\">\n        <tbody>\n          <tr>\n            <td>Identifier</td>\n            <td>0425.222.333</td>\n          </tr>\n          <tr>\n            <td>Address</td>\n            <td>\n              <span>Brussel </span>\n              <span>BE</span>\n            </td>\n          </tr>\n          <tr>\n            <td/>\n            <td>\n              <span/>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
   ];
   fhir:Organization.identifier [
      fhir:index 0;
@@ -59,7 +61,7 @@
   fhir:Organization.telecom [
      fhir:index 0;
      fhir:ContactPoint.system [ fhir:value "phone" ];
-     fhir:ContactPoint.value [ fhir:value "322675199" ];
+     fhir:ContactPoint.value [ fhir:value "+322675199" ];
      fhir:ContactPoint.use [ fhir:value "work" ]
   ];
   fhir:Organization.address [

@@ -1,77 +1,60 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FED.BE.CORE\ValueSet contact person - JSON Representation - FHIR v4.0.1</title>
-
+    <title>HL7.BE.CORE\Valueset contact person - JSON Representation - FHIR v4.0.1</title>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-
+  
     <link href="fhir.css" rel="stylesheet"/>
-
+      
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-
+  
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-    <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/ehealth.css" rel="stylesheet"/>
-
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
+  
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
   </head>
-  <body onload="document.body.style.opacity='1'">
+  <body>
 
-    <style type="text/css">h2{--heading-prefix:"6.12"}
-    h3,h4,h5,h6{--heading-prefix:"6.12"}</style>
+
+    <style type="text/css">h2{--heading-prefix:"3.13"}
+    h3,h4,h5,h6{--heading-prefix:"3.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Left logo - typically the publisher's logo - project or affiliate -->
-        <div id="project-nav">
+        <div id="hl7-nav">
           <a id="standards-logo" no-external="true" href="index.html">
             <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
           </a>
         </div>
-
-<!-- Right logo - for example the FHIR logo -->
-<!-- Make sure you have authorization to use the FHIR logo -->
-
-<!--
-        <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-        </div>
--->
-
-
-        <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.1.0 - CI Build</p>
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.0.0 - Published</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-
+    
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-
+    
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -82,8 +65,7 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="guidance.html">Guidance</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
@@ -115,107 +97,66 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+      <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet contact person</b></li>
-        </ul>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Valueset contact person</b></li>
+        </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-
-    <div id="segment-content">  <!-- segment-content -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (vnull). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
-
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="ValueSet-be-contactperson.html">Narrative Content</a>
-  </li>
-
-
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles (v1.0.0). See the <a href="changes.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <a name="root"> </a>
+  <h2 id="root">BeContactPerson - json</h2>
+  <p>
+    <a href="ValueSet-be-contactperson.json">Raw json</a>
+  </p>
   
-    <li>
-      <a href="ValueSet-be-contactperson.xml.html">XML</a>
-    </li>
   
 
-
+  <p>
+    <b>Narrative view of the Value Set</b>
+  </p>
   
-    <li class="active">
-      <a href="#">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-be-contactperson.ttl.html">TTL</a>
-    </li>
-  
-
-
-
-</ul>
-
-
-<a name="root"> </a>
-
-
-<h2 id="root">: ValueSet contact person - JSON Representation</h2>
-
-<p><a href="ValueSet-be-contactperson.json" no-download="true">Raw json</a> | <a href="ValueSet-be-contactperson.json" download>Download</a></p>
-
-  <!-- insert intro if present -->
-  
-
-
-
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "be-contactperson",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;This value set includes codes based on the following rules:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;a href=\&quot;https://terminology.hl7.org/1.0.0//CodeSystem-v2-0131.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v2-0131&lt;/code&gt;&lt;/a&gt; where concept  is-not-a  &lt;a href=\&quot;https://terminology.hl7.org/1.0.0//CodeSystem-v2-0131.html#v2-0131-O\&quot;&gt;O&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include all codes defined in &lt;a href=\&quot;CodeSystem-cd-contact-person.html\&quot;&gt;&lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;BeContactPerson&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include codes from &lt;a href=\&quot;http://hl7.org/fhir/R4/v2/0131/index.html\&quot;&gt;&lt;code&gt;http://terminology.hl7.org/CodeSystem/v2-0131&lt;/code&gt;&lt;/a&gt; where concept  is-not-a  &lt;a href=\&quot;http://hl7.org/fhir/R4/v2/0131/index.html#v2-0131-O\&quot;&gt;O&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;cd-contact-person.html\&quot;&gt;&lt;code&gt;https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-father\&quot;&gt;father&lt;/a&gt;&lt;/td&gt;&lt;td&gt;father&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-mother\&quot;&gt;mother&lt;/a&gt;&lt;/td&gt;&lt;td&gt;mother&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-child\&quot;&gt;child&lt;/a&gt;&lt;/td&gt;&lt;td&gt;child&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-spouse\&quot;&gt;spouse&lt;/a&gt;&lt;/td&gt;&lt;td&gt;spouse&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-husband\&quot;&gt;husband&lt;/a&gt;&lt;/td&gt;&lt;td&gt;husband&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-partner\&quot;&gt;partner&lt;/a&gt;&lt;/td&gt;&lt;td&gt;partner&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-brother\&quot;&gt;brother&lt;/a&gt;&lt;/td&gt;&lt;td&gt;brother&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-sister\&quot;&gt;sister&lt;/a&gt;&lt;/td&gt;&lt;td&gt;sister&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-brotherinlaw\&quot;&gt;brotherinlaw&lt;/a&gt;&lt;/td&gt;&lt;td&gt;brotherinlaw&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-tutor\&quot;&gt;tutor&lt;/a&gt;&lt;/td&gt;&lt;td&gt;tutor&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-notary\&quot;&gt;notary&lt;/a&gt;&lt;/td&gt;&lt;td&gt;notary&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-lawyer\&quot;&gt;lawyer&lt;/a&gt;&lt;/td&gt;&lt;td&gt;lawyer&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-employer\&quot;&gt;employer&lt;/a&gt;&lt;/td&gt;&lt;td&gt;employer&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-grandparent\&quot;&gt;grandparent&lt;/a&gt;&lt;/td&gt;&lt;td&gt;grandparent&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-son\&quot;&gt;son&lt;/a&gt;&lt;/td&gt;&lt;td&gt;son&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-daughter\&quot;&gt;daughter&lt;/a&gt;&lt;/td&gt;&lt;td&gt;daughter&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-grandchild\&quot;&gt;grandchild&lt;/a&gt;&lt;/td&gt;&lt;td&gt;grandchild&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-neighbour\&quot;&gt;neighbour&lt;/a&gt;&lt;/td&gt;&lt;td&gt;neighbour&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-stepson\&quot;&gt;stepson&lt;/a&gt;&lt;/td&gt;&lt;td&gt;stepson&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-stepdaughter\&quot;&gt;stepdaughter&lt;/a&gt;&lt;/td&gt;&lt;td&gt;stepdaughter&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-stepfather\&quot;&gt;stepfather&lt;/a&gt;&lt;/td&gt;&lt;td&gt;stepfather&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-stepmother\&quot;&gt;stepmother&lt;/a&gt;&lt;/td&gt;&lt;td&gt;stepmother&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;cd-contact-person.html#cd-contact-person-sisterinlaw\&quot;&gt;sisterinlaw&lt;/a&gt;&lt;/td&gt;&lt;td&gt;sisterinlaw&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;father&lt;/td&gt;&lt;td&gt;father&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;mother&lt;/td&gt;&lt;td&gt;mother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;child&lt;/td&gt;&lt;td&gt;child&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;spouse&lt;/td&gt;&lt;td&gt;spouse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;husband&lt;/td&gt;&lt;td&gt;husband&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;partner&lt;/td&gt;&lt;td&gt;partner&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;brother&lt;/td&gt;&lt;td&gt;brother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sister&lt;/td&gt;&lt;td&gt;sister&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;brotherinlaw&lt;/td&gt;&lt;td&gt;brother-in-law&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;tutor&lt;/td&gt;&lt;td&gt;tutor&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;notary&lt;/td&gt;&lt;td&gt;notary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;lawyer&lt;/td&gt;&lt;td&gt;lawyer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;employer&lt;/td&gt;&lt;td&gt;employer&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;grandparent&lt;/td&gt;&lt;td&gt;grandparent&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;son&lt;/td&gt;&lt;td&gt;son&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;daughter&lt;/td&gt;&lt;td&gt;daughter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;grandchild&lt;/td&gt;&lt;td&gt;grandchild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;neighbour&lt;/td&gt;&lt;td&gt;neighbour&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stepson&lt;/td&gt;&lt;td&gt;stepson&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stepdaughter&lt;/td&gt;&lt;td&gt;stepdaughter&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stepfather&lt;/td&gt;&lt;td&gt;stepfather&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;stepmother&lt;/td&gt;&lt;td&gt;stepmother&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;sisterinlaw&lt;/td&gt;&lt;td&gt;sisterinlaw&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-contactperson",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BeContactPerson",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ValueSet contact person",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-09-18T08:03:27+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2019-12-19T09:13:57+01:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "eHealth Platform",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "eHealth Platform",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.ehealth.fgov.be"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Message structure",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "message-structure@ehealth.fgov.be"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "other",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://hl7.org/Special/committees/fiwg"
         }
       ]
     }
   ],
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
@@ -229,72 +170,251 @@
         ]
       },
       {
-        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person"
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.system">system</a>" : "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person",
+        "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept">concept</a>" : [
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "father",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "father"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "mother",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "mother"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "child",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "child"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "spouse",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "spouse"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "husband",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "husband"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "partner",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "partner"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "brother",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "brother"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "sister",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "sister"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "brotherinlaw",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "brother-in-law"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "tutor",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "tutor"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "notary",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "notary"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "lawyer",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "lawyer"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "employer",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "employer"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "grandparent",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "grandparent"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "son",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "son"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "daughter",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "daughter"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "grandchild",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "grandchild"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "neighbour",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "neighbour"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stepson",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "stepson"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stepdaughter",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "stepdaughter"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stepfather",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "stepfather"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "stepmother",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "stepmother"
+              }
+            ]
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.code">code</a>" : "sisterinlaw",
+            "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation">designation</a>" : [
+              {
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.language">language</a>" : "en",
+                "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include.concept.designation.value">value</a>" : "sisterinlaw"
+              }
+            ]
+          }
+        ]
       }
     ]
   }
 }</pre>
 
 
-  <!-- insert notes if present -->
   
-
-
-
+  
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package fed.be.core#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2020 08:03+0200">2020-09-18</span>
-          <br/>
-          <span style="color: #FFFF77">
-            <div style="color: #33333" >
-
-
-          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-
-<!--                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
--->
-
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-
-<!--                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
--->
-
-<!--				 
-<br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
-	-->			  
-
-			<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-				<img  alt="belgium.be" src="assets/images/logo-be.png">
+		<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
+				<img  alt="belgium.be" src="assets/images/logo-be.png"/>
 			</a>
 			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-				<img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
+				<img height="50" alt="Welcome on ehealth website" src="assets/images/logo-ehealth.png"/>
 			</a>
-
-			
-</div>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package hl7.be.core#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 19, 2019 09:13+0100">2019-12-19</span>
+          <br/>
+		  <span>
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
           </span>
-        </p>
+       
+			
+		</p>
       </div>  <!-- /inner-wrapper -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-footer -->
@@ -308,8 +428,10 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/fhir.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

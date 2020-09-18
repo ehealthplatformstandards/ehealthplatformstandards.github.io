@@ -3,7 +3,7 @@
   "id": "be-cbe",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/be-cbe</td></tr><tr><td>Name</td><td>BeCBENamingSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>BCE/KBO</p>\n</div></td></tr><tr><td>Publisher</td><td>eHealth Platform</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe</td><td>true</td></tr><tr><td>OID</td><td>2.16.840.1.113883.3.6777.5.5</td><td>false</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be-cbe</p><p><b>name</b>: BeCBENamingSystem</p><p><b>status</b>: active</p><p><b>kind</b>: identifier</p><p><b>date</b>: 05-Jun-2019 00:00:00</p><p><b>publisher</b>: eHealth Platform</p><p><b>contact</b>: </p><p><b>description</b>: BCE/KBO</p><p><b>jurisdiction</b>: World <span style=\"background: LightGoldenRodYellow\">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '001' = 'World)</span></p><blockquote><p><b>uniqueId</b></p><p><b>type</b>: uri</p><p><b>value</b>: https://www.ehealth.fgov.be/standards/fhir/NamingSystem/cbe</p><p><b>preferred</b>: true</p></blockquote><blockquote><p><b>uniqueId</b></p><p><b>type</b>: oid</p><p><b>value</b>: 2.16.840.1.113883.3.6777.5.5</p><p><b>preferred</b>: false</p></blockquote></div>"
   },
   "name": "BeCBENamingSystem",
   "status": "active",
@@ -12,25 +12,25 @@
   "publisher": "eHealth Platform",
   "contact": [
     {
-      "name": "eHealth Platform",
       "telecom": [
         {
-          "system": "url",
-          "value": "https://www.ehealth.fgov.be"
-        }
-      ]
-    },
-    {
-      "name": "Message structure",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "message-structure@ehealth.fgov.be"
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
         }
       ]
     }
   ],
   "description": "BCE/KBO",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
   "uniqueId": [
     {
       "type": "uri",

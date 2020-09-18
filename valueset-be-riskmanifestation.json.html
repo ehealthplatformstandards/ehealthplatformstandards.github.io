@@ -1,77 +1,60 @@
-
-
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE HTML>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FED.BE.CORE\ValueSet risk manifestation - JSON Representation - FHIR v4.0.1</title>
-
+    <title>HL7.BE.CORE\Valueset risk manifestation - JSON Representation - FHIR v4.0.1</title>
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-
+  
     <link href="fhir.css" rel="stylesheet"/>
-
+      
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-
+  
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-    <!-- Placeholder for child template CSS declarations -->
-<link href="assets/css/ehealth.css" rel="stylesheet"/>
-
-    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
-
+  
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-
+  
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
   </head>
-  <body onload="document.body.style.opacity='1'">
+  <body>
 
-    <style type="text/css">h2{--heading-prefix:"6.16"}
-    h3,h4,h5,h6{--heading-prefix:"6.16"}</style>
+
+    <style type="text/css">h2{--heading-prefix:"3.14"}
+    h3,h4,h5,h6{--heading-prefix:"3.14"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <!-- Left logo - typically the publisher's logo - project or affiliate -->
-        <div id="project-nav">
+        <div id="hl7-nav">
           <a id="standards-logo" no-external="true" href="index.html">
             <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
           </a>
         </div>
-
-<!-- Right logo - for example the FHIR logo -->
-<!-- Make sure you have authorization to use the FHIR logo -->
-
-<!--
-        <div id="hl7-search">
-          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
-        </div>
--->
-
-
-        <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.1.0 - CI Build</p>
+        <div id="hl7-status">
+          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.0.0 - Published</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-
+    
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-
+    
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -82,8 +65,7 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <!-- menu.xml  -->
-<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="guidance.html">Guidance</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
@@ -115,106 +97,66 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->
+      <div class="container">  <!-- container -->  
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ValueSet risk manifestation</b></li>
-        </ul>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>Valueset risk manifestation</b></li>
+        </ul>  
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-
-    <div id="segment-content">  <!-- segment-content -->
+    
+    <div id="segment-content" class="segment">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
-
-<div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (vnull). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-
-
-
-
-
-
-
-<ul class="nav nav-tabs">
-
-  <li>
-    <a href="ValueSet-be-riskmanifestation.html">Narrative Content</a>
-  </li>
-
-
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles (v1.0.0). See the <a href="changes.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <a name="root"> </a>
+  <h2 id="root">BeRiskManifestation - json</h2>
+  <p>
+    <a href="ValueSet-be-riskmanifestation.json">Raw json</a>
+  </p>
   
-    <li>
-      <a href="ValueSet-be-riskmanifestation.xml.html">XML</a>
-    </li>
   
 
-
+  <p>
+    <b>Narrative view of the Value Set</b>
+  </p>
   
-    <li class="active">
-      <a href="#">JSON</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="ValueSet-be-riskmanifestation.ttl.html">TTL</a>
-    </li>
-  
-
-
-
-</ul>
-
-
-<a name="root"> </a>
-
-
-<h2 id="root">: ValueSet risk manifestation - JSON Representation</h2>
-
-<p><a href="ValueSet-be-riskmanifestation.json" no-download="true">Raw json</a> | <a href="ValueSet-be-riskmanifestation.json" download>Download</a></p>
-
-  <!-- insert intro if present -->
-  
-
-
-
   <pre class="json">
 {
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet">resourceType</a>" : "ValueSet",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.id">id</a>" : "be-riskmanifestation",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nederlands (België) (Dutch (Belgium), nl)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Belgium) (fr)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=473460002\&quot;&gt;473460002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergic conjunctivitis (disorder)&lt;/td&gt;&lt;td&gt;Allergic conjunctivitis&lt;/td&gt;&lt;td&gt;allergische conjunctivitis&lt;/td&gt;&lt;td&gt;conjonctivite allergique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=39579001\&quot;&gt;39579001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaphylaxis (disorder)&lt;/td&gt;&lt;td&gt;Anaphylaxis&lt;/td&gt;&lt;td&gt;anafylaxie&lt;/td&gt;&lt;td&gt;anaphylaxie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=41291007\&quot;&gt;41291007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Angioedema (disorder)&lt;/td&gt;&lt;td&gt;Angioedema&lt;/td&gt;&lt;td&gt;angio-oedeem&lt;/td&gt;&lt;td&gt;angiœdème&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=195967001\&quot;&gt;195967001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Asthma (disorder)&lt;/td&gt;&lt;td&gt;Asthma&lt;/td&gt;&lt;td&gt;astma&lt;/td&gt;&lt;td&gt;asthme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=24079001\&quot;&gt;24079001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atopic dermatitis (disorder)&lt;/td&gt;&lt;td&gt;Atopic dermatitis&lt;/td&gt;&lt;td&gt;atopische dermatitis&lt;/td&gt;&lt;td&gt;dermatite atopique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=4386001\&quot;&gt;4386001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bronchospasm (finding)&lt;/td&gt;&lt;td&gt;Bronchospasm&lt;/td&gt;&lt;td&gt;bronchospasme&lt;/td&gt;&lt;td&gt;bronchospasme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271759003\&quot;&gt;271759003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bullous eruption (disorder)&lt;/td&gt;&lt;td&gt;Bullous eruption&lt;/td&gt;&lt;td&gt;bulleuse huideruptie&lt;/td&gt;&lt;td&gt;éruption bulleuse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=698247007\&quot;&gt;698247007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac arrhythmia (disorder)&lt;/td&gt;&lt;td&gt;Cardiac arrhythmia&lt;/td&gt;&lt;td&gt;hartritmestoornis&lt;/td&gt;&lt;td&gt;arythmie cardique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=410430005\&quot;&gt;410430005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiorespiratory arrest (disorder)&lt;/td&gt;&lt;td&gt;Cardiorespiratory arrest&lt;/td&gt;&lt;td&gt;cardiopulmonale stilstand&lt;/td&gt;&lt;td&gt;arrêt cardiorespiratoire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=9826008\&quot;&gt;9826008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Conjunctivitis (disorder)&lt;/td&gt;&lt;td&gt;Conjunctivitis&lt;/td&gt;&lt;td&gt;conjunctivitis&lt;/td&gt;&lt;td&gt;conjonctivite&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=40275004\&quot;&gt;40275004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contact dermatitis (disorder)&lt;/td&gt;&lt;td&gt;Contact dermatitis&lt;/td&gt;&lt;td&gt;contactdermatitis&lt;/td&gt;&lt;td&gt;dermatite de contact&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=49727002\&quot;&gt;49727002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cough (finding)&lt;/td&gt;&lt;td&gt;Cough&lt;/td&gt;&lt;td&gt;hoesten&lt;/td&gt;&lt;td&gt;toux&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=62315008\&quot;&gt;62315008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diarrhea (finding)&lt;/td&gt;&lt;td&gt;Diarrhea&lt;/td&gt;&lt;td&gt;diarree&lt;/td&gt;&lt;td&gt;diarrhée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=702809001\&quot;&gt;702809001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug reaction with eosinophilia and systemic symptoms (disorder)&lt;/td&gt;&lt;td&gt;Drug reaction with eosinophilia and systemic symptoms&lt;/td&gt;&lt;td&gt;geneesmiddelexantheem met eosinofilie en systemische symptomen&lt;/td&gt;&lt;td&gt;réaction médicamenteuse avec éosinophilie et symptômes systémiques&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=297942002\&quot;&gt;297942002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug-induced erythema multiforme (disorder)&lt;/td&gt;&lt;td&gt;Drug-induced erythema multiforme&lt;/td&gt;&lt;td&gt;geneesmiddelengeïnduceerde erythema multiforme&lt;/td&gt;&lt;td&gt;érythème polymorphe d'origine médicamenteuse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=162290004\&quot;&gt;162290004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dry eyes (finding)&lt;/td&gt;&lt;td&gt;Dry eyes&lt;/td&gt;&lt;td&gt;droge ogen&lt;/td&gt;&lt;td&gt;sècheresse oculaire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=267036007\&quot;&gt;267036007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dyspnea (finding)&lt;/td&gt;&lt;td&gt;Dyspnea&lt;/td&gt;&lt;td&gt;dyspneu&lt;/td&gt;&lt;td&gt;dyspnée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=43116000\&quot;&gt;43116000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eczema (disorder)&lt;/td&gt;&lt;td&gt;Eczema&lt;/td&gt;&lt;td&gt;eczeem&lt;/td&gt;&lt;td&gt;eczéma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=51599000\&quot;&gt;51599000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Edema of larynx (disorder)&lt;/td&gt;&lt;td&gt;Edema of larynx&lt;/td&gt;&lt;td&gt;larynxoedeem&lt;/td&gt;&lt;td&gt;œdème du larynx&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271807003\&quot;&gt;271807003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eruption of skin (disorder)&lt;/td&gt;&lt;td&gt;Eruption&lt;/td&gt;&lt;td&gt;huideruptie&lt;/td&gt;&lt;td&gt;éruption cutanée&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=386661006\&quot;&gt;386661006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fever (finding)&lt;/td&gt;&lt;td&gt;Fever&lt;/td&gt;&lt;td&gt;koorts&lt;/td&gt;&lt;td&gt;fièvre&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=418363000\&quot;&gt;418363000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Itching of skin (finding)&lt;/td&gt;&lt;td&gt;Itching of skin&lt;/td&gt;&lt;td&gt;jeuk van huid&lt;/td&gt;&lt;td&gt;prurit de la peau&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=768962006\&quot;&gt;768962006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lyell syndrome (disorder)&lt;/td&gt;&lt;td&gt;Lyell syndrome&lt;/td&gt;&lt;td&gt;toxische epidermale necrolyse&lt;/td&gt;&lt;td&gt;nécrolyse épidermique toxique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=422587007\&quot;&gt;422587007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nausea (finding)&lt;/td&gt;&lt;td&gt;Nausea&lt;/td&gt;&lt;td&gt;nausea&lt;/td&gt;&lt;td&gt;nausées&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=16932000\&quot;&gt;16932000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nausea and vomiting (disorder)&lt;/td&gt;&lt;td&gt;Nausea and vomiting&lt;/td&gt;&lt;td&gt;nausea en braken&lt;/td&gt;&lt;td&gt;nausées et vomissements&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=359610006\&quot;&gt;359610006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ocular hyperemia (disorder)&lt;/td&gt;&lt;td&gt;Ocular hyperemia&lt;/td&gt;&lt;td&gt;oculaire hyperemie&lt;/td&gt;&lt;td&gt;hyperémie oculaire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271757001\&quot;&gt;271757001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Papular eruption (disorder)&lt;/td&gt;&lt;td&gt;Papular eruption&lt;/td&gt;&lt;td&gt;papulaire huideruptie&lt;/td&gt;&lt;td&gt;éruption papuleuse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=70076002\&quot;&gt;70076002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rhinitis (disorder)&lt;/td&gt;&lt;td&gt;Rhinitis&lt;/td&gt;&lt;td&gt;rinitis&lt;/td&gt;&lt;td&gt;rhinite&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=91175000\&quot;&gt;91175000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Seizure (finding)&lt;/td&gt;&lt;td&gt;Seizure&lt;/td&gt;&lt;td&gt;convulsie&lt;/td&gt;&lt;td&gt;convulsion&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=76067001\&quot;&gt;76067001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sneezing (finding)&lt;/td&gt;&lt;td&gt;Sneezing&lt;/td&gt;&lt;td&gt;niezen&lt;/td&gt;&lt;td&gt;éternuement&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=73442001\&quot;&gt;73442001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndrome (disorder)&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndrome&lt;/td&gt;&lt;td&gt;syndroom van Stevens-Johnson&lt;/td&gt;&lt;td&gt;syndrome de Stevens-Johnson&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=23924001\&quot;&gt;23924001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tight chest (finding)&lt;/td&gt;&lt;td&gt;Tight chest&lt;/td&gt;&lt;td&gt;drukkend gevoel op de borst&lt;/td&gt;&lt;td&gt;oppression thoracique&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=490008\&quot;&gt;490008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Upper respiratory tract hypersensitivity reaction (disorder)&lt;/td&gt;&lt;td&gt;Upper respiratory tract hypersensitivity reaction&lt;/td&gt;&lt;td&gt;overgevoeligheidsreactie van bovenste luchtwegen&lt;/td&gt;&lt;td&gt;réaction d'hypersensibilité des voies respiratoires supérieures&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=126485001\&quot;&gt;126485001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urticaria (disorder)&lt;/td&gt;&lt;td&gt;Urticaria&lt;/td&gt;&lt;td&gt;urticaria&lt;/td&gt;&lt;td&gt;urticaire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=31996006\&quot;&gt;31996006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vasculitis (disorder)&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td&gt;vasculitis&lt;/td&gt;&lt;td&gt;vasculite&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=422400008\&quot;&gt;422400008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vomiting (disorder)&lt;/td&gt;&lt;td&gt;Vomiting&lt;/td&gt;&lt;td&gt;braken&lt;/td&gt;&lt;td&gt;vomissements&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=247472004\&quot;&gt;247472004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Weal (disorder)&lt;/td&gt;&lt;td&gt;Weal&lt;/td&gt;&lt;td&gt;urticaire rash&lt;/td&gt;&lt;td&gt;éruption urticaire&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;h2&gt;BeRiskManifestation&lt;/h2&gt;&lt;div&gt;&lt;p&gt;Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.&lt;/p&gt;\n&lt;/div&gt;&lt;p&gt;This value set includes codes from the following code systems:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://www.snomed.org/\&quot;&gt;&lt;code&gt;http://snomed.info/sct&lt;/code&gt;&lt;/a&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=473460002\&quot;&gt;473460002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Allergic conjunctivitis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=39579001\&quot;&gt;39579001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anaphylaxis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=41291007\&quot;&gt;41291007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Angioedema (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=195967001\&quot;&gt;195967001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Asthma (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=24079001\&quot;&gt;24079001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Atopic dermatitis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=4386001\&quot;&gt;4386001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bronchospasm (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271759003\&quot;&gt;271759003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bullous eruption (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=698247007\&quot;&gt;698247007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiac arrhythmia (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=410430005\&quot;&gt;410430005&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cardiorespiratory arrest (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=9826008\&quot;&gt;9826008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Conjunctivitis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=40275004\&quot;&gt;40275004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Contact dermatitis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=49727002\&quot;&gt;49727002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Cough (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=62315008\&quot;&gt;62315008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Diarrhea (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=702809001\&quot;&gt;702809001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug reaction with eosinophilia and systemic symptoms (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=297942002\&quot;&gt;297942002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Drug-induced erythema multiforme (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=162290004\&quot;&gt;162290004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dry eyes (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=267036007\&quot;&gt;267036007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Dyspnea (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=43116000\&quot;&gt;43116000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eczema (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=51599000\&quot;&gt;51599000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Edema of larynx (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271807003\&quot;&gt;271807003&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eruption of skin (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=386661006\&quot;&gt;386661006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Fever (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=418363000\&quot;&gt;418363000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Itching of skin (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=768962006\&quot;&gt;768962006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Lyell syndrome (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=422587007\&quot;&gt;422587007&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nausea (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=16932000\&quot;&gt;16932000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Nausea and vomiting (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=359610006\&quot;&gt;359610006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Ocular hyperemia (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=271757001\&quot;&gt;271757001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Papular eruption (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=70076002\&quot;&gt;70076002&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Rhinitis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=91175000\&quot;&gt;91175000&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Seizure (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=76067001\&quot;&gt;76067001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sneezing (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=73442001\&quot;&gt;73442001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndrome (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=23924001\&quot;&gt;23924001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tight chest (finding)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=490008\&quot;&gt;490008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Upper respiratory tract hypersensitivity reaction (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=126485001\&quot;&gt;126485001&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Urticaria (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=31996006\&quot;&gt;31996006&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vasculitis (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=422400008\&quot;&gt;422400008&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Vomiting (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;a href=\&quot;http://browser.ihtsdotools.org/?perspective=full&amp;amp;conceptId1=247472004\&quot;&gt;247472004&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Weal (disorder)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Additional Language Displays&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;English (English, en)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;French (Belgium) (fr)&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Nederlands (België) (Dutch (Belgium), nl)&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;473460002&lt;/td&gt;&lt;td&gt;Allergic conjunctivitis&lt;/td&gt;&lt;td&gt;conjonctivite allergique&lt;/td&gt;&lt;td&gt;allergische conjunctivitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;39579001&lt;/td&gt;&lt;td&gt;Anaphylaxis&lt;/td&gt;&lt;td&gt;anaphylaxie&lt;/td&gt;&lt;td&gt;anafylaxie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;41291007&lt;/td&gt;&lt;td&gt;Angioedema&lt;/td&gt;&lt;td&gt;angiœdème&lt;/td&gt;&lt;td&gt;angio-oedeem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;195967001&lt;/td&gt;&lt;td&gt;Asthma&lt;/td&gt;&lt;td&gt;asthme&lt;/td&gt;&lt;td&gt;astma&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;24079001&lt;/td&gt;&lt;td&gt;Atopic dermatitis&lt;/td&gt;&lt;td&gt;dermatite atopique&lt;/td&gt;&lt;td&gt;atopische dermatitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;4386001&lt;/td&gt;&lt;td&gt;Bronchospasm&lt;/td&gt;&lt;td&gt;bronchospasme&lt;/td&gt;&lt;td&gt;bronchospasme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271759003&lt;/td&gt;&lt;td&gt;Bullous eruption&lt;/td&gt;&lt;td&gt;éruption bulleuse&lt;/td&gt;&lt;td&gt;bulleuse huideruptie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;698247007&lt;/td&gt;&lt;td&gt;Cardiac arrhythmia&lt;/td&gt;&lt;td&gt;arythmie cardique&lt;/td&gt;&lt;td&gt;hartritmestoornis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;410430005&lt;/td&gt;&lt;td&gt;Cardiorespiratory arrest&lt;/td&gt;&lt;td&gt;arrêt cardiorespiratoire&lt;/td&gt;&lt;td&gt;cardiopulmonale stilstand&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;9826008&lt;/td&gt;&lt;td&gt;Conjunctivitis&lt;/td&gt;&lt;td&gt;conjonctivite&lt;/td&gt;&lt;td&gt;conjunctivitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;40275004&lt;/td&gt;&lt;td&gt;Contact dermatitis&lt;/td&gt;&lt;td&gt;dermatite de contact&lt;/td&gt;&lt;td&gt;contactdermatitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;49727002&lt;/td&gt;&lt;td&gt;Cough&lt;/td&gt;&lt;td&gt;toux&lt;/td&gt;&lt;td&gt;hoesten&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;62315008&lt;/td&gt;&lt;td&gt;Diarrhea&lt;/td&gt;&lt;td&gt;diarrhée&lt;/td&gt;&lt;td&gt;diarree&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;702809001&lt;/td&gt;&lt;td&gt;Drug reaction with eosinophilia and systemic symptoms&lt;/td&gt;&lt;td&gt;réaction médicamenteuse avec éosinophilie et symptômes systémiques&lt;/td&gt;&lt;td&gt;geneesmiddelexantheem met eosinofilie en systemische symptomen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;297942002&lt;/td&gt;&lt;td&gt;Drug-induced erythema multiforme&lt;/td&gt;&lt;td&gt;érythème polymorphe d'origine médicamenteuse&lt;/td&gt;&lt;td&gt;geneesmiddelengeïnduceerde erythema multiforme&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;162290004&lt;/td&gt;&lt;td&gt;Dry eyes&lt;/td&gt;&lt;td&gt;sècheresse oculaire&lt;/td&gt;&lt;td&gt;droge ogen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;267036007&lt;/td&gt;&lt;td&gt;Dyspnea&lt;/td&gt;&lt;td&gt;dyspnée&lt;/td&gt;&lt;td&gt;dyspneu&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;43116000&lt;/td&gt;&lt;td&gt;Eczema&lt;/td&gt;&lt;td&gt;eczéma&lt;/td&gt;&lt;td&gt;eczeem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;51599000&lt;/td&gt;&lt;td&gt;Edema of larynx&lt;/td&gt;&lt;td&gt;œdème du larynx&lt;/td&gt;&lt;td&gt;larynxoedeem&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271807003&lt;/td&gt;&lt;td&gt;Eruption&lt;/td&gt;&lt;td&gt;éruption cutanée&lt;/td&gt;&lt;td&gt;huideruptie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;386661006&lt;/td&gt;&lt;td&gt;Fever&lt;/td&gt;&lt;td&gt;fièvre&lt;/td&gt;&lt;td&gt;koorts&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;418363000&lt;/td&gt;&lt;td&gt;Itching of skin&lt;/td&gt;&lt;td&gt;prurit de la peau&lt;/td&gt;&lt;td&gt;jeuk van huid&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;768962006&lt;/td&gt;&lt;td&gt;Lyell syndrome&lt;/td&gt;&lt;td&gt;nécrolyse épidermique toxique&lt;/td&gt;&lt;td&gt;toxische epidermale necrolyse&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;422587007&lt;/td&gt;&lt;td&gt;Nausea&lt;/td&gt;&lt;td&gt;nausées&lt;/td&gt;&lt;td&gt;nausea&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;16932000&lt;/td&gt;&lt;td&gt;Nausea and vomiting&lt;/td&gt;&lt;td&gt;nausées et vomissements&lt;/td&gt;&lt;td&gt;nausea en braken&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;359610006&lt;/td&gt;&lt;td&gt;Ocular hyperemia&lt;/td&gt;&lt;td&gt;hyperémie oculaire&lt;/td&gt;&lt;td&gt;oculaire hyperemie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;271757001&lt;/td&gt;&lt;td&gt;Papular eruption&lt;/td&gt;&lt;td&gt;éruption papuleuse&lt;/td&gt;&lt;td&gt;papulaire huideruptie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;70076002&lt;/td&gt;&lt;td&gt;Rhinitis&lt;/td&gt;&lt;td&gt;rhinite&lt;/td&gt;&lt;td&gt;rinitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;91175000&lt;/td&gt;&lt;td&gt;Seizure&lt;/td&gt;&lt;td&gt;convulsion&lt;/td&gt;&lt;td&gt;convulsie&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;76067001&lt;/td&gt;&lt;td&gt;Sneezing&lt;/td&gt;&lt;td&gt;éternuement&lt;/td&gt;&lt;td&gt;niezen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;73442001&lt;/td&gt;&lt;td&gt;Stevens-Johnson syndrome&lt;/td&gt;&lt;td&gt;syndrome de Stevens-Johnson&lt;/td&gt;&lt;td&gt;syndroom van Stevens-Johnson&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;23924001&lt;/td&gt;&lt;td&gt;Tight chest&lt;/td&gt;&lt;td&gt;oppression thoracique&lt;/td&gt;&lt;td&gt;drukkend gevoel op de borst&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;490008&lt;/td&gt;&lt;td&gt;Upper respiratory tract hypersensitivity reaction&lt;/td&gt;&lt;td&gt;réaction d'hypersensibilité des voies respiratoires supérieures&lt;/td&gt;&lt;td&gt;overgevoeligheidsreactie van bovenste luchtwegen&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;126485001&lt;/td&gt;&lt;td&gt;Urticaria&lt;/td&gt;&lt;td&gt;urticaire&lt;/td&gt;&lt;td&gt;urticaria&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;31996006&lt;/td&gt;&lt;td&gt;Vasculitis&lt;/td&gt;&lt;td&gt;vasculite&lt;/td&gt;&lt;td&gt;vasculitis&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;422400008&lt;/td&gt;&lt;td&gt;Vomiting&lt;/td&gt;&lt;td&gt;vomissements&lt;/td&gt;&lt;td&gt;braken&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;247472004&lt;/td&gt;&lt;td&gt;Weal&lt;/td&gt;&lt;td&gt;éruption urticaire&lt;/td&gt;&lt;td&gt;urticaire rash&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://www.ehealth.fgov.be/standards/fhir/ValueSet/be-riskmanifestation",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "1.0.0",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "BeRiskManifestation",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2020-09-18T08:03:27+02:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2019-12-19T09:13:57+01:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "eHealth Platform",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "eHealth Platform",
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://www.ehealth.fgov.be"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "Message structure",
-      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "message-structure@ehealth.fgov.be"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "other",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://hl7.org/Special/committees/fiwg"
         }
       ]
     }
   ],
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.description">description</a>" : "Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.jurisdiction">jurisdiction</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "001"
+        }
+      ]
+    }
+  ],
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose">compose</a>" : {
     "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.compose.include">include</a>" : [
       {
@@ -1189,65 +1131,35 @@
 }</pre>
 
 
-  <!-- insert notes if present -->
   
-
-
-
+  
 </div>
         </div>  <!-- /inner-wrapper -->
       </div>  <!-- /row -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package fed.be.core#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2020 08:03+0200">2020-09-18</span>
-          <br/>
-          <span style="color: #FFFF77">
-            <div style="color: #33333" >
-
-
-          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
-                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-
-<!--                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
--->
-
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
-                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
-
-<!--                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
--->
-
-<!--				 
-<br/>				 
-				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
-	-->			  
-
-			<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-				<img  alt="belgium.be" src="assets/images/logo-be.png">
+		<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
+				<img  alt="belgium.be" src="assets/images/logo-be.png"/>
 			</a>
 			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-				<img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
+				<img height="50" alt="Welcome on ehealth website" src="assets/images/logo-ehealth.png"/>
 			</a>
-
-			
-</div>
+          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package hl7.be.core#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 19, 2019 09:13+0100">2019-12-19</span>
+          <br/>
+		  <span>
+          Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
           </span>
-        </p>
+       
+			
+		</p>
       </div>  <!-- /inner-wrapper -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-footer -->
@@ -1261,8 +1173,10 @@
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/fhir.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

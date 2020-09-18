@@ -10,6 +10,8 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "practitionerrole1"];
   fhir:Resource.meta [
+     fhir:Meta.versionId [ fhir:value "1" ];
+     fhir:Meta.lastUpdated [ fhir:value "2019-07-01T13:30:55.864+00:00"^^xsd:dateTime ];
      fhir:Meta.profile [
        fhir:value "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole";
        fhir:index 0;
@@ -18,7 +20,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 23</p><p><b>active</b>: true</p><p><b>period</b>: Aug 1, 2019 2:00:00 AM --&gt; Dec 1, 2019 1:00:00 AM</p><p><b>practitioner</b>: <a href=\"Practitioner-practitioner1.html\">Dr Katherine Pulaski. Generated Summary: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p><p><b>code</b>: <span title=\"Codes: {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty persphysician}\">physician</span></p><p><b>specialty</b>: <span title=\"Codes: {http://snomed.info/sct 419772000}\">Family practice</span></p><blockquote><p><b>availableTime</b></p><p><b>daysOfWeek</b>: mon, tue, wed</p><p><b>availableStartTime</b>: </p></blockquote><p><b style=\"color: maroon\">Exception generating Narrative: type org.hl7.fhir.r5.model.TimeType not handled - should not be here</b></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>\n				Dr Katherine Pulaski\n				2012\n			</p>\n    </div>"
   ];
   fhir:PractitionerRole.identifier [
      fhir:index 0;
@@ -31,8 +33,8 @@
      fhir:Period.end [ fhir:value "2019-12-01T00:00:00.000Z"^^xsd:dateTime ]
   ];
   fhir:PractitionerRole.practitioner [
-     fhir:link <https://www.ehealth.fgov.be/standards/fhir/Practitioner/practitioner1>;
-     fhir:Reference.reference [ fhir:value "Practitioner/practitioner1" ];
+     fhir:link <https://www.anotherfhirserver.be/fhir/Practitioner/01>;
+     fhir:Reference.reference [ fhir:value "https://www.anotherfhirserver.be/fhir/Practitioner/01" ];
      fhir:Reference.display [ fhir:value "Dr Katherine Pulaski" ]
   ];
   fhir:PractitionerRole.code [
@@ -78,7 +80,7 @@
        fhir:index 1
      ];
      fhir:PractitionerRole.availableTime.availableStartTime [ fhir:value "09:00:00"^^xsd:time ];
-     fhir:PractitionerRole.availableTime.availableEndTime [ fhir:value "16:30:00"^^xsd:time ]
+     fhir:PractitionerRole.availableTime.availableEndTime [ fhir:value "12:00:00"^^xsd:time ]
   ];
   fhir:PractitionerRole.notAvailable [
      fhir:index 0;

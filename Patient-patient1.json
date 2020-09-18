@@ -2,16 +2,32 @@
   "resourceType": "Patient",
   "id": "patient1",
   "meta": {
+    "versionId": "1",
+    "lastUpdated": "2019-07-01T13:30:55.864+00:00",
     "profile": [
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient"
     ]
   },
   "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><blockquote><p><b>nationality</b></p><h3>Urls</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>value</b>: <span title=\"Codes: {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country BE}\">Belgium</span></p></blockquote><p><b>Birth Place</b>: </p><p><b>identifier</b>: Social Beneficiary Identifier: 79121137740 (OFFICIAL), Medical record number: 45XXP0PA-4 (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Josephine Nessa La Paradisio (OFFICIAL)</p><p><b>telecom</b>: nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p><p><b>address</b>: </p><ul><li>Sloordelle 42, 1160 Oudergem(HOME)</li><li>42, Allee des Colzas, 1160 Auderghem(HOME)</li><li>377, Avenue Prince d'Orange, 1420 Braine-lʼAlleud(WORK)</li></ul><p><b>maritalStatus</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}\">Divorced</span></p><h3>Contacts</h3><table class=\"grid\"><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v2-0131 N}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-contact-person mother}\">Next-of-Kin</span></td><td>Leia Vogels </td><td>ph: +31201234567(MOBILE)</td></tr></table><p><b>generalPractitioner</b>: <a href=\"Practitioner-practitioner1.html\">Generated Summary: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p></div>"
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t<div class=\"hapiHeaderText\">Josephine Nessa <b>LA PARADISIO </b>\n\t\t\t</div>\n\t\t\t<table class=\"hapiPropertyTable\">\n\t\t\t\t<tbody>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>Identifier</td>\n\t\t\t\t\t\t<td>79121137740</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>Address</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<span>Auderghem Oudergem </span>\n\t\t\t\t\t\t\t<span>BE </span>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t\t<tr>\n\t\t\t\t\t\t<td>Date of birth</td>\n\t\t\t\t\t\t<td>\n\t\t\t\t\t\t\t<span>11 December 1979</span>\n\t\t\t\t\t\t</td>\n\t\t\t\t\t</tr>\n\t\t\t\t</tbody>\n\t\t\t</table>\n\t\t</div>"
   },
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/language",
+            "valueCode": "nl"
+          }
+        ],
+        "city": "Namen",
+        "country": "BE"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
       "extension": [
         {
           "url": "code",
@@ -25,21 +41,7 @@
             ]
           }
         }
-      ],
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
-      "valueAddress": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/language",
-            "valueCode": "nl"
-          }
-        ],
-        "city": "Namen",
-        "country": "BE"
-      }
+      ]
     }
   ],
   "identifier": [
@@ -132,6 +134,10 @@
         {
           "extension": [
             {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Sloordelle"
+            },
+            {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
               "valueString": "42"
             }
@@ -159,6 +165,10 @@
         {
           "extension": [
             {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Allee des Colzas"
+            },
+            {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
               "valueString": "42"
             }
@@ -174,11 +184,15 @@
       "type": "both",
       "text": "377, Avenue Prince d'Orange, 1420 Braine-lʼAlleud",
       "line": [
-        "42, Allee des Colzas"
+        "377, Avenue Prince d'Orange"
       ],
       "_line": [
         {
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Avenue Prince d'Orange"
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
               "valueString": "377"
@@ -239,7 +253,7 @@
   ],
   "generalPractitioner": [
     {
-      "reference": "Practitioner/practitioner1"
+      "reference": "Practitioner/01"
     }
   ]
 }

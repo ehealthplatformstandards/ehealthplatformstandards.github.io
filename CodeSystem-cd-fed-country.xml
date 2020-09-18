@@ -3,33 +3,30 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cd-fed-country"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country defines many codes, of which the following are a subset:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BE<a name="cd-fed-country-BE"> </a></td><td>Belgium</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FedCountry</h2><div><p>FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes</p>
+</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country defines many codes, but they are not represented here</p></div>
   </text>
   <url value="https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country"/>
-  <version value="1.1.0"/>
-  <name value="Cdfedcountry"/>
-  <title value="CodeSystem CD-FED-COUNTRY"/>
+  <version value="1.0.0"/>
+  <name value="FedCountry"/>
+  <title value="FedCountry"/>
   <status value="active"/>
-  <date value="2020-09-18T08:03:27+02:00"/>
+  <experimental value="false"/>
+  <date value="2019-12-19T09:13:57+01:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
-    <name value="eHealth Platform"/>
     <telecom>
-      <system value="url"/>
-      <value value="https://www.ehealth.fgov.be"/>
+      <system value="other"/>
+      <value value="http://hl7.org/Special/committees/fiwg"/>
     </telecom>
   </contact>
-  <contact>
-    <name value="Message structure"/>
-    <telecom>
-      <system value="email"/>
-      <value value="message-structure@ehealth.fgov.be"/>
-    </telecom>
-  </contact>
-  <description value="FedICT country codes."/>
-  <content value="fragment"/>
-  <concept>
-    <code value="BE"/>
-    <display value="Belgium"/>
-  </concept>
+  <description value="FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="false"/>
+  <content value="not-present"/>
 </CodeSystem>

@@ -6,7 +6,7 @@
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category exam}">Examination</span></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 15188001:{363698007=89644007}}">Hard of hearing left ear</span></p><p><b>subject</b>: <a href="Patient-patient1.html">Generated Summary: Social Beneficiary Identifier: 79121137740 (OFFICIAL), Medical record number: 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio (OFFICIAL); nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK); gender: female; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}">Divorced</span></a></p><p><b>effective</b>: 1999-07-02</p><p><b>performer</b>: <a href="Practitioner-practitioner1.html">K. Pulaski. Generated Summary: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient hard of hearing, left ear.</div>
   </text>
   <status value="final"/>
   <category>
@@ -25,11 +25,11 @@
     <text value="Hard of hearing left ear"/>
   </code>
   <subject>
-    <reference value="Patient/patient1"/>
+    <reference value="Patient/example"/>
   </subject>
   <effectiveDateTime value="1999-07-02"/>
   <performer>
-    <reference value="Practitioner/practitioner1"/>
+    <reference value="Practitioner/564654654"/>
     <display value="K. Pulaski"/>
   </performer>
 </Observation>

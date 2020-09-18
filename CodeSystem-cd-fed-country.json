@@ -3,41 +3,37 @@
   "id": "cd-fed-country",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country defines many codes, of which the following are a subset:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BE<a name=\"cd-fed-country-BE\"> </a></td><td>Belgium</td></tr></table></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FedCountry</h2><div><p>FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country defines many codes, but they are not represented here</p></div>"
   },
   "url": "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country",
-  "version": "1.1.0",
-  "name": "Cdfedcountry",
-  "title": "CodeSystem CD-FED-COUNTRY",
+  "version": "1.0.0",
+  "name": "FedCountry",
+  "title": "FedCountry",
   "status": "active",
-  "date": "2020-09-18T08:03:27+02:00",
+  "experimental": false,
+  "date": "2019-12-19T09:13:57+01:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
-      "name": "eHealth Platform",
       "telecom": [
         {
-          "system": "url",
-          "value": "https://www.ehealth.fgov.be"
-        }
-      ]
-    },
-    {
-      "name": "Message structure",
-      "telecom": [
-        {
-          "system": "email",
-          "value": "message-structure@ehealth.fgov.be"
+          "system": "other",
+          "value": "http://hl7.org/Special/committees/fiwg"
         }
       ]
     }
   ],
-  "description": "FedICT country codes.",
-  "content": "fragment",
-  "concept": [
+  "description": "FHIR code system definition for country codes as they are described on https://www.ehealth.fgov.be/standards/kmehr/en/tables/fedict-country-codes",
+  "jurisdiction": [
     {
-      "code": "BE",
-      "display": "Belgium"
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
     }
-  ]
+  ],
+  "caseSensitive": false,
+  "content": "not-present"
 }
