@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="2e838c15-74cb-4456-a17e-0b557888e0d4"/>
+  <id value="7121cb9b-de56-445f-9c58-71e82f27d40b"/>
   <meta>
-    <lastUpdated value="2020-09-18T13:42:32.400+02:00"/>
+    <lastUpdated value="2020-09-18T08:03:27.195+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -1236,7 +1236,7 @@
         <name value="BeAllergyIntoleranceCode"/>
         <title value="ValueSet allergy intolerance code"/>
         <status value="active"/>
-        <date value="2020-09-18T13:42:32+02:00"/>
+        <date value="2020-09-18T08:03:27+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -1254,8 +1254,8 @@
         </contact>
         <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
         <expansion>
-          <identifier value="urn:uuid:13e3522d-a1af-44e5-bf12-a25aad0fa2f1"/>
-          <timestamp value="2020-09-18T13:43:04+02:00"/>
+          <identifier value="urn:uuid:7f1152f4-2117-47ea-8048-8a86f67cd766"/>
+          <timestamp value="2020-09-18T08:04:02+02:00"/>
           <total value="148"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2207,7 +2207,7 @@
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2020-09-18T13:42:32+02:00"/>
+        <date value="2020-09-18T08:03:27+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -2225,8 +2225,8 @@
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:5f945b20-c5a0-4f54-b093-16c65b89f54f"/>
-          <timestamp value="2020-09-18T13:43:04+02:00"/>
+          <identifier value="urn:uuid:f7e0d5da-3f2c-4977-98cc-b3eff6bc1a4f"/>
+          <timestamp value="2020-09-18T08:04:02+02:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2672,7 +2672,7 @@
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2020-09-18T13:42:32+02:00"/>
+        <date value="2020-09-18T08:03:27+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -2690,8 +2690,8 @@
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:bc6aac08-8fe7-4157-9be4-807910ae8e20"/>
-          <timestamp value="2020-09-18T13:43:04+02:00"/>
+          <identifier value="urn:uuid:9688f232-785c-4f70-83c4-f8dee2147891"/>
+          <timestamp value="2020-09-18T08:04:02+02:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
