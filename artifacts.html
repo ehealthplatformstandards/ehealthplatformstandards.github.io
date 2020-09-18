@@ -3,58 +3,73 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.CORE\Artifacts - FHIR v4.0.1</title>
-  
+    <title>FED.BE.CORE\Artifacts Summary - FHIR v4.0.1</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-  
+
     <link href="fhir.css" rel="stylesheet"/>
-      
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  
+
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ehealth.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-  
+
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <div id="hl7-nav">
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
           <a id="standards-logo" no-external="true" href="index.html">
             <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
           </a>
         </div>
-        <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.0.0 - Published</p>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.1.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -65,7 +80,8 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <!-- menu.xml  -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="guidance.html">Guidance</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
@@ -97,17 +113,18 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->  
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts</b></li>
-        </ul>  
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+        </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">  <!-- segment-content -->
+
+    <div id="segment-content">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -116,244 +133,446 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles (v1.0.0). See the <a href="changes.html">Directory of published versions</a></p><!--EndReleaseHeader-->
-  <h2>Artifacts</h2>
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (vnull). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
   
   <!--DO NOT EDIT THIS FILE - It is generated and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
      xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Data Type Profiles</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#6">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
      xmlns:f="http://hl7.org/fhir">
-   <div class="itoc">
-      <p>Artifact Packages</p>
-      <p class="link">-
-            <a href="#1">Core Profiles</a>
-      </p>
-      <p class="link">-
-            <a href="#2">Conditions</a>
-      </p>
-      <p class="link">-
-            <a href="#3">Terminology</a>
-      </p>
-      <p class="link">-
-            <a href="#4">Examples</a>
-      </p>
-   </div>
    <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
    <a name="1"> </a>
-   <h3>Core Profiles </h3>
-   <p>Core resources to be reused in other resources</p>
+   <h3>Structures: Resource Profiles </h3>
    <p>
-      <table>
+    <p>These define constraints on FHIR resources that need to be complied with by conformant implementations</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
          <tbody>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-patient.html" title="StructureDefinition/be-patient">Patient core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-allergyintolerance.html"
+                     title="StructureDefinition/be-allergyintolerance">Allergy Intolerance core BE profile</a>
                </td>
-               <td>The Core BE profile for Patient</td>
+               <td>
+<p>Belgian federal profile for an allergy and/or an intolerance. Initially based on the functional description of the NIHDI.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-practitioner.html" title="StructureDefinition/be-practitioner">Practitioner core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-observation.html"
+                     title="StructureDefinition/be-observation">Observation core BE profile</a>
                </td>
-               <td>The Core BE profile for Practitioner</td>
+               <td>
+<p>Belgian federal profile for an observation. Initially based on the functional description of the NIHDI. As Observation is used in many instances in FHIR, 
+please refer to the HL7 specs of the base resource for guidance around expression of actual values using UCUM, methods, location on body etc.
+Special remarks for KMEHR users: The FHIR Observation resource captures many things that are in a KMEHR message structured as an ‘item’. 
+This includes things like ‘vital signs such as body weight, blood pressure, and temperature […], personal characteristics such as eye-color […] social history like tobacco use, family support, 
+or cognitive status […]’ ( https://www.hl7.org/fhir/R4/observation.html ) For some of these things, HL7 already has worked out profiles and they SHALL be used when such a use case is needed. 
+Specifically, projects SHALL take note of the existing profiles described on https://www.hl7.org/fhir/R4/observation-vitalsigns.html.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-observationcodeableconcept.html"
-                     title="StructureDefinition/be-observationcodeableconcept">Observation codeable concept core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-organization.html"
+                     title="StructureDefinition/be-organization">Organization core BE profile</a>
                </td>
-               <td>The Core BE profile for Observation codeable concept</td>
+               <td>
+<p>Belgian federal profile for an organization. Initially based on the functional description of the NIHDI.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-provenance.html" title="StructureDefinition/be-provenance">Provenance core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-patient.html"
+                     title="StructureDefinition/be-patient">Patient core BE profile</a>
                </td>
-               <td>The Core BE profile for Provenance</td>
+               <td>
+<p>Belgian federal profile for a patient. Initially based on the functional description of the NIHDI. Special remarks for KMEHR users: following elements in KMEHR are not available in this FHIR resource. 
+If needed, an extension can be defined in a future iteration of these specifications: the ‘deathlocation’ (location is not available but the death of the patient is expressed by either date or Boolean cfr. infra.),
+the ‘insurancystatus’ (covered in a seperate FHIR resource: Coverage), ‘insurancymembership’ (covered in a seperate FHIR resource: Coverage) and ‘profession’ (covered in a possible future FHIR resource: OccupationalData.)</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-organization.html" title="StructureDefinition/be-organization">Organization core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-practitioner.html"
+                     title="StructureDefinition/be-practitioner">Practitioner core BE profile</a>
                </td>
-               <td>The Core BE profile for Organization</td>
+               <td>
+<p>Belgian federal profile for a practitioner. Initially based on the functional description of the NIHDI.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-address.html" title="StructureDefinition/be-address">Address core BE profile</a>
-               </td>
-               <td>The Core BE profile for Address</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="be-practitionerrole.html"
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-practitionerrole.html"
                      title="StructureDefinition/be-practitionerrole">Practitioner Role core BE profile</a>
                </td>
-               <td>The Core BE profile for Practitioner Role</td>
+               <td>
+<p>Belgian federal profile for a practitioner role. Initially based on the functional description of the NIHDI.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-provenance.html"
+                     title="StructureDefinition/be-provenance">Provenance core BE profile</a>
+               </td>
+               <td>
+<p>Belgian federal profile for a provenance. Note this profile does not introduce any changes from the base profile but has been created to mark its importance, 
+specifically when FHIR is used in a non-document approach. General use case remarks: ‘Provenance of a resource is a record that describes entities and processes involved in producing and delivering or 
+otherwise influencing that resource.’ (cfr. the HL7 base specifications) According to the FHIR specifications, the provenance resource SHALL only be provided when no other resource already plays this role: 
+for a Patient it SHOULD be its managing organization, provenance of an Observation SHOULD be its performer, provenance of an AllergyIntolerance SHOULD be its recorder. 
+‘Many other FHIR resources contain some elements that represent information about how the resource was obtained, and therefore they overlap with the functionality of the Provenance.’ 
+Special remarks for KMEHR users: The FHIR Provenance resource in general refers to an entity that had something to do with the creation or updating of something else. In a KMEHR context, 
+this is somewhat different – as it is ‘XML document’ based, each KMEHR message has an ‘author’ element that is responsible.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="2"> </a>
-   <h3>Conditions </h3>
-   <p>Resource profiles defined for conditions</p>
+   <h3>Structures: Data Type Profiles </h3>
    <p>
-      <table>
+    <p>These define constraints on FHIR data types that need to be complied with by conformant implementations</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
          <tbody>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-allergyintolerance.html"
-                     title="StructureDefinition/be-allergyintolerance">Allergy Intolerance core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-address.html"
+                     title="StructureDefinition/be-address">Address core BE profile</a>
                </td>
-               <td>The Core BE profile for Allergy Intolerance</td>
+               <td>
+<p>Belgian federal profile on address, to provide the possibility in the ‘line’ element to provide a seperate streetname, housenumber and postal box. It is always RECOMMENDED to give these elements seperately.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="be-observation.html" title="StructureDefinition/be-observation">Observation core BE profile</a>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-be-observationcodeableconcept.html"
+                     title="StructureDefinition/be-observationcodeableconcept">Observation codeable concept core BE profile</a>
                </td>
-               <td>The Core BE profile for Observation</td>
+               <td>
+<p>This is a supporting profile, only to give guidelines how to express a few of the typical coding systems. In general, it shall be noted SNOMED-CT is the preferred national terminology. 
+Other coding systems remain allowed or MAY be preferred in specific flows (e.g. the use of LOINC codes to express a laboratory test.)</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="3"> </a>
-   <h3>Terminology </h3>
-   <p>Terminology resources - ValueSets and CodeSystems</p>
+   <h3>Terminology: Value Sets </h3>
    <p>
-      <table>
+    <p>These define sets of codes used by systems conforming with this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
          <tbody>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-exposureroute.html" title="ValueSet/be-exposureroute">Valueset exposureroute</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-allergyintolerancecode.html"
+                     title="ValueSet/be-allergyintolerancecode">ValueSet allergy intolerance code</a>
                </td>
-               <td>The valueset for exposureroute</td>
+               <td>
+<p>Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-causativeagent.html"
-                     title="ValueSet/be-causativeagent">Valueset causative agent</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-civilstate.html" title="ValueSet/be-civilstate">ValueSet civil state</a>
                </td>
-               <td>The valueset for causative agent</td>
+               <td>
+<p>Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. 
+Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE 
+for the Belgian specific code.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-civilstate.html" title="ValueSet/be-civilstate">Valueset civil state</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-contactperson.html" title="ValueSet/be-contactperson">ValueSet contact person</a>
                </td>
-               <td>The valueset for civil state</td>
+               <td>
+<p>Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-contactperson.html" title="ValueSet/be-contactperson">Valueset contact person</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-causativeagent.html"
+                     title="ValueSet/be-causativeagent">ValueSet causative agent</a>
                </td>
-               <td>The valueset for contact person</td>
+               <td>
+<p>Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of causative agent. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-riskmanifestation.html"
-                     title="ValueSet/be-riskmanifestation">Valueset risk manifestation</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-exposureroute.html" title="ValueSet/be-exposureroute">ValueSet exposure route</a>
                </td>
-               <td>The valueset for risk manifestation</td>
+               <td>
+<p>Codes to illustrate differentiating types of exposure route. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-allergyintolerancecode.html"
-                     title="ValueSet/be-allergyintolerancecode">Valueset allergy intolerance code</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-noallergy.html" title="ValueSet/be-noallergy">ValueSet no allergies</a>
                </td>
-               <td>The valueset for the code for allergy/intolerance</td>
+               <td>
+<p>Codes as communicated by the FOD Terminology Center differentiating types of no allergies. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="valueset-be-noallergy.html" title="ValueSet/be-noallergy">Valueset no allergies</a>
+               <td style="column-width:30%">
+                  <a href="ValueSet-be-riskmanifestation.html"
+                     title="ValueSet/be-riskmanifestation">ValueSet risk manifestation</a>
                </td>
-               <td>The valueset for the code for no allergies</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="cd-hcparty.html" title="CodeSystem/cd-hcparty">Codesystem CD-HCPARTY</a>
-               </td>
-               <td>The CD-HCPARTY codesystem</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="cd-civilstate.html" title="CodeSystem/cd-civilstate">Codesystem CD-CIVILSTATE</a>
-               </td>
-               <td>The CD-CIVILSTATE codesystem</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="cd-contact-person.html" title="CodeSystem/cd-contact-person">Codesystem CD-CONTACT-PERSON</a>
-               </td>
-               <td>The CD-CONTACT-PERSON codesystem</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="cd-fed-country.html" title="CodeSystem/cd-fed-country">Codesystem CD-FED-COUNTRY</a>
-               </td>
-               <td>The CD-FED-COUNTRY codesystem</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="be-ehp.html" title="NamingSystem/be-ehp">NamingSystem EHP</a>
-               </td>
-               <td>The EHP naming system</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="be-cbe.html" title="NamingSystem/be-cbe">NamingSystem CBE</a>
-               </td>
-               <td>The CBE naming system</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="be-ssin.html" title="NamingSystem/be-ssin">NamingSystem SSIN</a>
-               </td>
-               <td>The SSIN naming system</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">  •  <a href="be-nihdi.html" title="NamingSystem/be-nihdi">NamingSystem NIHDI</a>
-               </td>
-               <td>The NIHDI naming system</td>
+               <td>
+<p>Codes as communicated by NIHDI and the FPS Terminology Center differentiating types of risk manifestation. This valueset supports the Belgian federal FHIR profiling effort.</p>
+</td>
             </tr>
          </tbody>
       </table>
    </p>
    <a name="4"> </a>
-   <h3>Examples </h3>
-   <p>Examples for the different resources</p>
+   <h3>Terminology: Code Systems </h3>
    <p>
-      <table>
+    <p>These define new code systems used by systems conforming with this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
          <tbody>
             <tr>
-               <td style="column-width:30%">  •  <a href="patient1.html" title="Patient/patient1">Patient1</a>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cd-civilstate.html" title="CodeSystem/cd-civilstate">CodeSystem CD-CIVILSTATE</a>
                </td>
-               <td>Patient</td>
+               <td>
+<p>Civil state in Belgium.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="patient2.html" title="Patient/patient2">Patient2</a>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cd-contact-person.html"
+                     title="CodeSystem/cd-contact-person">CodeSystem CD-CONTACT-PERSON</a>
                </td>
-               <td>Patient with logical identifier for GP</td>
+               <td>
+<p>Contact person</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="practitioner1.html" title="Practitioner/practitioner1">Practitioner1</a>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cd-fed-country.html" title="CodeSystem/cd-fed-country">CodeSystem CD-FED-COUNTRY</a>
                </td>
-               <td>Practitioner</td>
+               <td>
+<p>FedICT country codes.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="organization1.html" title="Organization/organization1">Organization1</a>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-albert.html" title="CodeSystem/albert">CodeSystem ALBERT</a>
                </td>
-               <td>Organization</td>
+               <td>
+<p>CodeSystem ALBERT.</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="practitionerrole1.html"
-                     title="PractitionerRole/practitionerrole1">PractitionerRole1</a>
+               <td style="column-width:30%">
+                  <a href="CodeSystem-cd-hcparty.html" title="CodeSystem/cd-hcparty">CodeSystem CD-HCPARTY</a>
                </td>
-               <td>PractitionerRole</td>
+               <td>
+<p>healthcare party in Belgium.</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Terminology: Naming Systems </h3>
+   <p>
+    <p>These define identifier and/or code system identities used by systems conforming with this implementation guide</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-be-cbe.html" title="NamingSystem/be-cbe">NamingSystem CBE</a>
+               </td>
+               <td>
+<p>The CBE naming system</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="observation1.html" title="Observation/observation1">Observation1</a>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-be-ehp.html" title="NamingSystem/be-ehp">NamingSystem EHP</a>
                </td>
-               <td>Observation heart rate</td>
+               <td>
+<p>The EHP naming system</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="observation2.html" title="Observation/observation2">Observation2</a>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-be-nihdi.html" title="NamingSystem/be-nihdi">NamingSystem NIHDI</a>
                </td>
-               <td>Observation hard of hearing</td>
+               <td>
+<p>The NIHDI naming system</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="allergyintolerance1.html"
-                     title="AllergyIntolerance/allergyintolerance1">AllergyIntolerance1</a>
+               <td style="column-width:30%">
+                  <a href="NamingSystem-be-ssin.html" title="NamingSystem/be-ssin">NamingSystem SSIN</a>
                </td>
-               <td>Food allergy</td>
+               <td>
+<p>The SSIN naming system</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="6"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-allergyIntolerance1.html"
+                     title="AllergyIntolerance/allergyIntolerance1">AllergyIntolerance 1</a>
+               </td>
+               <td>
+<p>AllergyIntolerance 1</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="allergyintolerance2.html"
-                     title="AllergyIntolerance/allergyintolerance2">AllergyIntolerance2</a>
+               <td style="column-width:30%">
+                  <a href="AllergyIntolerance-allergyIntolerance2.html"
+                     title="AllergyIntolerance/allergyIntolerance2">AllergyIntolerance 2</a>
                </td>
-               <td>Pollen allergy with multiple reactions</td>
+               <td>
+<p>AllergyIntolerance 2</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="provenance1.html" title="Provenance/provenance1">Provenance1</a>
+               <td style="column-width:30%">
+                  <a href="Bundle-bundle1.html" title="Bundle/bundle1">Bundle 1</a>
                </td>
-               <td>Provenance</td>
+               <td>
+<p>Bundle 1</p>
+</td>
             </tr>
             <tr>
-               <td style="column-width:30%">  •  <a href="bundle1.html" title="Bundle/bundle1">Bundle1</a>
+               <td style="column-width:30%">
+                  <a href="Bundle-bundleHistory.html" title="Bundle/bundleHistory">Bundle History</a>
                </td>
-               <td>Bundle transaction upload with provenance of creation of practitioner</td>
+               <td>
+<p>This Bundle contains the history of the value sets and code systems</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-eHealthPlatform.html"
+                     title="Organization/eHealthPlatform">eHealth Platform organization</a>
+               </td>
+               <td>
+<p>eHealth Platform organization</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation1.html" title="Observation/observation1">Observation 1</a>
+               </td>
+               <td>
+<p>Observation 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-observation2.html" title="Observation/observation2">Observation 2</a>
+               </td>
+               <td>
+<p>Observation 2</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Organization-organization1.html"
+                     title="Organization/organization1">Organization 1</a>
+               </td>
+               <td>
+<p>Organization 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient1.html" title="Patient/patient1">Patient 1</a>
+               </td>
+               <td>
+<p>Patient 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Patient-patient2.html" title="Patient/patient2">Patient 2</a>
+               </td>
+               <td>
+<p>Patient 2</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Practitioner-practitioner1.html"
+                     title="Practitioner/practitioner1">Practitioner 1</a>
+               </td>
+               <td>
+<p>Practitioner 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="PractitionerRole-practitionerrole1.html"
+                     title="PractitionerRole/practitionerrole1">Practitioner role 1</a>
+               </td>
+               <td>
+<p>Practitioner role 1</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Provenance-provenance1.html" title="Provenance/provenance1">Provenance 1</a>
+               </td>
+               <td>
+<p>Provenance 1</p>
+</td>
             </tr>
          </tbody>
       </table>
@@ -366,27 +585,54 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-		<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-				<img  alt="belgium.be" src="assets/images/logo-be.png"/>
-			</a>
-			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-				<img height="50" alt="Welcome on ehealth website" src="assets/images/logo-ehealth.png"/>
-			</a>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package hl7.be.core#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 19, 2019 09:13+0100">2019-12-19</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package fed.be.core#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2020 08:03+0200">2020-09-18</span>
           <br/>
-		  <span>
+          <span style="color: #FFFF77">
+            <div style="color: #33333" >
+
+
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-          </span>
-       
+
+<!--                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+<!--                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+
+			<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
+				<img  alt="belgium.be" src="assets/images/logo-be.png">
+			</a>
+			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
+				<img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
+			</a>
+
 			
-		</p>
+</div>
+          </span>
+        </p>
       </div>  <!-- /inner-wrapper -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-footer -->
@@ -400,10 +646,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/fhir.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

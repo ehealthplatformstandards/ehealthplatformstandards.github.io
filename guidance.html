@@ -3,58 +3,73 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.BE.CORE\Guidance - FHIR v4.0.1</title>
-  
+    <title>FED.BE.CORE\Guidance - FHIR v4.0.1</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
-  
+
     <link href="fhir.css" rel="stylesheet"/>
-      
+
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet"/>
     <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
-  
+
     <!-- Project extras -->
     <link href="assets/css/project.css" rel="stylesheet"/>
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
-  
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/ehealth.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
     <script src="assets/js/respond.min.js"></script>
     <![endif]-->
-  
+
     <!-- Favicons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
-    <link rel="shortcut icon" href="assets/ico/favicon.png"/>  
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
-  <body>
+  <body onload="document.body.style.opacity='1'">
 
-
-    <style type="text/css">h2{--heading-prefix:"6"}
-    h3,h4,h5,h6{--heading-prefix:"6"}</style>
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-        <div id="hl7-nav">
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
           <a id="standards-logo" no-external="true" href="index.html">
             <img height="50" alt="Welcome on standards website" src="assets/images/standards.svg"/>
           </a>
         </div>
-        <div id="hl7-status">
-          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.0.0 - Published</p>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">The Core Belgian Federal FHIR Profiles</span><br/>1.1.0 - CI Build</p>
         </div>
       </div> <!-- /container -->
     </div>  <!-- /segment-header -->
-    
+
     <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
       <div id="stripe"> </div>
       <div class="container">  <!-- container -->
         <!-- HEADER CONTENT -->
-    
+
         <nav class="navbar navbar-inverse">
           <!--status-bar-->
           <div class="container">
@@ -65,7 +80,8 @@
             </button>
             <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
-              <ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+              <!-- menu.xml  -->
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
   <li><a href="index.html">IG Home</a></li>
   <li><a href="guidance.html">Guidance</a></li>
   <li><a href="toc.html">Table of Contents</a></li>
@@ -97,17 +113,18 @@
     </div>  <!-- /segment-navbar -->
     <!--status-bar-->
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
-      <div class="container">  <!-- container -->  
+      <div class="container">  <!-- container -->
         <ul class="breadcrumb">
           <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Guidance</b></li>
-        </ul>  
+        </ul>
       </div>  <!-- /container -->
     </div>  <!-- /segment-breadcrumb -->
-    
-    <div id="segment-content" class="segment">  <!-- segment-content -->
+
+    <div id="segment-content">  <!-- segment-content -->
       <div class="container">  <!-- container -->
         <div class="row">
           <div class="inner-wrapper">
+
 <style type="text/css">
 h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
 h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
@@ -116,13 +133,13 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles (v1.0.0). See the <a href="changes.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">The Core Belgian Federal FHIR Profiles - Local Development build (vnull). See the <a href="https://www.ehealth.fgov.be/standards/fhir/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Guidance</h2>
   
-  <div xmlns="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir ../../src-generated/schemas/fhir-single.xsd" >
+  <!-- guidance.xml  --><div xmlns="http://www.w3.org/1999/xhtml">
   
 
-  
+<a name="guidance">  </a> 
 <h3>Guidance</h3>
 <p>As mentioned supra, the Belgian federal profiling effort considers 
 all published rules or constraints defined by HL7 on the FHIR resources strictly as an integral part of the standard 
@@ -143,6 +160,7 @@ is in KMEHR in FHIR, not the other way around. Attention points that could not d
 <p>As the FHIR specification is very developer friendly, there will be no public delivery of FHIR validation or visualisation tools by the eHealth Platform. Developers are encouraged to enjoy the speed and abundance of the <a href="https://www.hl7.org/fhir/R4/implsupport-module.html">existing FHIR eco system</a>, which existence is indeed one of the rationales behind the choice for FHIR.</p>
 <p>As a general principle for implementers, please note <a href="http://hl7.org/fhir/r4/validation.html#correct-use">Postel's Law is quoted</a> on the HL7 FHIR pages.</p>
 
+<a name="use-of-extensions">  </a> 
 <h4>Use of extensions</h4>
 <p>“Note that, unlike in many other specifications, there can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions. 
 The use of extensions is what allows the <a href="http://www.hl7.org/fhir/r4/extensibility.html">FHIR specification</a> to retain a core simplicity for everyone.”</p>
@@ -151,11 +169,12 @@ The use of extensions is what allows the <a href="http://www.hl7.org/fhir/r4/ext
 <p>When an extension is needed and <a href="http://www.hl7.org/fhir/r4/extensibility-registry.html">there is already an extension</a>: this existing extension SHALL be used. In general, Belgian profiling on resources will endeavour to – when needed – only use the extensions already defined by HL7.
 In the Belgian profiling documentation, some available standard HL7 extensions of certain resources are recommended.</p>
 
+<a name="valuesets-bindings">  </a> 
 <h4>Valuesets binding</h4>
 <p>The <a href="https://www.hl7.org/fhir/r4/terminologies.html#strength">concept of valueset binding</a> is extremely important in the FHIR specification. The FHIR standard defines different levels of recommendation/ obligation towards the use of valuesets. 
 They are defined on the pages of HL7 but are partly copied here for easy reference.</p>
 <p>Almost all the elements that have a coded data type are bound to a value set. The bindings are associated with various degrees of flexibility as to how closely the value set SHALL be followed:</p>
-<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;">
 
 <tr>
 <td>required</td>
@@ -178,6 +197,7 @@ If the value set does not cover the concept (based on human review), alternate c
 <p>Important note: there can be differences concerning the precise conformance of ‘required’ and ‘extensible’ depending to which datatype they are applied. 
 Consult the <a href="https://www.hl7.org/fhir/r4/terminologies.html#strength">HL7 pages</a> for extensive information.</p>
 
+<a name="snomed-ct-usage">  </a> 
 <h4>SNOMED-CT usage</h4>
 <p>As SNOMED-CT is the preferred coding in the Belgian context and supported by the <a href="http://terminology-center.be">FPS Health</a>, it SHALL be clear there are some strict rules concerning its usage in a FHIR context 
 as defined by the FHIR specifications and they can be found on the <a href="https://www.hl7.org/fhir/R4/snomedct.html">HL7 pages</a>.</p>
@@ -189,13 +209,14 @@ as defined by the FHIR specifications and they can be found on the <a href="http
 in the Observation resource, in particular, <a href="https://hl7.org/fhir/R4/observation.html#code-interop">the different patterns</a> that are described.</li>
 </ul>
 
+<a name="period">  </a> 
 <h4>Period</h4>
 <p>Period is a FHIR field and datatype that is often used in FHIR to describe the period of validity of something. 
 Depending on the information available, the period can include a start dateTime and/or an end dateTime.</p>
 <p>Mostly the period is an optional item but in general, it is good practice, RECOMMENDED to add it when available.</p>
 <p>Where it is specifically of interest to add it, it will be mentioned in the be- documentation.</p>
 
-
+<a name="canonical-identifiers">  </a> 
 <h4>Canonical Identifiers</h4>
 <p>
 FHIR resources often contain canonical identifiers. This datatype uses an URI to refer to the used system. Note when these take the form of a URL they are not by definition resolvable.
@@ -203,9 +224,9 @@ Specific URIs to use in Belgian profiles are explained in the profiles and a gen
 <p>Example:
 <br>To refer to a number of the national registry:</br>
 &lt;identifier&gt;  
-<br>&lt;use value=&quot;official&quot;/&gt; </br>
-&lt;system value=&quot;https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin&quot;/&gt;
-<br>&lt;value value=&quot;7031966696&quot;/&gt;</br>
+<br>&lt;use value="official"/&gt; </br>
+&lt;system value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/&gt;
+<br>&lt;value value="7031966696"/&gt;</br>
 &lt;/identifier&gt;
 </p>
 
@@ -213,17 +234,18 @@ Specific URIs to use in Belgian profiles are explained in the profiles and a gen
 <br>Note there is no S=’LOCAL’ way in FHIR. A local system will be identified by its own unique URI.</br>
 </p>
 
+<a name="texttual-and-parts-structured-information">  </a> 
 <h4>Textual and parts/structured information</h4>
 <p>A narrative SHOULD be included in resource instances. When doing so, <a href="https://www.hl7.org/fhir/narrative.html#Narrative">the guidelines of the HL7 FHIR specification</a> SHALL be followed strictly.</p>
 
-
+<a name="contact-point">  </a> 
 <h4>ContactPoint</h4>
 <p>Notably used in the Patient and Practioner resource.</p>
 <p>Special remarks for KMEHR users:
 <br>This information is typically retrieved in the KMEHR element &lt;telecom&gt;. That element uses both KMEHR tables CD-TELECOM (in its version 1.0) and CD-ADDRESS (in its version 1.1) to describe the actual telecom value.</br>
 <br>Please take extra note of the accepted range of FHIR values in the ‘system’ and ‘use’ fields as FHIR uses its own tables to express this content. Further information about the functional meanings concerning the FHIR valueset can be found on its official page.</br>
 <br>Take extra note of the way a mobile phone is expressed in KMEHR vs. FHIR.</br>
-<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;">
 <tr>
 <th>KMEHR CD-ADDRESS</th>
 <th>FHIR: http://hl7.org/fhir/ValueSet/contact-point-use</th>
@@ -265,7 +287,7 @@ Specific URIs to use in Belgian profiles are explained in the profiles and a gen
 
 </table>
 
-<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;">
 <tr><th>KMEHR CD-TELECOM</th><th>FHIR: http://hl7.org/fhir/ValueSet/contact-point-system</th></tr> 
 <tr><td>email</td><td>email</td></tr>
 <tr><td>fax</td><td>fax</td></tr>
@@ -278,6 +300,7 @@ Specific URIs to use in Belgian profiles are explained in the profiles and a gen
 <tr><td>N/A</td><td>other</td></tr></table>
 </p>
 
+<a name="human-name">  </a> 
 <h4>HumanName</h4>
 <p>Special remarks for KMEHR users:
 <br>In a KMEHR message, a human name is typically composed of one or more &lt;firstname&gt; elements and one &lt;familyname&gt; element. In the FHIR datatype HumanName, it is possible to map this using corresponding elements ‘given’ and ‘family’.</br>
@@ -289,6 +312,8 @@ When needed, the more elaborate possibilities available in the HumanName can be 
 Note the HumanName.use is a required element. Typically the name that was used in KMEHR would be ‘official’. At least a HumanName with official use SHOULD be provided.
 </p>
 </p>
+
+<a name="address">  </a> 
 <h4>Address</h4>
 <p>When needed in bilingual settings, an address MAY repeat using the standard HL7 extension for language.Note the HL7 specification points to the ‘text’ element as the most important element ‘to define what is printed on the envelope.For this purpose, as it is of the FHIR datatype ‘string’, it may contain some special characters like a carriage return.</p>
 <p>It is RECOMMENDED to also use the available elements to model the address in a structured way. (These are available in the BeAddress profile in this guide as also already used in the Patient resource and others.)</p>
@@ -303,7 +328,7 @@ languages (e.g. in the bilingual environment of Brussels-Capital Region) (also a
 In KMEHR, an address might be expressed using free text or a totally structured approach where the streetname and housenumber are put in separate fields. The structural approach is RECOMMENDED in FHIR using the streetname/number/box HL7 extensions defined in BeAddress.</br>
 <br>Note the FHIR address also allows to optionally define whether the address is a physical, postal or ‘both’ address using the Address.type field.</br>
 </p>
-<table style="width:100%;border: 1px solid black;border-collapse: collapse;" >
+<table style="width:100%;border: 1px solid black;border-collapse: collapse;">
 <tr><th>KMEHR CD-ADDRESS</th><th>FHIR: http://hl7.org/fhir/ValueSet/address-use</th></tr> 
 <tr>
 <td>careaddress</td>
@@ -321,10 +346,13 @@ In KMEHR, an address might be expressed using free text or a totally structured 
 <td>temp (RECOMMENDED to also use ‘period’ when using this)</td>
 </tr>
 </table>
+
+<a name="country-codes">  </a> 
 <h4>Country codes</h4>
 <p>Concerning the codification of the country, the FHIR specification defines its country field as a string and suggests using a ISO 3166 2 or 3 letter codes.</p>
 <p>As that 2-letter format is also the standard in a KMEHR address, it is hence RECOMMENDED to codify the country in the same way as in KMEHR.</p>
 
+<a name="codeableconcept">  </a> 
 <h4>CodeableConcept</h4>
 <p>Clinical information is typically expressed using some form of coded content and very often <a href="https://www.hl7.org/fhir/r4/datatypes.html#CodeableConcept">the FHIR datatype ‘CodeableConcept’</a> is used for this. “It is one of the most common patterns in healthcare data. A typical use of CodeableConcept is to send the local code that the concept was coded with, and also one or more translations to publicly defined code systems such as LOINC or SNOMED CT. Sending local codes is useful and important for the purposes of debugging and integrity auditing.” Equally important in this way, it is RECOMMENDED to add display values when sending codes.</p>
 <p>Using UserSelected Boolean, it is possible to clarify which code was actually chosen by the user when multiple codes are sent. It is RECOMMENDED to use this Boolean.</p>
@@ -341,27 +369,54 @@ In KMEHR, an address might be expressed using free text or a totally structured 
     </div>  <!-- /container -->
   </div>  <!-- /segment-content -->
 
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-		<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
-				<img  alt="belgium.be" src="assets/images/logo-be.png"/>
-			</a>
-			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
-				<img height="50" alt="Welcome on ehealth website" src="assets/images/logo-ehealth.png"/>
-			</a>
-          IG &#169; 2019+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package hl7.be.core#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Dec 19, 2019 09:13+0100">2019-12-19</span>
+          IG &#169; 2020+ <a style="color: #81BEF7" href="https://www.ehealth.fgov.be">eHealth Platform</a>.  Package fed.be.core#1.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Sep 18, 2020 08:03+0200">2020-09-18</span>
           <br/>
-		  <span>
+          <span style="color: #FFFF77">
+            <div style="color: #33333" >
+
+
           Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a> |
-                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a>
-          </span>
-       
+
+<!--                 <a style="color: #81BEF7" target="_blank" href="https://www.ehealth.fgov.be/standards/fhir/history.html">Version History <img alt="external" style="vertical-align: baseline" src="external.png"/></a></a> |
+-->
+
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+<!--                 <a style="color: #81BEF7" target="_blank" href="mailto:mail@hl7belgium.org">Propose a change<img alt="external" style="vertical-align: baseline" src="external.png"/></a>
+-->
+
+<!--				 
+<br/>				 
+				 <a style="color: #81BEF7" rel="eufunded" href="https://europa.eu"><img style="border-style: none;" alt="EU" src="assets/images/en_horizontal_cef_logo.png" width="250"/></a>
+	-->			  
+
+			<a id="belgium-logo" href="https://www.belgium.be/en" target="_blank">
+				<img  alt="belgium.be" src="assets/images/logo-be.png">
+			</a>
+			<a id="ehealth-logo" href="https://www.ehealth.fgov.be" style="text-decoration:none">
+				<img height="50" alt="Welcome to ehealth website" src="assets/images/logo-ehealth.png"/>
+			</a>
+
 			
-		</p>
+</div>
+          </span>
+        </p>
       </div>  <!-- /inner-wrapper -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-footer -->
@@ -375,10 +430,8 @@ In KMEHR, an address might be expressed using free text or a totally structured 
   <!-- Bootstrap core JavaScript
   ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
   <script type="text/javascript" src="assets/js/respond.min.js"> </script>
-  <script type="text/javascript" src="assets/js/fhir.js"> </script>
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>

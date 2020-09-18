@@ -3,30 +3,10 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="observation1"/>
   <meta>
-    <profile value="http://hl7.org/fhir/StructureDefinition/vitalsigns"/>
+    <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
-      <p>
-        <b>Generated Narrative with Details</b>
-      </p>
-      <p>
-        <b>id</b>: heart-rate</p>
-      <p>
-        <b>meta</b>: </p>
-      <p>
-        <b>status</b>: final</p>
-      <p>
-        <b>category</b>: Vital Signs <span>(Details : {http://terminology.hl7.org/CodeSystem/observation-category code 'vital-signs' = 'Vital Signs', given as 'Vital Signs'})</span></p>
-      <p>
-        <b>code</b>: Heart rate <span>(Details : {LOINC code '8867-4' = 'Heart rate', given as 'Heart rate'})</span></p>
-      <p>
-        <b>subject</b>: <a>Patient/example</a></p>
-      <p>
-        <b>effective</b>: 02/07/1999</p>
-      <p>
-        <b>value</b>: 44 beats/minute<span> (Details: UCUM code /min = '/min')</span></p>
-    </div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8867-4}, {http://snomed.info/sct 364075005}">Heart rate</span></p><p><b>subject</b>: <a href="Patient-patient1.html">Generated Summary: Social Beneficiary Identifier: 79121137740 (OFFICIAL), Medical record number: 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio (OFFICIAL); nessa.laparadisio@belgium.be, ph: +322476792979(MOBILE), ph: +3226718655(HOME), ph: +322476799(WORK); gender: female; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}">Divorced</span></a></p><p><b>effective</b>: 1999-07-02</p><p><b>performer</b>: <a href="Practitioner-practitioner1.html">Generated Summary: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be(WORK), ph: 022675198(WORK), fax: 022675209(WORK); gender: female; birthDate: 1979-12-11</a></p><p><b>value</b>: 44 beats/minute</p></div>
   </text>
   <status value="final"/>
   <category>
@@ -48,19 +28,14 @@
       <code value="364075005"/>
       <display value="Heart rate (observable entity)"/>
     </coding>
-    <coding>
-      <system value="http://my-own-custom-codes"/>
-      <code value="H-RATE"/>
-      <display value="Heart rate"/>
-    </coding>
     <text value="Heart rate"/>
   </code>
   <subject>
-    <reference value="Patient/example"/>
+    <reference value="Patient/patient1"/>
   </subject>
   <effectiveDateTime value="1999-07-02"/>
   <performer>
-    <reference value="Practitioner/example"/>
+    <reference value="Practitioner/practitioner1"/>
   </performer>
   <valueQuantity>
     <value value="44"/>

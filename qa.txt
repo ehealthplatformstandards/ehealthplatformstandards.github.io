@@ -1,329 +1,139 @@
-﻿Core IG : Validation Results
+﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 54, warn = 2, info = 4
-IG Publisher Version: v1.0.27-SNAPSHOT
-Generated Thu Dec 19 09:15:16 CET 2019. FHIR version 4.0.1 for hl7.be.core#1.0.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 0, warn = 0, info = 2
+IG Publisher Version: 1.1.25
+Generated Fri Sep 18 08:04:30 CEST 2020. FHIR version 4.0.1 for fed.be.core# (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
- Build Errors : 217 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\ImplementationGuide-be-core : 13 / 1
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\allergyintolerance-allergyintolerance1 : 3 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\allergyintolerance-allergyintolerance2 : 3 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\bundle-bundle1 : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\observation-observation1 : 2 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\observation-observation2 : 2 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\organization-organization1 : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\patient-patient1 : 1 / 1
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\patient-patient2 : 0 / 1
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\practitioner-practitioner1 : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\practitionerrole-practitionerrole1 : 1 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\provenance-provenance1 : 2 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-address : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-allergyintolerance : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observation : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observationcodeableconcept : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-organization : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-patient : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitioner : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitionerrole : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-provenance : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-civilstate : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-contact-person : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-fed-country : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-hcparty : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-cbe : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ehp : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-nihdi : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ssin : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-allergyintolerancecode : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-causativeagent : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-civilstate : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-contactperson : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-exposureroute : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-noallergy : 0 / 0
- C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-riskmanifestation : 0 / 0
+ Build Errors : 0 / 0 / 0
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\allergyintolerance-allergyIntolerance2 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\bundle-bundle1 : 0 / 0 / 7
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\bundle-bundleHistory : 0 / 0 / 5
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\observation-observation1 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\observation-observation2 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\organization-eHealthPlatform : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\organization-organization1 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\patient-patient1 : 0 / 0 / 2
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\patient-patient2 : 0 / 0 / 2
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\practitioner-practitioner1 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\practitionerrole-practitionerrole1 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\provenance-provenance1 : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-address : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-allergyintolerance : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-observation : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-observationcodeableconcept : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-organization : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-patient : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-practitioner : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-practitionerrole : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-provenance : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-albert : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-civilstate : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-contact-person : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-fed-country : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-hcparty : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-cbe : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-ehp : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-nihdi : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-ssin : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-allergyintolerancecode : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-causativeagent : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-civilstate : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-contactperson : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-exposureroute : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-noallergy : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-riskmanifestation : 0 / 0 / 1
 </table>
 == n/a ==
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.html: The html source does not contain the publish box <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader--> (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance2.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance2.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance2.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\allergyintolerance2.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\artifacts.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 225, column 807: The link 'be-address-definitions.html#Address.line.extension:Streetname.value[x]' for "value[x]" cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 227, column 807: The link 'be-address-definitions.html#Address.line.extension:Housenumber.value[x]' for "value[x]" cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 229, column 807: The link 'be-address-definitions.html#Address.line.extension:Postbox.value[x]' for "value[x]" cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 379, column 807: The link 'be-address-definitions.html#Address.line.extension:Streetname.value[x]' for "value[x]" cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 381, column 807: The link 'be-address-definitions.html#Address.line.extension:Housenumber.value[x]' for "value[x]" cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 383, column 807: The link 'be-address-definitions.html#Address.line.extension:Postbox.value[x]' for "value[x]" cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-address.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-allergyintolerance.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-cbe.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-cbe.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-cbe.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-cbe.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ehp.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ehp.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ehp.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ehp.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-nihdi.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-nihdi.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-nihdi.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-nihdi.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observation.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-observationcodeableconcept.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 247, column 799: The link 'be-organization-definitions.html#Organization.type.coding' for "coding" cannot be resolved (valid targets: [Organization.address.text, Organization.identifier, Organization.type:CD-HCPARTY.coding.extension, Organization.implicitRules, Organization.language, Organization.address.state, Organization.name, Organization.address.type, Organization.identifier:EHP, Organization.identifier:SSIN.use, hl7-status, segment-footer, Organization.contact, Organization.identifier:NIHDI.extension, Organization.type:CD-HCPARTY, segment-header, Organization.address, Organization.identifier:NIHDI.assigner, Organization.type:CD-HCPARTY.id, Organization.address.extension:language, Organization.identifier:EHP.type, Organization.extension, Organization.identifier:EHP.id, Organization.contact.address, Organization.id, belgium-logo, Organization.identifier:SSIN.type, Organization.identifier:EHP.value, Organization.alias, Organization, Organization.partOf, publish-box, segment-post-footer, Organization.address.country, Organization.telecom, Organization.type:CD-HCPARTY.text, Organization.identifier:SSIN.assigner, Organization.type:CD-HCPARTY.extension, Organization.endpoint, segment-content, Organization.address.id, Organization.contact.purpose, Organization.contact.name, Organization.address.period, Organization.type:CD-HCPARTY.coding.userSelected, Organization.identifier:SSIN.period, Organization.identifier:EHP.extension, Organization.identifier:NIHDI.id, Organization.identifier:SSIN, Organization.identifier:CBE.period, Organization.identifier:NIHDI.system, Organization.type:CD-HCPARTY.coding.code, Organization.type:CD-HCPARTY.coding.id, Organization.address.city, Organization.identifier:CBE.id, Organization.address.use, Organization.identifier:CBE.assigner, Organization.meta, Organization.identifier:CBE.use, standards-logo, Organization.identifier:NIHDI.value, stripe, Organization.identifier:SSIN.value, Organization.contact.extension, Organization.identifier:CBE.system, Organization.type, Organization.type:CD-HCPARTY.coding.display, Organization.identifier:NIHDI.period, ehealth-logo, Organization.identifier:NIHDI.use, Organization.identifier:EHP.period, Organization.identifier:SSIN.system, Organization.identifier:CBE.type, Organization.identifier:SSIN.extension, Organization.text, segment-navbar, Organization.identifier:NIHDI, Organization.modifierExtension, Organization.type:CD-HCPARTY.coding, Organization.identifier:CBE, Organization.identifier:EHP.assigner, Organization.contained, root, Organization.contact.id, Organization.identifier:CBE.extension, Organization.identifier:EHP.system, Organization.active, Organization.identifier:CBE.value, Organization.address.postalCode, Organization.type:CD-HCPARTY.coding.version, Organization.contact.modifierExtension, Organization.type:CD-HCPARTY.coding.system, Organization.address.district, Organization.contact.telecom, Organization.address.line, hl7-nav, Organization.identifier:EHP.use, Organization.address.extension, Organization.identifier:SSIN.id, segment-breadcrumb, Organization.identifier:NIHDI.type])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 561, column 799: The link 'be-organization-definitions.html#Organization.type.coding' for "coding" cannot be resolved (valid targets: [Organization.address.text, Organization.identifier, Organization.type:CD-HCPARTY.coding.extension, Organization.implicitRules, Organization.language, Organization.address.state, Organization.name, Organization.address.type, Organization.identifier:EHP, Organization.identifier:SSIN.use, hl7-status, segment-footer, Organization.contact, Organization.identifier:NIHDI.extension, Organization.type:CD-HCPARTY, segment-header, Organization.address, Organization.identifier:NIHDI.assigner, Organization.type:CD-HCPARTY.id, Organization.address.extension:language, Organization.identifier:EHP.type, Organization.extension, Organization.identifier:EHP.id, Organization.contact.address, Organization.id, belgium-logo, Organization.identifier:SSIN.type, Organization.identifier:EHP.value, Organization.alias, Organization, Organization.partOf, publish-box, segment-post-footer, Organization.address.country, Organization.telecom, Organization.type:CD-HCPARTY.text, Organization.identifier:SSIN.assigner, Organization.type:CD-HCPARTY.extension, Organization.endpoint, segment-content, Organization.address.id, Organization.contact.purpose, Organization.contact.name, Organization.address.period, Organization.type:CD-HCPARTY.coding.userSelected, Organization.identifier:SSIN.period, Organization.identifier:EHP.extension, Organization.identifier:NIHDI.id, Organization.identifier:SSIN, Organization.identifier:CBE.period, Organization.identifier:NIHDI.system, Organization.type:CD-HCPARTY.coding.code, Organization.type:CD-HCPARTY.coding.id, Organization.address.city, Organization.identifier:CBE.id, Organization.address.use, Organization.identifier:CBE.assigner, Organization.meta, Organization.identifier:CBE.use, standards-logo, Organization.identifier:NIHDI.value, stripe, Organization.identifier:SSIN.value, Organization.contact.extension, Organization.identifier:CBE.system, Organization.type, Organization.type:CD-HCPARTY.coding.display, Organization.identifier:NIHDI.period, ehealth-logo, Organization.identifier:NIHDI.use, Organization.identifier:EHP.period, Organization.identifier:SSIN.system, Organization.identifier:CBE.type, Organization.identifier:SSIN.extension, Organization.text, segment-navbar, Organization.identifier:NIHDI, Organization.modifierExtension, Organization.type:CD-HCPARTY.coding, Organization.identifier:CBE, Organization.identifier:EHP.assigner, Organization.contained, root, Organization.contact.id, Organization.identifier:CBE.extension, Organization.identifier:EHP.system, Organization.active, Organization.identifier:CBE.value, Organization.address.postalCode, Organization.type:CD-HCPARTY.coding.version, Organization.contact.modifierExtension, Organization.type:CD-HCPARTY.coding.system, Organization.address.district, Organization.contact.telecom, Organization.address.line, hl7-nav, Organization.identifier:EHP.use, Organization.address.extension, Organization.identifier:SSIN.id, segment-breadcrumb, Organization.identifier:NIHDI.type])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-organization.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-patient.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitioner.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 237, column 806: The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 241, column 799: The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 806: The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 512, column 799: The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for "coding" cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-practitionerrole.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance-definitions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance-examples.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance-mappings.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.profile.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.profile.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.profile.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-provenance.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ssin.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ssin.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ssin.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\be-ssin.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\bundle1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\bundle1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\bundle1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\bundle1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-civilstate.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-civilstate.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-civilstate.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-civilstate.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-contact-person.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-contact-person.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-contact-person.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-contact-person.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-fed-country.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-fed-country.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-fed-country.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-fed-country.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-hcparty.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-hcparty.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-hcparty.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\cd-hcparty.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\changes.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\conventions.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\downloads.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\guidance.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\index.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 172, column 10: The link 'artifacts.html#terminology' for "Value Sets and Code Systems" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 173, column 10: The link 'artifacts.html#core-profiles' for "Core profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 174, column 10: The link 'artifacts.html#conditions' for "Functional profiles" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 175, column 7: The link 'artifacts.html#examples' for "Examples" cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation2.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation2.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation2.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\observation2.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\organization1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\organization1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\organization1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\organization1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient2.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient2.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient2.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\patient2.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitioner1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitioner1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitioner1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitioner1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitionerrole1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitionerrole1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitionerrole1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\practitionerrole1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\provenance1.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\provenance1.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\provenance1.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\provenance1.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\toc.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-allergyintolerancecode.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-allergyintolerancecode.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-allergyintolerancecode.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-allergyintolerancecode.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-causativeagent.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-causativeagent.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-causativeagent.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-causativeagent.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-civilstate.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-civilstate.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-civilstate.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-civilstate.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-contactperson.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-contactperson.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-contactperson.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-contactperson.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-exposureroute.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-exposureroute.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-exposureroute.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-exposureroute.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-noallergy.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-noallergy.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-noallergy.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-noallergy.xml.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-riskmanifestation.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-riskmanifestation.json.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-riskmanifestation.ttl.html: The html source does not contain the publish box
-ERROR: C:\Users\EH074\Documents\GitHub\onlyTest\output\valueset-be-riskmanifestation.xml.html: The html source does not contain the publish box
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\ImplementationGuide-be-core.xml ==
-WARNING: ImplementationGuide/hl7.be.core: ImplementationGuide: ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[10].code: The value provided ('path-qa') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-qa in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[11].code: The value provided ('path-temp') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-temp in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[12].code: The value provided ('path-output') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-output in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[14].code: The value provided ('path-suppressed-warnings') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-suppressed-warnings in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[15].code: The value provided ('template-html') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#template-html in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[16].code: The value provided ('template-md') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#template-md in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[17].code: The value provided ('apply-contact') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-contact in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[18].code: The value provided ('apply-context') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-context in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[19].code: The value provided ('apply-copyright') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-copyright in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[20].code: The value provided ('apply-jurisdiction') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-jurisdiction in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[21].code: The value provided ('apply-license') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-license in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[22].code: The value provided ('apply-publisher') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-publisher in http://hl7.org/fhir/guide-parameter-code)
-ERROR: ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[23].code: The value provided ('apply-version') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-version in http://hl7.org/fhir/guide-parameter-code)
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\AllergyIntolerance-allergyintolerance1.xml ==
-ERROR: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.patient: Unable to resolve resource 'Patient/example'
-ERROR: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.recorder: Unable to resolve resource 'Practitioner/example'
-ERROR: AllergyIntolerance/allergyintolerance1: AllergyIntolerance.asserter: Unable to resolve resource 'Patient/example'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\AllergyIntolerance-allergyintolerance2.xml ==
-ERROR: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.patient: Unable to resolve resource 'Patient/example'
-ERROR: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.recorder: Unable to resolve resource 'Practitioner/example'
-ERROR: AllergyIntolerance/allergyintolerance2: AllergyIntolerance.asserter: Unable to resolve resource 'Patient/example'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Bundle-bundle1.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Observation-observation1.xml ==
-ERROR: Observation/observation1: Observation.subject: Unable to resolve resource 'Patient/example'
-ERROR: Observation/observation1: Observation.performer[0]: Unable to resolve resource 'Practitioner/example'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Observation-observation2.xml ==
-ERROR: Observation/observation2: Observation.subject: Unable to resolve resource 'Patient/example'
-ERROR: Observation/observation2: Observation.performer[0]: Unable to resolve resource 'Practitioner/564654654'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Organization-organization1.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Patient-patient1.xml ==
-INFORMATION: Patient/patient1: Patient.identifier[1]: This element does not match any known slice for the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
-ERROR: Patient/patient1: Patient.generalPractitioner[0]: Unable to resolve resource 'Practitioner/01'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Patient-patient2.xml ==
-INFORMATION: Patient/patient2: Patient.identifier[1]: This element does not match any known slice for the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Practitioner-practitioner1.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\PractitionerRole-practitionerrole1.xml ==
-ERROR: PractitionerRole/practitionerrole1: PractitionerRole.practitioner: Unable to resolve resource 'https://www.anotherfhirserver.be/fhir/Practitioner/01'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Provenance-provenance1.xml ==
-ERROR: Provenance/provenance1: Provenance.target[0]: Unable to resolve resource 'Practitioner/2/_history/1'
-ERROR: Provenance/provenance1: Provenance.agent[0].who: Unable to resolve resource 'https://www.anotherfhirserver.be/fhir/Organization/02'
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-address.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-allergyintolerance.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observation.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observationcodeableconcept.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-organization.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-patient.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitioner.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitionerrole.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-provenance.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-civilstate.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-contact-person.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-fed-country.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-hcparty.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-cbe.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ehp.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-nihdi.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ssin.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-allergyintolerancecode.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-causativeagent.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-civilstate.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-contactperson.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-exposureroute.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-noallergy.xml ==
-== C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-riskmanifestation.xml ==
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide.json ==
+INFORMATION: ImplementationGuide/fed.be.core: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
+INFORMATION: AllergyIntolerance/allergyIntolerance1: AllergyIntolerance: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\AllergyIntolerance-allergyIntolerance2.json ==
+INFORMATION: AllergyIntolerance/allergyIntolerance2: AllergyIntolerance: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Bundle-bundle1.json ==
+INFORMATION: Bundle/bundle1: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/bundle1: Bundle.entry[0].resource.ofType(Practitioner): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner
+INFORMATION: Bundle/bundle1: Bundle.entry[0].resource.ofType(Practitioner): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner - listed in meta
+INFORMATION: Bundle/bundle1: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
+INFORMATION: Bundle/bundle1: Bundle.entry[1].resource.ofType(Organization): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta
+INFORMATION: Bundle/bundle1: Bundle.entry[2].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/bundle1: Bundle.entry[2].resource.ofType(Provenance): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance - listed in meta
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Bundle-bundleHistory.json ==
+INFORMATION: Bundle/bundleHistory: Bundle: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle
+INFORMATION: Bundle/bundleHistory: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/bundleHistory: Bundle.entry[0].resource.ofType(Provenance): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance - listed in meta
+INFORMATION: Bundle/bundleHistory: Bundle.entry[1].resource.ofType(Provenance): Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance
+INFORMATION: Bundle/bundleHistory: Bundle.entry[1].resource.ofType(Provenance): Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance - listed in meta
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Observation-observation1.json ==
+INFORMATION: Observation/observation1: Observation: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Observation-observation2.json ==
+INFORMATION: Observation/observation2: Observation: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Organization-eHealthPlatform.json ==
+INFORMATION: Organization/eHealthPlatform: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Organization-organization1.json ==
+INFORMATION: Organization/organization1: Organization: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Patient-patient1.json ==
+INFORMATION: Patient/patient1: Patient: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+INFORMATION: Patient/patient1: Patient.identifier[1]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Patient-patient2.json ==
+INFORMATION: Patient/patient2: Patient: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+INFORMATION: Patient/patient2: Patient.identifier[1]: This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Practitioner-practitioner1.json ==
+INFORMATION: Practitioner/practitioner1: Practitioner: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\PractitionerRole-practitionerrole1.json ==
+INFORMATION: PractitionerRole/practitionerrole1: PractitionerRole: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Provenance-provenance1.json ==
+INFORMATION: Provenance/provenance1: Provenance: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-address.json ==
+INFORMATION: StructureDefinition/be-address: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-allergyintolerance.json ==
+INFORMATION: StructureDefinition/be-allergyintolerance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-observation.json ==
+INFORMATION: StructureDefinition/be-observation: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-observationcodeableconcept.json ==
+INFORMATION: StructureDefinition/be-observationcodeableconcept: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-organization.json ==
+INFORMATION: StructureDefinition/be-organization: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-patient.json ==
+INFORMATION: StructureDefinition/be-patient: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-practitioner.json ==
+INFORMATION: StructureDefinition/be-practitioner: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-practitionerrole.json ==
+INFORMATION: StructureDefinition/be-practitionerrole: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-provenance.json ==
+INFORMATION: StructureDefinition/be-provenance: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-albert.json ==
+INFORMATION: CodeSystem/albert: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-civilstate.json ==
+INFORMATION: CodeSystem/cd-civilstate: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-contact-person.json ==
+INFORMATION: CodeSystem/cd-contact-person: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-fed-country.json ==
+INFORMATION: CodeSystem/cd-fed-country: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-hcparty.json ==
+INFORMATION: CodeSystem/cd-hcparty: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-cbe.json ==
+INFORMATION: NamingSystem/be-cbe: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-ehp.json ==
+INFORMATION: NamingSystem/be-ehp: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-nihdi.json ==
+INFORMATION: NamingSystem/be-nihdi: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-ssin.json ==
+INFORMATION: NamingSystem/be-ssin: NamingSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-allergyintolerancecode.json ==
+INFORMATION: ValueSet/be-allergyintolerancecode: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-causativeagent.json ==
+INFORMATION: ValueSet/be-causativeagent: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-civilstate.json ==
+INFORMATION: ValueSet/be-civilstate: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-contactperson.json ==
+INFORMATION: ValueSet/be-contactperson: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-exposureroute.json ==
+INFORMATION: ValueSet/be-exposureroute: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-noallergy.json ==
+INFORMATION: ValueSet/be-noallergy: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-riskmanifestation.json ==
+INFORMATION: ValueSet/be-riskmanifestation: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
