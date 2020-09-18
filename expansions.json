@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "7121cb9b-de56-445f-9c58-71e82f27d40b",
+  "id" : "2e838c15-74cb-4456-a17e-0b557888e0d4",
   "meta" : {
-    "lastUpdated" : "2020-09-18T08:03:27.195+02:00"
+    "lastUpdated" : "2020-09-18T13:42:32.400+02:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeAllergyIntoleranceCode",
       "title" : "ValueSet allergy intolerance code",
       "status" : "active",
-      "date" : "2020-09-18T08:03:27+02:00",
+      "date" : "2020-09-18T13:42:32+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -37,8 +37,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:7f1152f4-2117-47ea-8048-8a86f67cd766",
-        "timestamp" : "2020-09-18T08:04:02+02:00",
+        "identifier" : "urn:uuid:13e3522d-a1af-44e5-bf12-a25aad0fa2f1",
+        "timestamp" : "2020-09-18T13:43:04+02:00",
         "total" : 148,
         "parameter" : [{
           "name" : "excludeNested",
@@ -817,7 +817,7 @@
       "name" : "BeCivilState",
       "title" : "ValueSet civil state",
       "status" : "active",
-      "date" : "2020-09-18T08:03:27+02:00",
+      "date" : "2020-09-18T13:42:32+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -835,8 +835,8 @@
       }],
       "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
       "expansion" : {
-        "identifier" : "urn:uuid:f7e0d5da-3f2c-4977-98cc-b3eff6bc1a4f",
-        "timestamp" : "2020-09-18T08:04:02+02:00",
+        "identifier" : "urn:uuid:5f945b20-c5a0-4f54-b093-16c65b89f54f",
+        "timestamp" : "2020-09-18T13:43:04+02:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -946,7 +946,7 @@
       "name" : "BeContactPerson",
       "title" : "ValueSet contact person",
       "status" : "active",
-      "date" : "2020-09-18T08:03:27+02:00",
+      "date" : "2020-09-18T13:42:32+02:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -964,8 +964,8 @@
       }],
       "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
       "expansion" : {
-        "identifier" : "urn:uuid:9688f232-785c-4f70-83c4-f8dee2147891",
-        "timestamp" : "2020-09-18T08:04:02+02:00",
+        "identifier" : "urn:uuid:bc6aac08-8fe7-4157-9be4-807910ae8e20",
+        "timestamp" : "2020-09-18T13:43:04+02:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",

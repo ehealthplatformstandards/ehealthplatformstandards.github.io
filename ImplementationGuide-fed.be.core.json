@@ -10,7 +10,7 @@
   "name": "TheCoreBelgianFederalFHIRProfiles",
   "title": "The Core Belgian Federal FHIR Profiles",
   "status": "active",
-  "date": "2020-09-18T08:03:27+02:00",
+  "date": "2020-09-18T13:42:32+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {
@@ -61,7 +61,7 @@
           },
           {
             "url": "value",
-            "valueString": "CI Build"
+            "valueString": "published"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
