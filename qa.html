@@ -1,1171 +1,643 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 217, errors = 27, warn = 1, info = 2 -->
+<!-- broken links = 0, errors = 0, warn = 0, info = 2 -->
 <head>
-  <title>Core IG : Validation Results</title>
+  <title>TheCoreBelgianFederalFHIRProfiles : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
 </head>
 <body style="margin: 20px; background-color: #ffffff">
- <h1>Validation Results for Core IG</h1>
- <p>Generated Thu Dec 19 09:15:14 CET 2019, FHIR version 4.0.1 for hl7.be.core#1.0.0 (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir">https://www.ehealth.fgov.be/standards/fhir</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/history.html">history</a>))</p>
-<p>IG Publisher Version: v1.0.27-SNAPSHOT</p>
-<p><a href="#suppressed">2 Suppressed Errors</a></p>
- <p>HL7 Publication check:</p> <ul><li>n/a - not an HL7.org or FHIR.org implementation guide</li></ul>
-
+ <h1>Validation Results for TheCoreBelgianFederalFHIRProfiles</h1>
+ <p>Generated Fri Sep 25 13:08:07 CEST 2020, FHIR version 4.0.1 for fed.be.core# (canonical = <a href="https://www.ehealth.fgov.be/standards/fhir">https://www.ehealth.fgov.be/standards/fhir</a> (<a href="https://www.ehealth.fgov.be/standards/fhir/history.html">history</a>)). See <a href="c:\users\eh068\documents\implementationguide\ehealthplatformstandards\output\qa.min.html">Errors Only</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.27</span></td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAI0lEQVR42u3QIQEAAAACIL/6/4MvTAQOkLYBAAB4kAAAANwMad9AqkRjgNAAAAAASUVORK5CYII=)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> fed.be.core</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.ehealth.fgov.be/standards/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table></td></tr>
+ <tr><td>HL7 Publication Rules:</td><td>n/a - not an HL7.org or FHIR.org implementation guide
+</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>Realm rules:</td><td><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.ehealth.fgov.be/standards/fhir (Problem #1 with package-list.json at https://www.ehealth.fgov.be/standards/fhir: com.google.gson.stream.MalformedJsonException: Use JsonReader.setLenient(true) to accept malformed JSON at line 1 column 12 path $)</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 0, info = 2</td></tr>
+</table>
  <table class="grid">
    <tr>
-     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Information messages &amp; Warnings</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>217</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_ImplementationGuide-be-core"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\ImplementationGuide-be-core</b></a></td><td><b>13</b></td><td><b>1</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_allergyintolerance-allergyintolerance1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\allergyintolerance-allergyintolerance1</b></a></td><td><b>3</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_allergyintolerance-allergyintolerance2"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\allergyintolerance-allergyintolerance2</b></a></td><td><b>3</b></td><td><b>0</b></td>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_bundle-bundle1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\bundle-bundle1</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_observation-observation1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\observation-observation1</b></a></td><td><b>2</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_observation-observation2"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\observation-observation2</b></a></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_organization-organization1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\organization-organization1</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_patient-patient1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\patient-patient1</b></a></td><td><b>1</b></td><td><b>1</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_ImplementationGuide-BeCoreImplementationGuide"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_patient-patient2"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\patient-patient2</b></a></td><td><b>0</b></td><td><b>1</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_allergyintolerance-allergyIntolerance1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\allergyintolerance-allergyIntolerance1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_practitioner-practitioner1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\practitioner-practitioner1</b></a></td><td><b>0</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_practitionerrole-practitionerrole1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\practitionerrole-practitionerrole1</b></a></td><td><b>1</b></td><td><b>0</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_examples_provenance-provenance1"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\provenance-provenance1</b></a></td><td><b>2</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_allergyintolerance-allergyIntolerance2"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\allergyintolerance-allergyIntolerance2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-address"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-address</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_bundle-bundle1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\bundle-bundle1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>7</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-allergyintolerance"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-allergyintolerance</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_bundle-bundleHistory"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\bundle-bundleHistory</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>5</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-observation"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observation</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_observation-observation1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\observation-observation1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-observationcodeableconcept"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observationcodeableconcept</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_observation-observation2"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\observation-observation2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-organization"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-organization</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_organization-eHealthPlatform"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\organization-eHealthPlatform</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-patient"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-patient</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_organization-organization1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\organization-organization1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-practitioner"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_patient-patient1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\patient-patient1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-practitionerrole"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitionerrole</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_patient-patient2"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\patient-patient2</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-provenance"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-provenance</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_practitioner-practitioner1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\practitioner-practitioner1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-civilstate"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-civilstate</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_practitionerrole-practitionerrole1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\practitionerrole-practitionerrole1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-contact-person"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-contact-person</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_provenance-provenance1"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\provenance-provenance1</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-fed-country"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-fed-country</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-address"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-address</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-hcparty"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-hcparty</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-allergyintolerance"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-allergyintolerance</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-cbe"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-cbe</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-observation"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-observation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-ehp"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ehp</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-observationcodeableconcept"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-observationcodeableconcept</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-nihdi"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-nihdi</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-organization"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-organization</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-ssin"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ssin</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-patient"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-patient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-allergyintolerancecode"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-allergyintolerancecode</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-practitioner"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-practitioner</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-causativeagent"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-causativeagent</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-practitionerrole"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-practitionerrole</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-civilstate"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-civilstate</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-provenance"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\structuredefinition-be-provenance</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-contactperson"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-contactperson</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-albert"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-albert</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-exposureroute"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-exposureroute</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-civilstate"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-civilstate</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-noallergy"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-noallergy</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-contact-person"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-contact-person</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-riskmanifestation"><b>C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-riskmanifestation</b></a></td><td><b>0</b></td><td><b>0</b></td>
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-fed-country"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-fed-country</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-hcparty"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\codesystem-cd-hcparty</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-cbe"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-cbe</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-ehp"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-ehp</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-nihdi"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-nihdi</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-ssin"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\namingsystem-be-ssin</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-allergyintolerancecode"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-allergyintolerancecode</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-causativeagent"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-causativeagent</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-civilstate"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-civilstate</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-contactperson"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-contactperson</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-exposureroute"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-exposureroute</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-noallergy"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-noallergy</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-riskmanifestation"><b>C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\valueset-be-riskmanifestation</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
 </table>
 <hr/>
 <a name="internal"> </a>
 <h2><a href="">n/a</a></h2>
  <table class="grid">
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box &lt;!--ReleaseHeader--&gt;&lt;p id=&quot;publish-box&quot;&gt;Publish Box goes here&lt;/p&gt;&lt;!--EndReleaseHeader--&gt; (see note at http://wiki.hl7.org/index.php?title=FHIR_Implementation_Guide_Publishing_Requirements#HL7_HTML_Standards_considerations)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance2.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance2.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance2.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>allergyintolerance2.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>artifacts.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-address.html#03ea6a9a-4577-4f71-9f9d-83b26a64bbd7">be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 225, column 807</a></b></td><td><b>error</b></td><td><b>The link 'be-address-definitions.html#Address.line.extension:Streetname.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-address.html#49524aca-eccf-4d9e-82ce-8f139e07c20f">be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 227, column 807</a></b></td><td><b>error</b></td><td><b>The link 'be-address-definitions.html#Address.line.extension:Housenumber.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-address.html#5b00094c-b84a-4b6f-be93-f040983bd36a">be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 229, column 807</a></b></td><td><b>error</b></td><td><b>The link 'be-address-definitions.html#Address.line.extension:Postbox.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-address.html#b4772cb2-d12c-48be-9559-02367b4d33e1">be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 379, column 807</a></b></td><td><b>error</b></td><td><b>The link 'be-address-definitions.html#Address.line.extension:Streetname.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-address.html#2a18dc96-e545-4ce9-acdd-b7bd5684207e">be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 381, column 807</a></b></td><td><b>error</b></td><td><b>The link 'be-address-definitions.html#Address.line.extension:Housenumber.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-address.html#e1e6cb8d-d8e8-4323-9af6-22865702ba9a">be-address.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 383, column 807</a></b></td><td><b>error</b></td><td><b>The link 'be-address-definitions.html#Address.line.extension:Postbox.value[x]' for &quot;value[x]&quot; cannot be resolved (valid targets: [Address.extension:language.url, Address.line.extension:Housenumber.extension, Address, Address.postalCode, Address.line.extension:Housenumber.valueString, Address.line.extension:Postbox.id, standards-logo, Address.extension:language.id, Address.city, hl7-status, stripe, segment-footer, Address.line, Address.line.id, segment-header, Address.state, Address.line.extension:Postbox.url, ehealth-logo, Address.line.extension:Streetname.valueString, Address.use, Address.line.extension:Streetname, Address.line.extension:Streetname.id, belgium-logo, Address.id, Address.line.extension, segment-navbar, Address.period, Address.extension:language.valueCode, publish-box, segment-post-footer, Address.type, Address.line.extension:Housenumber.url, Address.line.extension:Postbox.extension, root, Address.line.extension:Streetname.url, Address.extension, Address.country, segment-content, Address.extension:language.extension, Address.text, Address.line.extension:Housenumber, Address.line.extension:Postbox, Address.line.extension:Postbox.valueString, Address.line.extension:Streetname.extension, Address.line.value, Address.district, hl7-nav, segment-breadcrumb, Address.extension:language, Address.line.extension:Housenumber.id])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-address.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-allergyintolerance.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-cbe.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-cbe.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-cbe.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-cbe.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ehp.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ehp.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ehp.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ehp.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-nihdi.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-nihdi.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-nihdi.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-nihdi.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observation.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-observationcodeableconcept.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-organization.html#0b2e7d24-f05e-4b57-978b-dcd1fc49d2cc">be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 247, column 799</a></b></td><td><b>error</b></td><td><b>The link 'be-organization-definitions.html#Organization.type.coding' for &quot;coding&quot; cannot be resolved (valid targets: [Organization.address.text, Organization.identifier, Organization.type:CD-HCPARTY.coding.extension, Organization.implicitRules, Organization.language, Organization.address.state, Organization.name, Organization.address.type, Organization.identifier:EHP, Organization.identifier:SSIN.use, hl7-status, segment-footer, Organization.contact, Organization.identifier:NIHDI.extension, Organization.type:CD-HCPARTY, segment-header, Organization.address, Organization.identifier:NIHDI.assigner, Organization.type:CD-HCPARTY.id, Organization.address.extension:language, Organization.identifier:EHP.type, Organization.extension, Organization.identifier:EHP.id, Organization.contact.address, Organization.id, belgium-logo, Organization.identifier:SSIN.type, Organization.identifier:EHP.value, Organization.alias, Organization, Organization.partOf, publish-box, segment-post-footer, Organization.address.country, Organization.telecom, Organization.type:CD-HCPARTY.text, Organization.identifier:SSIN.assigner, Organization.type:CD-HCPARTY.extension, Organization.endpoint, segment-content, Organization.address.id, Organization.contact.purpose, Organization.contact.name, Organization.address.period, Organization.type:CD-HCPARTY.coding.userSelected, Organization.identifier:SSIN.period, Organization.identifier:EHP.extension, Organization.identifier:NIHDI.id, Organization.identifier:SSIN, Organization.identifier:CBE.period, Organization.identifier:NIHDI.system, Organization.type:CD-HCPARTY.coding.code, Organization.type:CD-HCPARTY.coding.id, Organization.address.city, Organization.identifier:CBE.id, Organization.address.use, Organization.identifier:CBE.assigner, Organization.meta, Organization.identifier:CBE.use, standards-logo, Organization.identifier:NIHDI.value, stripe, Organization.identifier:SSIN.value, Organization.contact.extension, Organization.identifier:CBE.system, Organization.type, Organization.type:CD-HCPARTY.coding.display, Organization.identifier:NIHDI.period, ehealth-logo, Organization.identifier:NIHDI.use, Organization.identifier:EHP.period, Organization.identifier:SSIN.system, Organization.identifier:CBE.type, Organization.identifier:SSIN.extension, Organization.text, segment-navbar, Organization.identifier:NIHDI, Organization.modifierExtension, Organization.type:CD-HCPARTY.coding, Organization.identifier:CBE, Organization.identifier:EHP.assigner, Organization.contained, root, Organization.contact.id, Organization.identifier:CBE.extension, Organization.identifier:EHP.system, Organization.active, Organization.identifier:CBE.value, Organization.address.postalCode, Organization.type:CD-HCPARTY.coding.version, Organization.contact.modifierExtension, Organization.type:CD-HCPARTY.coding.system, Organization.address.district, Organization.contact.telecom, Organization.address.line, hl7-nav, Organization.identifier:EHP.use, Organization.address.extension, Organization.identifier:SSIN.id, segment-breadcrumb, Organization.identifier:NIHDI.type])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-organization.html#7c0936cb-9316-4dc4-98dd-78aee0f95042">be-organization.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 561, column 799</a></b></td><td><b>error</b></td><td><b>The link 'be-organization-definitions.html#Organization.type.coding' for &quot;coding&quot; cannot be resolved (valid targets: [Organization.address.text, Organization.identifier, Organization.type:CD-HCPARTY.coding.extension, Organization.implicitRules, Organization.language, Organization.address.state, Organization.name, Organization.address.type, Organization.identifier:EHP, Organization.identifier:SSIN.use, hl7-status, segment-footer, Organization.contact, Organization.identifier:NIHDI.extension, Organization.type:CD-HCPARTY, segment-header, Organization.address, Organization.identifier:NIHDI.assigner, Organization.type:CD-HCPARTY.id, Organization.address.extension:language, Organization.identifier:EHP.type, Organization.extension, Organization.identifier:EHP.id, Organization.contact.address, Organization.id, belgium-logo, Organization.identifier:SSIN.type, Organization.identifier:EHP.value, Organization.alias, Organization, Organization.partOf, publish-box, segment-post-footer, Organization.address.country, Organization.telecom, Organization.type:CD-HCPARTY.text, Organization.identifier:SSIN.assigner, Organization.type:CD-HCPARTY.extension, Organization.endpoint, segment-content, Organization.address.id, Organization.contact.purpose, Organization.contact.name, Organization.address.period, Organization.type:CD-HCPARTY.coding.userSelected, Organization.identifier:SSIN.period, Organization.identifier:EHP.extension, Organization.identifier:NIHDI.id, Organization.identifier:SSIN, Organization.identifier:CBE.period, Organization.identifier:NIHDI.system, Organization.type:CD-HCPARTY.coding.code, Organization.type:CD-HCPARTY.coding.id, Organization.address.city, Organization.identifier:CBE.id, Organization.address.use, Organization.identifier:CBE.assigner, Organization.meta, Organization.identifier:CBE.use, standards-logo, Organization.identifier:NIHDI.value, stripe, Organization.identifier:SSIN.value, Organization.contact.extension, Organization.identifier:CBE.system, Organization.type, Organization.type:CD-HCPARTY.coding.display, Organization.identifier:NIHDI.period, ehealth-logo, Organization.identifier:NIHDI.use, Organization.identifier:EHP.period, Organization.identifier:SSIN.system, Organization.identifier:CBE.type, Organization.identifier:SSIN.extension, Organization.text, segment-navbar, Organization.identifier:NIHDI, Organization.modifierExtension, Organization.type:CD-HCPARTY.coding, Organization.identifier:CBE, Organization.identifier:EHP.assigner, Organization.contained, root, Organization.contact.id, Organization.identifier:CBE.extension, Organization.identifier:EHP.system, Organization.active, Organization.identifier:CBE.value, Organization.address.postalCode, Organization.type:CD-HCPARTY.coding.version, Organization.contact.modifierExtension, Organization.type:CD-HCPARTY.coding.system, Organization.address.district, Organization.contact.telecom, Organization.address.line, hl7-nav, Organization.identifier:EHP.use, Organization.address.extension, Organization.identifier:SSIN.id, segment-breadcrumb, Organization.identifier:NIHDI.type])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-organization.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-patient.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitioner.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-practitionerrole.html#a819bdd5-272c-48c2-ac56-187c82d06b28">be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 237, column 806</a></b></td><td><b>error</b></td><td><b>The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for &quot;coding&quot; cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-practitionerrole.html#6b4c5cce-42ff-4895-b5e2-55005856cc33">be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 241, column 799</a></b></td><td><b>error</b></td><td><b>The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for &quot;coding&quot; cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-practitionerrole.html#fb108bee-9c7a-44cd-abb9-0b88f11a8537">be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 508, column 806</a></b></td><td><b>error</b></td><td><b>The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for &quot;coding&quot; cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="be-practitionerrole.html#70f8d7dc-907c-49f0-aa76-56a1439c81e3">be-practitionerrole.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 512, column 799</a></b></td><td><b>error</b></td><td><b>The link 'be-practitionerrole-definitions.html#PractitionerRole.code.coding' for &quot;coding&quot; cannot be resolved (valid targets: [PractitionerRole.code:SNOMED-CT.coding.system, PractitionerRole.specialty:SNOMED-CT.coding.code, PractitionerRole.specialty:SNOMED-CT.extension, PractitionerRole.availableTime.availableEndTime, PractitionerRole.identifier, PractitionerRole.code:CD-HCPARTY.coding.id, PractitionerRole.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.version, PractitionerRole.notAvailable.description, standards-logo, PractitionerRole.code, PractitionerRole.specialty, hl7-status, PractitionerRole.code:CD-HCPARTY, stripe, segment-footer, PractitionerRole.id, PractitionerRole.code:SNOMED-CT.text, PractitionerRole.specialty:SNOMED-CT.coding, PractitionerRole.code:CD-HCPARTY.extension, PractitionerRole.availableTime.allDay, PractitionerRole.period, PractitionerRole.code:CD-HCPARTY.coding, segment-header, PractitionerRole.notAvailable.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.userSelected, PractitionerRole.availableTime.extension, PractitionerRole.availableTime.availableStartTime, PractitionerRole.code:CD-HCPARTY.coding.extension, PractitionerRole.implicitRules, PractitionerRole.specialty:SNOMED-CT.coding.version, ehealth-logo, PractitionerRole, PractitionerRole.contained, PractitionerRole.location, PractitionerRole.organization, PractitionerRole.specialty:SNOMED-CT.coding.id, belgium-logo, PractitionerRole.code:CD-HCPARTY.coding.code, PractitionerRole.availableTime.daysOfWeek, segment-navbar, PractitionerRole.meta, PractitionerRole.availableTime.id, PractitionerRole.code:SNOMED-CT.coding.code, PractitionerRole.practitioner, PractitionerRole.code:SNOMED-CT.extension, PractitionerRole.code:SNOMED-CT.coding.display, PractitionerRole.endpoint, publish-box, PractitionerRole.code:CD-HCPARTY.coding.system, PractitionerRole.notAvailable.extension, segment-post-footer, PractitionerRole.specialty:SNOMED-CT, PractitionerRole.notAvailable.id, PractitionerRole.availableTime, PractitionerRole.specialty:SNOMED-CT.coding.userSelected, PractitionerRole.extension, root, PractitionerRole.code:SNOMED-CT.coding, PractitionerRole.healthcareService, PractitionerRole.availableTime.modifierExtension, PractitionerRole.code:SNOMED-CT.coding.extension, segment-content, PractitionerRole.availabilityExceptions, PractitionerRole.specialty:SNOMED-CT.coding.system, PractitionerRole.code:CD-HCPARTY.coding.display, PractitionerRole.specialty:SNOMED-CT.coding.extension, PractitionerRole.notAvailable, PractitionerRole.code:SNOMED-CT.coding.id, PractitionerRole.text, PractitionerRole.code:SNOMED-CT, PractitionerRole.specialty:SNOMED-CT.text, PractitionerRole.telecom, PractitionerRole.active, PractitionerRole.specialty:SNOMED-CT.coding.display, PractitionerRole.code:CD-HCPARTY.coding.userSelected, PractitionerRole.code:CD-HCPARTY.id, PractitionerRole.language, hl7-nav, PractitionerRole.code:CD-HCPARTY.coding.version, PractitionerRole.code:CD-HCPARTY.text, PractitionerRole.specialty:SNOMED-CT.id, PractitionerRole.notAvailable.during, PractitionerRole.code:SNOMED-CT.id, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-practitionerrole.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance-definitions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance-examples.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance-mappings.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.profile.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.profile.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.profile.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-provenance.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ssin.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ssin.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ssin.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>be-ssin.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>bundle1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>bundle1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>bundle1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>bundle1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-civilstate.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-civilstate.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-civilstate.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-civilstate.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-contact-person.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-contact-person.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-contact-person.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-contact-person.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-fed-country.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-fed-country.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-fed-country.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-fed-country.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-hcparty.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-hcparty.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-hcparty.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>cd-hcparty.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>changes.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>conventions.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>downloads.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>guidance.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>index.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#32f6716a-f990-46ab-a440-0641cccb407c">index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 172, column 10</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#terminology' for &quot;Value Sets and Code Systems&quot; cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#340a39cd-2388-49e9-aa20-12f339ecee0c">index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 173, column 10</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#core-profiles' for &quot;Core profiles&quot; cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#ed95d80a-544d-4739-b15e-37f0bc9cb1c0">index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 174, column 10</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#conditions' for &quot;Functional profiles&quot; cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b><a href="index.html#108b3023-c4e9-4652-923e-8fbc448ba6e3">index.html#/html/body/div/div/div/div/div/div/ul/li/a at Line 175, column 7</a></b></td><td><b>error</b></td><td><b>The link 'artifacts.html#examples' for &quot;Examples&quot; cannot be resolved (valid targets: [segment-header, publish-box, segment-post-footer, ehealth-logo, standards-logo, 1, 2, 3, 4, belgium-logo, hl7-status, stripe, segment-footer, hl7-nav, segment-navbar, segment-content, segment-breadcrumb])</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation2.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation2.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation2.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>observation2.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>organization1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>organization1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>organization1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>organization1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient2.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient2.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient2.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>patient2.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitioner1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitioner1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitioner1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitioner1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitionerrole1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitionerrole1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitionerrole1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>practitionerrole1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>provenance1.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>provenance1.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>provenance1.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>provenance1.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>toc.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-allergyintolerancecode.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-allergyintolerancecode.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-allergyintolerancecode.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-allergyintolerancecode.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-causativeagent.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-causativeagent.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-causativeagent.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-causativeagent.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-civilstate.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-civilstate.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-civilstate.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-civilstate.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-contactperson.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-contactperson.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-contactperson.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-contactperson.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-exposureroute.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-exposureroute.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-exposureroute.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-exposureroute.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-noallergy.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-noallergy.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-noallergy.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-noallergy.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-riskmanifestation.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-riskmanifestation.json.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-riskmanifestation.ttl.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>valueset-be-riskmanifestation.xml.html</b></td><td><b>error</b></td><td><b>The html source does not contain the publish box</b></td>
-   </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_ImplementationGuide-be-core"> </a>
-<h2><a href="hl7.be.core.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\ImplementationGuide-be-core.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_ImplementationGuide-BeCoreImplementationGuide"> </a>
+<h2><a href="ImplementationGuide-fed.be.core.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide</b></td><td><b>warning</b></td><td><b>ig-0: Name should be usable as an identifier for the module by machine processing applications such as code generation [name.matches('[A-Z]([A-Za-z0-9_]){0,254}')]</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[10].code</b></td><td><b>error</b></td><td><b>The value provided ('path-qa') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-qa in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[11].code</b></td><td><b>error</b></td><td><b>The value provided ('path-temp') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-temp in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[12].code</b></td><td><b>error</b></td><td><b>The value provided ('path-output') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-output in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[14].code</b></td><td><b>error</b></td><td><b>The value provided ('path-suppressed-warnings') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#path-suppressed-warnings in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[15].code</b></td><td><b>error</b></td><td><b>The value provided ('template-html') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#template-html in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[16].code</b></td><td><b>error</b></td><td><b>The value provided ('template-md') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#template-md in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[17].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-contact') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-contact in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[18].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-context') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-context in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[19].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-copyright') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-copyright in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[20].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-jurisdiction') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-jurisdiction in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[21].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-license') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-license in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[22].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-publisher') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-publisher in http://hl7.org/fhir/guide-parameter-code)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ImplementationGuide/hl7.be.core: ImplementationGuide.definition.parameter[23].code</b></td><td><b>error</b></td><td><b>The value provided ('apply-version') is not in the value set http://hl7.org/fhir/ValueSet/guide-parameter-code|4.0.1 (http://hl7.org/fhir/ValueSet/guide-parameter-code, and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/guide-parameter-code#apply-version in http://hl7.org/fhir/guide-parameter-code)</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>ImplementationGuide/fed.be.core: ImplementationGuide</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_allergyintolerance-allergyintolerance1"> </a>
-<h2><a href="allergyintolerance1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\AllergyIntolerance-allergyintolerance1.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_allergyintolerance-allergyIntolerance1"> </a>
+<h2><a href="AllergyIntolerance-allergyIntolerance1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\AllergyIntolerance-allergyIntolerance1.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>AllergyIntolerance/allergyintolerance1: AllergyIntolerance.patient</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>AllergyIntolerance/allergyintolerance1: AllergyIntolerance.recorder</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/example'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>AllergyIntolerance/allergyintolerance1: AllergyIntolerance.asserter</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>AllergyIntolerance/allergyIntolerance1: AllergyIntolerance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_allergyintolerance-allergyintolerance2"> </a>
-<h2><a href="allergyintolerance2.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\AllergyIntolerance-allergyintolerance2.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_allergyintolerance-allergyIntolerance2"> </a>
+<h2><a href="AllergyIntolerance-allergyIntolerance2.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\AllergyIntolerance-allergyIntolerance2.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>AllergyIntolerance/allergyintolerance2: AllergyIntolerance.patient</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>AllergyIntolerance/allergyintolerance2: AllergyIntolerance.recorder</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/example'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>AllergyIntolerance/allergyintolerance2: AllergyIntolerance.asserter</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>AllergyIntolerance/allergyIntolerance2: AllergyIntolerance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_bundle-bundle1"> </a>
-<h2><a href="bundle1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Bundle-bundle1.xml</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_observation-observation1"> </a>
-<h2><a href="observation1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Observation-observation1.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_bundle-bundle1"> </a>
+<h2><a href="Bundle-bundle1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Bundle-bundle1.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/observation1: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/observation1: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/example'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle.entry[0].resource.ofType(Practitioner) (l11/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Practitioner</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle.entry[0].resource.ofType(Practitioner) (l11/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle.entry[1].resource.ofType(Organization) (l88/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle.entry[1].resource.ofType(Organization) (l88/c18)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle.entry[2].resource.ofType(Provenance) (l239/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundle1: Bundle.entry[2].resource.ofType(Provenance) (l239/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance - listed in meta</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_observation-observation2"> </a>
-<h2><a href="observation2.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Observation-observation2.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_bundle-bundleHistory"> </a>
+<h2><a href="Bundle-bundleHistory.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Bundle-bundleHistory.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/observation2: Observation.subject</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Patient/example'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundleHistory: Bundle (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Bundle</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Observation/observation2: Observation.performer[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/564654654'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundleHistory: Bundle.entry[0].resource.ofType(Provenance) (l35/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundleHistory: Bundle.entry[0].resource.ofType(Provenance) (l35/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance - listed in meta</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundleHistory: Bundle.entry[1].resource.ofType(Provenance) (l90/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Provenance</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Bundle/bundleHistory: Bundle.entry[1].resource.ofType(Provenance) (l90/c22)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance - listed in meta</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_organization-organization1"> </a>
-<h2><a href="organization1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Organization-organization1.xml</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_patient-patient1"> </a>
-<h2><a href="patient1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Patient-patient1.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_observation-observation1"> </a>
+<h2><a href="Observation-observation1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Observation-observation1.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/observation1: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_observation-observation2"> </a>
+<h2><a href="Observation-observation2.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Observation-observation2.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation/observation2: Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_organization-eHealthPlatform"> </a>
+<h2><a href="Organization-eHealthPlatform.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Organization-eHealthPlatform.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Organization/eHealthPlatform: Organization (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Organization/eHealthPlatform: Organization (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_META"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization - listed in meta</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_organization-organization1"> </a>
+<h2><a href="Organization-organization1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Organization-organization1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Organization/organization1: Organization (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_patient-patient1"> </a>
+<h2><a href="Patient-patient1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Patient-patient1.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/patient1: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Patient/patient1: Patient.identifier[1]</b></td><td><b>information</b></td><td><b>This element does not match any known slice for the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Patient/patient1: Patient.generalPractitioner[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/01'</b></td>
+     <td><b><a href="">Patient/patient1: Patient.identifier[1] (l141/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b> <span id="sl21" class="flip" onclick="flip('l21')">Show Reasoning</span><div id="l21" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient<ul><li>Patient.identifier[1]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin' in system)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_patient-patient2"> </a>
-<h2><a href="patient2.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Patient-patient2.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_patient-patient2"> </a>
+<h2><a href="Patient-patient2.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Patient-patient2.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Patient/patient2: Patient (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Patient/patient2: Patient.identifier[1]</b></td><td><b>information</b></td><td><b>This element does not match any known slice for the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b></td>
+     <td><b><a href="">Patient/patient2: Patient.identifier[1] (l141/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient</b> <span id="sl23" class="flip" onclick="flip('l23')">Show Reasoning</span><div id="l23" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient<ul><li>Patient.identifier[1]: discriminator = true and ('https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin' in system)</li></ul></div></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_practitioner-practitioner1"> </a>
-<h2><a href="practitioner1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Practitioner-practitioner1.xml</a></h2>
- <table class="grid">
-   <tr>
-     <td>&check;</td>
-   </tr>
-</table>
-<hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_practitionerrole-practitionerrole1"> </a>
-<h2><a href="practitionerrole1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\PractitionerRole-practitionerrole1.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_practitioner-practitioner1"> </a>
+<h2><a href="Practitioner-practitioner1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Practitioner-practitioner1.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>PractitionerRole/practitionerrole1: PractitionerRole.practitioner</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://www.anotherfhirserver.be/fhir/Practitioner/01'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>Practitioner/practitioner1: Practitioner (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_examples_provenance-provenance1"> </a>
-<h2><a href="provenance1.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\examples\Provenance-provenance1.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_practitionerrole-practitionerrole1"> </a>
+<h2><a href="PractitionerRole-practitionerrole1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\PractitionerRole-practitionerrole1.json</a></h2>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Provenance/provenance1: Provenance.target[0]</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'Practitioner/2/_history/1'</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>Provenance/provenance1: Provenance.agent[0].who</b></td><td><b>error</b></td><td><b>Unable to resolve resource 'https://www.anotherfhirserver.be/fhir/Organization/02'</b></td>
+   <tr style="background-color: #d6feff">
+     <td><b>PractitionerRole/practitionerrole1: PractitionerRole (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-address"> </a>
-<h2><a href="be-address.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-address.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_examples_provenance-provenance1"> </a>
+<h2><a href="Provenance-provenance1.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\Provenance-provenance1.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Provenance/provenance1: Provenance (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-allergyintolerance"> </a>
-<h2><a href="be-allergyintolerance.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-allergyintolerance.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-address"> </a>
+<h2><a href="StructureDefinition-be-address.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-address.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-address: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-observation"> </a>
-<h2><a href="be-observation.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observation.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-allergyintolerance"> </a>
+<h2><a href="StructureDefinition-be-allergyintolerance.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-allergyintolerance.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-allergyintolerance: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-observationcodeableconcept"> </a>
-<h2><a href="be-observationcodeableconcept.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-observationcodeableconcept.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-observation"> </a>
+<h2><a href="StructureDefinition-be-observation.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-observation.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-observation: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-organization"> </a>
-<h2><a href="be-organization.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-organization.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-observationcodeableconcept"> </a>
+<h2><a href="StructureDefinition-be-observationcodeableconcept.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-observationcodeableconcept.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-observationcodeableconcept: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-patient"> </a>
-<h2><a href="be-patient.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-patient.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-organization"> </a>
+<h2><a href="StructureDefinition-be-organization.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-organization.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-organization: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-practitioner"> </a>
-<h2><a href="be-practitioner.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitioner.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-patient"> </a>
+<h2><a href="StructureDefinition-be-patient.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-patient.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-patient: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-practitionerrole"> </a>
-<h2><a href="be-practitionerrole.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-practitionerrole.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-practitioner"> </a>
+<h2><a href="StructureDefinition-be-practitioner.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-practitioner.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-practitioner: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_resources_structuredefinition-be-provenance"> </a>
-<h2><a href="be-provenance.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\resources\structuredefinition-be-provenance.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-practitionerrole"> </a>
+<h2><a href="StructureDefinition-be-practitionerrole.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-practitionerrole.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-practitionerrole: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-civilstate"> </a>
-<h2><a href="cd-civilstate.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-civilstate.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_profiles_structuredefinition-be-provenance"> </a>
+<h2><a href="StructureDefinition-be-provenance.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\profiles\StructureDefinition-be-provenance.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>StructureDefinition/be-provenance: StructureDefinition</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-contact-person"> </a>
-<h2><a href="cd-contact-person.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-contact-person.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-albert"> </a>
+<h2><a href="CodeSystem-albert.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-albert.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/albert: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-fed-country"> </a>
-<h2><a href="cd-fed-country.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-fed-country.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-civilstate"> </a>
+<h2><a href="CodeSystem-cd-civilstate.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-civilstate.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/cd-civilstate: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_codesystem-cd-hcparty"> </a>
-<h2><a href="cd-hcparty.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\codesystem-cd-hcparty.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-contact-person"> </a>
+<h2><a href="CodeSystem-cd-contact-person.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-contact-person.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/cd-contact-person: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-cbe"> </a>
-<h2><a href="be-cbe.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-cbe.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-fed-country"> </a>
+<h2><a href="CodeSystem-cd-fed-country.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-fed-country.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/cd-fed-country: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-ehp"> </a>
-<h2><a href="be-ehp.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ehp.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_codesystem-cd-hcparty"> </a>
+<h2><a href="CodeSystem-cd-hcparty.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\CodeSystem-cd-hcparty.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>CodeSystem/cd-hcparty: CodeSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-nihdi"> </a>
-<h2><a href="be-nihdi.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-nihdi.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-cbe"> </a>
+<h2><a href="NamingSystem-be-cbe.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-cbe.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>NamingSystem/be-cbe: NamingSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_namingsystem-be-ssin"> </a>
-<h2><a href="be-ssin.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\namingsystem-be-ssin.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-ehp"> </a>
+<h2><a href="NamingSystem-be-ehp.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-ehp.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>NamingSystem/be-ehp: NamingSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-allergyintolerancecode"> </a>
-<h2><a href="valueset-be-allergyintolerancecode.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-allergyintolerancecode.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-nihdi"> </a>
+<h2><a href="NamingSystem-be-nihdi.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-nihdi.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>NamingSystem/be-nihdi: NamingSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-causativeagent"> </a>
-<h2><a href="valueset-be-causativeagent.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-causativeagent.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_namingsystem-be-ssin"> </a>
+<h2><a href="NamingSystem-be-ssin.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\NamingSystem-be-ssin.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>NamingSystem/be-ssin: NamingSystem</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/NamingSystem</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-civilstate"> </a>
-<h2><a href="valueset-be-civilstate.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-civilstate.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-allergyintolerancecode"> </a>
+<h2><a href="ValueSet-be-allergyintolerancecode.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-allergyintolerancecode.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-allergyintolerancecode: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-contactperson"> </a>
-<h2><a href="valueset-be-contactperson.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-contactperson.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-causativeagent"> </a>
+<h2><a href="ValueSet-be-causativeagent.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-causativeagent.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-causativeagent: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-exposureroute"> </a>
-<h2><a href="valueset-be-exposureroute.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-exposureroute.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-civilstate"> </a>
+<h2><a href="ValueSet-be-civilstate.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-civilstate.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-civilstate: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-noallergy"> </a>
-<h2><a href="valueset-be-noallergy.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-noallergy.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-contactperson"> </a>
+<h2><a href="ValueSet-be-contactperson.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-contactperson.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-contactperson: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
 </table>
 <hr/>
-<a name="C__Users_EH074_Documents_GitHub_onlyTest_input_vocabulary_valueset-be-riskmanifestation"> </a>
-<h2><a href="valueset-be-riskmanifestation.html">C:\Users\EH074\Documents\GitHub\onlyTest\input\vocabulary\valueset-be-riskmanifestation.xml</a></h2>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-exposureroute"> </a>
+<h2><a href="ValueSet-be-exposureroute.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-exposureroute.json</a></h2>
  <table class="grid">
    <tr>
-     <td>&check;</td>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-exposureroute: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-noallergy"> </a>
+<h2><a href="ValueSet-be-noallergy.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-noallergy.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-noallergy: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_eh068_Documents_ImplementationGuide_ehealthplatformstandards_input_vocabulary_valueset-be-riskmanifestation"> </a>
+<h2><a href="ValueSet-be-riskmanifestation.html">C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\vocabulary\ValueSet-be-riskmanifestation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>ValueSet/be-riskmanifestation: ValueSet</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST"><b>Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet</b></td>
    </tr>
 </table>
 <a name="suppressed"> </a>
-<p><b>Suppressed Error Messages</b></p><ul>
- <li>// Temporarily suppress these to reduce noise.  The first is a tooling bug</li>
- <li>The value provided ('de-BE') is not in the value set http://hl7.org/fhir/ValueSet/languages (http://hl7.org/fhir/ValueSet/languages, and a code is recommended to come from this value set) (error message = The code provided (urn:ietf:bcp:47#de-BE) is not valid in the value set CommonLanguages)</li>
-</ul>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
 </body>
 </html>

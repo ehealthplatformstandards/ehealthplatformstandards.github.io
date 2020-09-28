@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="bundleHistory"/>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://example.org/fhir/1"/>
+    <resource>
+      <Provenance>
+        <id value="CDHCPARTY1.1.0"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>target</b>: <a href="CodeSystem-cd-hcparty.html">Generated Summary: url: https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty; version: 1.1.0; name: HCParty; status: active; date: Sep 25, 2020 1:06:43 PM; publisher: eHealth Platform; eHealth Platform: https://www.ehealth.fgov.be, Message structure: message-structure@ehealth.fgov.be; description: healthcare party in Belgium.; content: complete</a></p><p><b>occurred</b>: Sep 25, 2020 10:00:00 AM</p><p><b>recorded</b>: Sep 25, 2020 10:00:00 AM</p><p><b>reason</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActReason HOPERAT}">V1.1.0: Added values 'orgretirementhome', 'orgrevalidationcenter', 'orgshelteredliving', 'orgpsychiatriccarehome', 'orgpolyclinic'.</span></p><p><b>activity</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-DataOperation UPDATE}">revise</span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="Organization-eHealthPlatform.html">eHealth Platform. Generated Summary: active; name: eHealth Platform; Phone: 3228918611</a></td></tr></table></div>
+        </text>
+        <target>
+          <reference value="CodeSystem/cd-hcparty"/>
+        </target>
+        <occurredDateTime value="2020-09-25T09:00:00+01:00"/>
+        <recorded value="2020-09-25T09:00:00+01:00"/>
+        <reason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HOPERAT"/>
+            <display value="Healthcare Operations"/>
+          </coding>
+          <text value="V1.1.0: Added values &#39;orgretirementhome&#39;, &#39;orgrevalidationcenter&#39;, &#39;orgshelteredliving&#39;, &#39;orgpsychiatriccarehome&#39;, &#39;orgpolyclinic&#39;."/>
+        </reason>
+        <activity>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+            <code value="UPDATE"/>
+          </coding>
+        </activity>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+            </coding>
+          </type>
+          <who>
+            <reference value="Organization/eHealthPlatform"/>
+            <display value="eHealth Platform"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/fhir/2"/>
+    <resource>
+      <Provenance>
+        <id value="CDFEDCOUNTRY1.1.0"/>
+        <meta>
+          <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>target</b>: <a href="CodeSystem-cd-fed-country.html">Generated Summary: url: https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-fed-country; version: 1.1.0; name: Cdfedcountry; title: CodeSystem CD-FED-COUNTRY; status: active; date: Sep 25, 2020 1:06:43 PM; publisher: eHealth Platform; eHealth Platform: https://www.ehealth.fgov.be, Message structure: message-structure@ehealth.fgov.be; description: FedICT country codes.; content: fragment</a></p><p><b>occurred</b>: Sep 25, 2020 10:00:00 AM</p><p><b>recorded</b>: Sep 25, 2020 10:00:00 AM</p><p><b>reason</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-ActReason HOPERAT}">V1.1.0: content mode on fragment. Added BE value.</span></p><p><b>activity</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-DataOperation UPDATE}">revise</span></p><h3>Agents</h3><table class="grid"><tr><td>-</td><td><b>Type</b></td><td><b>Who</b></td></tr><tr><td>*</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="Organization-eHealthPlatform.html">eHealth Platform. Generated Summary: active; name: eHealth Platform; Phone: 3228918611</a></td></tr></table></div>
+        </text>
+        <target>
+          <reference value="CodeSystem/cd-fed-country"/>
+        </target>
+        <occurredDateTime value="2020-09-25T09:00:00+01:00"/>
+        <recorded value="2020-09-25T09:00:00+01:00"/>
+        <reason>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActReason"/>
+            <code value="HOPERAT"/>
+            <display value="Healthcare Operations"/>
+          </coding>
+          <text value="V1.1.0: content mode on fragment. Added BE value."/>
+        </reason>
+        <activity>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+            <code value="UPDATE"/>
+          </coding>
+        </activity>
+        <agent>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+              <code value="author"/>
+            </coding>
+          </type>
+          <who>
+            <reference value="Organization/eHealthPlatform"/>
+            <display value="eHealth Platform"/>
+          </who>
+        </agent>
+      </Provenance>
+    </resource>
+  </entry>
+</Bundle>

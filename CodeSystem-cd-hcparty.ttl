@@ -9,35 +9,33 @@
   fhir:nodeRole fhir:treeRoot;
   fhir:Resource.id [ fhir:value "cd-hcparty"];
   fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>HCParty</h2><div><p>healthcare party in Belgium.</p>\n</div><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">deptanatomopathology<a name=\"cd-hcparty-deptanatomopathology\"> </a></td><td>anatomopathology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptanesthesiology<a name=\"cd-hcparty-deptanesthesiology\"> </a></td><td>anesthesiology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptbacteriology<a name=\"cd-hcparty-deptbacteriology\"> </a></td><td>bacteriology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptcardiology<a name=\"cd-hcparty-deptcardiology\"> </a></td><td>cardiology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdermatology<a name=\"cd-hcparty-deptdermatology\"> </a></td><td>dermatology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdietetics<a name=\"cd-hcparty-deptdietetics\"> </a></td><td>dietetics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptemergency<a name=\"cd-hcparty-deptemergency\"> </a></td><td>emergency</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgastroenterology<a name=\"cd-hcparty-deptgastroenterology\"> </a></td><td>gastroenterology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgeneralpractice<a name=\"cd-hcparty-deptgeneralpractice\"> </a></td><td>general practice</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgenetics<a name=\"cd-hcparty-deptgenetics\"> </a></td><td>genetics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgeriatry<a name=\"cd-hcparty-deptgeriatry\"> </a></td><td>geriatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgynecology<a name=\"cd-hcparty-deptgynecology\"> </a></td><td>gynecology</td><td/></tr><tr><td style=\"white-space:nowrap\">depthematology<a name=\"cd-hcparty-depthematology\"> </a></td><td>hematology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptintensivecare<a name=\"cd-hcparty-deptintensivecare\"> </a></td><td>intensive care</td><td/></tr><tr><td style=\"white-space:nowrap\">deptkinesitherapy<a name=\"cd-hcparty-deptkinesitherapy\"> </a></td><td>kinesitherapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptlaboratory<a name=\"cd-hcparty-deptlaboratory\"> </a></td><td>Laboratory service or department within an organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmedicine<a name=\"cd-hcparty-deptmedicine\"> </a></td><td>internal medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmolecularbiology<a name=\"cd-hcparty-deptmolecularbiology\"> </a></td><td>molecular biology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptneonatalogy<a name=\"cd-hcparty-deptneonatalogy\"> </a></td><td>neonatalogy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnephrology<a name=\"cd-hcparty-deptnephrology\"> </a></td><td>nephrology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptneurology<a name=\"cd-hcparty-deptneurology\"> </a></td><td>neurology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnte<a name=\"cd-hcparty-deptnte\"> </a></td><td>nose-throat-ear</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnuclear<a name=\"cd-hcparty-deptnuclear\"> </a></td><td>nuclear</td><td/></tr><tr><td style=\"white-space:nowrap\">deptoncology<a name=\"cd-hcparty-deptoncology\"> </a></td><td>oncology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptophtalmology<a name=\"cd-hcparty-deptophtalmology\"> </a></td><td>ophtalmology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpediatry<a name=\"cd-hcparty-deptpediatry\"> </a></td><td>pediatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpharmacy<a name=\"cd-hcparty-deptpharmacy\"> </a></td><td>Pharmacy service or department within an organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">deptphysiotherapy<a name=\"cd-hcparty-deptphysiotherapy\"> </a></td><td>physiotherapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpneumology<a name=\"cd-hcparty-deptpneumology\"> </a></td><td>pneumology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpsychiatry<a name=\"cd-hcparty-deptpsychiatry\"> </a></td><td>psychiatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptradiology<a name=\"cd-hcparty-deptradiology\"> </a></td><td>radiology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptradiotherapy<a name=\"cd-hcparty-deptradiotherapy\"> </a></td><td>radiotherapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptrhumatology (deprecated)<a name=\"cd-hcparty-deptrhumatology.40deprecated.41\"> </a></td><td>rhumatology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptstomatology<a name=\"cd-hcparty-deptstomatology\"> </a></td><td>stomatology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsurgery<a name=\"cd-hcparty-deptsurgery\"> </a></td><td>surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">depttoxicology<a name=\"cd-hcparty-depttoxicology\"> </a></td><td>toxicology</td><td/></tr><tr><td style=\"white-space:nowrap\">depturology<a name=\"cd-hcparty-depturology\"> </a></td><td>urology</td><td/></tr><tr><td style=\"white-space:nowrap\">orghospital<a name=\"cd-hcparty-orghospital\"> </a></td><td>hospital</td><td/></tr><tr><td style=\"white-space:nowrap\">orginsurance<a name=\"cd-hcparty-orginsurance\"> </a></td><td>insurance</td><td/></tr><tr><td style=\"white-space:nowrap\">orglaboratory<a name=\"cd-hcparty-orglaboratory\"> </a></td><td>Independent laboratory</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpublichealth<a name=\"cd-hcparty-orgpublichealth\"> </a></td><td>public health organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">persbiologist<a name=\"cd-hcparty-persbiologist\"> </a></td><td>medical laboratory technician</td><td/></tr><tr><td style=\"white-space:nowrap\">persdentist<a name=\"cd-hcparty-persdentist\"> </a></td><td>dentist</td><td/></tr><tr><td style=\"white-space:nowrap\">persnurse<a name=\"cd-hcparty-persnurse\"> </a></td><td>nurse</td><td/></tr><tr><td style=\"white-space:nowrap\">persparamedical<a name=\"cd-hcparty-persparamedical\"> </a></td><td>paramedical</td><td/></tr><tr><td style=\"white-space:nowrap\">perspharmacist<a name=\"cd-hcparty-perspharmacist\"> </a></td><td>pharmacist</td><td/></tr><tr><td style=\"white-space:nowrap\">persphysician<a name=\"cd-hcparty-persphysician\"> </a></td><td>physician</td><td/></tr><tr><td style=\"white-space:nowrap\">perssocialworker<a name=\"cd-hcparty-perssocialworker\"> </a></td><td>social worker</td><td/></tr><tr><td style=\"white-space:nowrap\">perstechnician<a name=\"cd-hcparty-perstechnician\"> </a></td><td>Medical Imaging Technician</td><td/></tr><tr><td style=\"white-space:nowrap\">persadministrative<a name=\"cd-hcparty-persadministrative\"> </a></td><td>administrative</td><td/></tr><tr><td style=\"white-space:nowrap\">persmidwife<a name=\"cd-hcparty-persmidwife\"> </a></td><td>midwife</td><td/></tr><tr><td style=\"white-space:nowrap\">application<a name=\"cd-hcparty-application\"> </a></td><td>software application</td><td/></tr><tr><td style=\"white-space:nowrap\">deptorthopedy<a name=\"cd-hcparty-deptorthopedy\"> </a></td><td>orthopedy</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpractice<a name=\"cd-hcparty-orgpractice\"> </a></td><td>practice organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpharmacy<a name=\"cd-hcparty-orgpharmacy\"> </a></td><td>Independent pharmacy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptalgology<a name=\"cd-hcparty-deptalgology\"> </a></td><td>algology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptcardiacsurgery<a name=\"cd-hcparty-deptcardiacsurgery\"> </a></td><td>cardiac surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">depthandsurgery<a name=\"cd-hcparty-depthandsurgery\"> </a></td><td>hand surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmaxillofacialsurgery<a name=\"cd-hcparty-deptmaxillofacialsurgery\"> </a></td><td>maxillofacial surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpediatricsurgery<a name=\"cd-hcparty-deptpediatricsurgery\"> </a></td><td>pediatric surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptplasticandreparatorysurgery<a name=\"cd-hcparty-deptplasticandreparatorysurgery\"> </a></td><td>plastic and reparatory surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptthoracicsurgery<a name=\"cd-hcparty-deptthoracicsurgery\"> </a></td><td>thoracic surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptvascularsurgery<a name=\"cd-hcparty-deptvascularsurgery\"> </a></td><td>vascular surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptvisceraldigestiveabdominalsurgery<a name=\"cd-hcparty-deptvisceraldigestiveabdominalsurgery\"> </a></td><td>visceral digestive abdominal surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdentistry<a name=\"cd-hcparty-deptdentistry\"> </a></td><td>dentistry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdiabetology<a name=\"cd-hcparty-deptdiabetology\"> </a></td><td>diabetology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptendocrinology<a name=\"cd-hcparty-deptendocrinology\"> </a></td><td>endocrinology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptoccupationaltherapy<a name=\"cd-hcparty-deptoccupationaltherapy\"> </a></td><td>occupational therapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmajorburns<a name=\"cd-hcparty-deptmajorburns\"> </a></td><td>major burns</td><td/></tr><tr><td style=\"white-space:nowrap\">deptinfectiousdisease<a name=\"cd-hcparty-deptinfectiousdisease\"> </a></td><td>infectious disease</td><td/></tr><tr><td style=\"white-space:nowrap\">deptspeechtherapy<a name=\"cd-hcparty-deptspeechtherapy\"> </a></td><td>speech therapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsportsmedecine<a name=\"cd-hcparty-deptsportsmedecine\"> </a></td><td>sports medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">deptphysicalmedecine<a name=\"cd-hcparty-deptphysicalmedecine\"> </a></td><td>physical medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">depttropicalmedecine<a name=\"cd-hcparty-depttropicalmedecine\"> </a></td><td>tropical medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">deptneurosurgery<a name=\"cd-hcparty-deptneurosurgery\"> </a></td><td>neuro surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnutritiondietetics<a name=\"cd-hcparty-deptnutritiondietetics\"> </a></td><td>nutrition dietetics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptobstetrics<a name=\"cd-hcparty-deptobstetrics\"> </a></td><td>obstetrics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptchildandadolescentpsychiatry<a name=\"cd-hcparty-deptchildandadolescentpsychiatry\"> </a></td><td>child and adolescent psychiatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpodiatry<a name=\"cd-hcparty-deptpodiatry\"> </a></td><td>podiatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpsychology<a name=\"cd-hcparty-deptpsychology\"> </a></td><td>psychology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptrevalidation<a name=\"cd-hcparty-deptrevalidation\"> </a></td><td>revalidation</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsenology<a name=\"cd-hcparty-deptsenology\"> </a></td><td>senology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsocialservice<a name=\"cd-hcparty-deptsocialservice\"> </a></td><td>social service</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpediatricintensivecare<a name=\"cd-hcparty-deptpediatricintensivecare\"> </a></td><td>pediatric intensive care</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpalliativecare<a name=\"cd-hcparty-deptpalliativecare\"> </a></td><td>palliative care</td><td/></tr><tr><td style=\"white-space:nowrap\">deptrheumatology<a name=\"cd-hcparty-deptrheumatology\"> </a></td><td>rheumatology</td><td/></tr><tr><td style=\"white-space:nowrap\">persambulancefirstaid<a name=\"cd-hcparty-persambulancefirstaid\"> </a></td><td>ambulance first aid</td><td/></tr><tr><td style=\"white-space:nowrap\">persaudician<a name=\"cd-hcparty-persaudician\"> </a></td><td>audician</td><td/></tr><tr><td style=\"white-space:nowrap\">persaudiologist<a name=\"cd-hcparty-persaudiologist\"> </a></td><td>audiologist</td><td/></tr><tr><td style=\"white-space:nowrap\">perscaregiver<a name=\"cd-hcparty-perscaregiver\"> </a></td><td>caregiver</td><td/></tr><tr><td style=\"white-space:nowrap\">persdietician<a name=\"cd-hcparty-persdietician\"> </a></td><td>dietician</td><td/></tr><tr><td style=\"white-space:nowrap\">perseducator<a name=\"cd-hcparty-perseducator\"> </a></td><td>educator</td><td/></tr><tr><td style=\"white-space:nowrap\">perslogopedist<a name=\"cd-hcparty-perslogopedist\"> </a></td><td>logopedist</td><td/></tr><tr><td style=\"white-space:nowrap\">persoccupationaltherapist<a name=\"cd-hcparty-persoccupationaltherapist\"> </a></td><td>occupational therapist</td><td/></tr><tr><td style=\"white-space:nowrap\">persorthopedist (deprecated)<a name=\"cd-hcparty-persorthopedist.40deprecated.41\"> </a></td><td>orthopedist</td><td/></tr><tr><td style=\"white-space:nowrap\">persorthoptist<a name=\"cd-hcparty-persorthoptist\"> </a></td><td>orthoptist</td><td/></tr><tr><td style=\"white-space:nowrap\">persoptician<a name=\"cd-hcparty-persoptician\"> </a></td><td>optician</td><td/></tr><tr><td style=\"white-space:nowrap\">perspharmacyassistant<a name=\"cd-hcparty-perspharmacyassistant\"> </a></td><td>pharmacy assistant</td><td/></tr><tr><td style=\"white-space:nowrap\">persphysiotherapist<a name=\"cd-hcparty-persphysiotherapist\"> </a></td><td>physiotherapist</td><td/></tr><tr><td style=\"white-space:nowrap\">perspodologist<a name=\"cd-hcparty-perspodologist\"> </a></td><td>podologist</td><td/></tr><tr><td style=\"white-space:nowrap\">perspracticalnurse<a name=\"cd-hcparty-perspracticalnurse\"> </a></td><td>practical nurse</td><td/></tr><tr><td style=\"white-space:nowrap\">perspsychologist<a name=\"cd-hcparty-perspsychologist\"> </a></td><td>psychologist</td><td/></tr><tr><td style=\"white-space:nowrap\">orgprimaryhealthcarecenter<a name=\"cd-hcparty-orgprimaryhealthcarecenter\"> </a></td><td>primary health care center</td><td/></tr><tr><td style=\"white-space:nowrap\">guardpost<a name=\"cd-hcparty-guardpost\"> </a></td><td>Guard post</td><td/></tr><tr><td style=\"white-space:nowrap\">groupofphysicianssameaddress<a name=\"cd-hcparty-groupofphysicianssameaddress\"> </a></td><td>Group of physicians same address</td><td/></tr><tr><td style=\"white-space:nowrap\">groupofphysiciansdifferentaddress<a name=\"cd-hcparty-groupofphysiciansdifferentaddress\"> </a></td><td>Group of physicians different address</td><td/></tr><tr><td style=\"white-space:nowrap\">groupofnurses<a name=\"cd-hcparty-groupofnurses\"> </a></td><td>Group of nurses</td><td/></tr><tr><td style=\"white-space:nowrap\">certificateholder<a name=\"cd-hcparty-certificateholder\"> </a></td><td>Certificate holder</td><td/></tr><tr><td style=\"white-space:nowrap\">perstrussmaker<a name=\"cd-hcparty-perstrussmaker\"> </a></td><td>Truss maker</td><td/></tr><tr><td style=\"white-space:nowrap\">patient<a name=\"cd-hcparty-patient\"> </a></td><td>Patient</td><td/></tr><tr><td style=\"white-space:nowrap\">persorthotist<a name=\"cd-hcparty-persorthotist\"> </a></td><td>Orthotist</td><td/></tr><tr><td style=\"white-space:nowrap\">perspatientdriver<a name=\"cd-hcparty-perspatientdriver\"> </a></td><td>Patient driver (not urgent)</td><td/></tr><tr><td style=\"white-space:nowrap\">orgprevention<a name=\"cd-hcparty-orgprevention\"> </a></td><td>Prevention organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">perspharmacistclinicalbiologist<a name=\"cd-hcparty-perspharmacistclinicalbiologist\"> </a></td><td>pharmacist-clinical biologist</td><td/></tr><tr><td style=\"white-space:nowrap\">hub<a name=\"cd-hcparty-hub\"> </a></td><td>hub</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnursing<a name=\"cd-hcparty-deptnursing\"> </a></td><td>nursing</td><td/></tr><tr><td style=\"white-space:nowrap\">persoraldentalhygienist<a name=\"cd-hcparty-persoraldentalhygienist\"> </a></td><td>Oral dental hygienist</td><td/></tr><tr><td style=\"white-space:nowrap\">persclinicalpsychologist<a name=\"cd-hcparty-persclinicalpsychologist\"> </a></td><td>Clinical psychologist</td><td/></tr><tr><td style=\"white-space:nowrap\">persclinicalorthopedagogist<a name=\"cd-hcparty-persclinicalorthopedagogist\"> </a></td><td>Clinical orthopedagogist</td><td/></tr></table></div>"
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Deprecated</b></td></tr><tr><td style=\"white-space:nowrap\">deptanatomopathology<a name=\"cd-hcparty-deptanatomopathology\"> </a></td><td>anatomopathology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptanesthesiology<a name=\"cd-hcparty-deptanesthesiology\"> </a></td><td>anesthesiology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptbacteriology<a name=\"cd-hcparty-deptbacteriology\"> </a></td><td>bacteriology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptcardiology<a name=\"cd-hcparty-deptcardiology\"> </a></td><td>cardiology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdermatology<a name=\"cd-hcparty-deptdermatology\"> </a></td><td>dermatology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdietetics<a name=\"cd-hcparty-deptdietetics\"> </a></td><td>dietetics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptemergency<a name=\"cd-hcparty-deptemergency\"> </a></td><td>emergency</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgastroenterology<a name=\"cd-hcparty-deptgastroenterology\"> </a></td><td>gastroenterology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgeneralpractice<a name=\"cd-hcparty-deptgeneralpractice\"> </a></td><td>general practice</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgenetics<a name=\"cd-hcparty-deptgenetics\"> </a></td><td>genetics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgeriatry<a name=\"cd-hcparty-deptgeriatry\"> </a></td><td>geriatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptgynecology<a name=\"cd-hcparty-deptgynecology\"> </a></td><td>gynecology</td><td/></tr><tr><td style=\"white-space:nowrap\">depthematology<a name=\"cd-hcparty-depthematology\"> </a></td><td>hematology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptintensivecare<a name=\"cd-hcparty-deptintensivecare\"> </a></td><td>intensive care</td><td/></tr><tr><td style=\"white-space:nowrap\">deptkinesitherapy<a name=\"cd-hcparty-deptkinesitherapy\"> </a></td><td>kinesitherapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptlaboratory<a name=\"cd-hcparty-deptlaboratory\"> </a></td><td>Laboratory service or department within an organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmedicine<a name=\"cd-hcparty-deptmedicine\"> </a></td><td>internal medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmolecularbiology<a name=\"cd-hcparty-deptmolecularbiology\"> </a></td><td>molecular biology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptneonatalogy<a name=\"cd-hcparty-deptneonatalogy\"> </a></td><td>neonatalogy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnephrology<a name=\"cd-hcparty-deptnephrology\"> </a></td><td>nephrology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptneurology<a name=\"cd-hcparty-deptneurology\"> </a></td><td>neurology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnte<a name=\"cd-hcparty-deptnte\"> </a></td><td>nose-throat-ear</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnuclear<a name=\"cd-hcparty-deptnuclear\"> </a></td><td>nuclear</td><td/></tr><tr><td style=\"white-space:nowrap\">deptoncology<a name=\"cd-hcparty-deptoncology\"> </a></td><td>oncology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptophtalmology<a name=\"cd-hcparty-deptophtalmology\"> </a></td><td>ophtalmology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpediatry<a name=\"cd-hcparty-deptpediatry\"> </a></td><td>pediatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpharmacy<a name=\"cd-hcparty-deptpharmacy\"> </a></td><td>Pharmacy service or department within an organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">deptphysiotherapy<a name=\"cd-hcparty-deptphysiotherapy\"> </a></td><td>physiotherapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpneumology<a name=\"cd-hcparty-deptpneumology\"> </a></td><td>pneumology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpsychiatry<a name=\"cd-hcparty-deptpsychiatry\"> </a></td><td>psychiatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptradiology<a name=\"cd-hcparty-deptradiology\"> </a></td><td>radiology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptradiotherapy<a name=\"cd-hcparty-deptradiotherapy\"> </a></td><td>radiotherapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptstomatology<a name=\"cd-hcparty-deptstomatology\"> </a></td><td>stomatology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsurgery<a name=\"cd-hcparty-deptsurgery\"> </a></td><td>surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">depttoxicology<a name=\"cd-hcparty-depttoxicology\"> </a></td><td>toxicology</td><td/></tr><tr><td style=\"white-space:nowrap\">depturology<a name=\"cd-hcparty-depturology\"> </a></td><td>urology</td><td/></tr><tr><td style=\"white-space:nowrap\">orghospital<a name=\"cd-hcparty-orghospital\"> </a></td><td>hospital</td><td/></tr><tr><td style=\"white-space:nowrap\">orginsurance<a name=\"cd-hcparty-orginsurance\"> </a></td><td>insurance</td><td/></tr><tr><td style=\"white-space:nowrap\">orglaboratory<a name=\"cd-hcparty-orglaboratory\"> </a></td><td>Independent laboratory</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpublichealth<a name=\"cd-hcparty-orgpublichealth\"> </a></td><td>public health organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">persbiologist<a name=\"cd-hcparty-persbiologist\"> </a></td><td>medical laboratory technician</td><td/></tr><tr><td style=\"white-space:nowrap\">persdentist<a name=\"cd-hcparty-persdentist\"> </a></td><td>dentist</td><td/></tr><tr><td style=\"white-space:nowrap\">persnurse<a name=\"cd-hcparty-persnurse\"> </a></td><td>nurse</td><td/></tr><tr><td style=\"white-space:nowrap\">persparamedical<a name=\"cd-hcparty-persparamedical\"> </a></td><td>paramedical</td><td/></tr><tr><td style=\"white-space:nowrap\">perspharmacist<a name=\"cd-hcparty-perspharmacist\"> </a></td><td>pharmacist</td><td/></tr><tr><td style=\"white-space:nowrap\">persphysician<a name=\"cd-hcparty-persphysician\"> </a></td><td>physician</td><td/></tr><tr><td style=\"white-space:nowrap\">perssocialworker<a name=\"cd-hcparty-perssocialworker\"> </a></td><td>social worker</td><td/></tr><tr><td style=\"white-space:nowrap\">perstechnician<a name=\"cd-hcparty-perstechnician\"> </a></td><td>Medical Imaging Technician</td><td/></tr><tr><td style=\"white-space:nowrap\">persadministrative<a name=\"cd-hcparty-persadministrative\"> </a></td><td>administrative</td><td/></tr><tr><td style=\"white-space:nowrap\">persmidwife<a name=\"cd-hcparty-persmidwife\"> </a></td><td>midwife</td><td/></tr><tr><td style=\"white-space:nowrap\">application<a name=\"cd-hcparty-application\"> </a></td><td>software application</td><td/></tr><tr><td style=\"white-space:nowrap\">deptorthopedy<a name=\"cd-hcparty-deptorthopedy\"> </a></td><td>orthopedy</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpractice<a name=\"cd-hcparty-orgpractice\"> </a></td><td>practice organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpharmacy<a name=\"cd-hcparty-orgpharmacy\"> </a></td><td>Independent pharmacy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptalgology<a name=\"cd-hcparty-deptalgology\"> </a></td><td>algology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptcardiacsurgery<a name=\"cd-hcparty-deptcardiacsurgery\"> </a></td><td>cardiac surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">depthandsurgery<a name=\"cd-hcparty-depthandsurgery\"> </a></td><td>hand surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmaxillofacialsurgery<a name=\"cd-hcparty-deptmaxillofacialsurgery\"> </a></td><td>maxillofacial surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpediatricsurgery<a name=\"cd-hcparty-deptpediatricsurgery\"> </a></td><td>pediatric surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptplasticandreparatorysurgery<a name=\"cd-hcparty-deptplasticandreparatorysurgery\"> </a></td><td>plastic and reparatory surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptthoracicsurgery<a name=\"cd-hcparty-deptthoracicsurgery\"> </a></td><td>thoracic surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptvascularsurgery<a name=\"cd-hcparty-deptvascularsurgery\"> </a></td><td>vascular surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptvisceraldigestiveabdominalsurgery<a name=\"cd-hcparty-deptvisceraldigestiveabdominalsurgery\"> </a></td><td>visceral digestive abdominal surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdentistry<a name=\"cd-hcparty-deptdentistry\"> </a></td><td>dentistry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptdiabetology<a name=\"cd-hcparty-deptdiabetology\"> </a></td><td>diabetology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptendocrinology<a name=\"cd-hcparty-deptendocrinology\"> </a></td><td>endocrinology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptoccupationaltherapy<a name=\"cd-hcparty-deptoccupationaltherapy\"> </a></td><td>occupational therapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptmajorburns<a name=\"cd-hcparty-deptmajorburns\"> </a></td><td>major burns</td><td/></tr><tr><td style=\"white-space:nowrap\">deptinfectiousdisease<a name=\"cd-hcparty-deptinfectiousdisease\"> </a></td><td>infectious disease</td><td/></tr><tr><td style=\"white-space:nowrap\">deptspeechtherapy<a name=\"cd-hcparty-deptspeechtherapy\"> </a></td><td>speech therapy</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsportsmedecine<a name=\"cd-hcparty-deptsportsmedecine\"> </a></td><td>sports medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">deptphysicalmedecine<a name=\"cd-hcparty-deptphysicalmedecine\"> </a></td><td>physical medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">depttropicalmedecine<a name=\"cd-hcparty-depttropicalmedecine\"> </a></td><td>tropical medecine</td><td/></tr><tr><td style=\"white-space:nowrap\">deptneurosurgery<a name=\"cd-hcparty-deptneurosurgery\"> </a></td><td>neuro surgery</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnutritiondietetics<a name=\"cd-hcparty-deptnutritiondietetics\"> </a></td><td>nutrition dietetics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptobstetrics<a name=\"cd-hcparty-deptobstetrics\"> </a></td><td>obstetrics</td><td/></tr><tr><td style=\"white-space:nowrap\">deptchildandadolescentpsychiatry<a name=\"cd-hcparty-deptchildandadolescentpsychiatry\"> </a></td><td>child and adolescent psychiatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpodiatry<a name=\"cd-hcparty-deptpodiatry\"> </a></td><td>podiatry</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpsychology<a name=\"cd-hcparty-deptpsychology\"> </a></td><td>psychology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptrevalidation<a name=\"cd-hcparty-deptrevalidation\"> </a></td><td>revalidation</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsenology<a name=\"cd-hcparty-deptsenology\"> </a></td><td>senology</td><td/></tr><tr><td style=\"white-space:nowrap\">deptsocialservice<a name=\"cd-hcparty-deptsocialservice\"> </a></td><td>social service</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpediatricintensivecare<a name=\"cd-hcparty-deptpediatricintensivecare\"> </a></td><td>pediatric intensive care</td><td/></tr><tr><td style=\"white-space:nowrap\">deptpalliativecare<a name=\"cd-hcparty-deptpalliativecare\"> </a></td><td>palliative care</td><td/></tr><tr><td style=\"white-space:nowrap\">deptrheumatology<a name=\"cd-hcparty-deptrheumatology\"> </a></td><td>rheumatology</td><td/></tr><tr><td style=\"white-space:nowrap\">persambulancefirstaid<a name=\"cd-hcparty-persambulancefirstaid\"> </a></td><td>ambulance first aid</td><td/></tr><tr><td style=\"white-space:nowrap\">persaudician<a name=\"cd-hcparty-persaudician\"> </a></td><td>audician</td><td/></tr><tr><td style=\"white-space:nowrap\">persaudiologist<a name=\"cd-hcparty-persaudiologist\"> </a></td><td>audiologist</td><td/></tr><tr><td style=\"white-space:nowrap\">perscaregiver<a name=\"cd-hcparty-perscaregiver\"> </a></td><td>caregiver</td><td>Deprecated</td></tr><tr><td style=\"white-space:nowrap\">persdietician<a name=\"cd-hcparty-persdietician\"> </a></td><td>dietician</td><td/></tr><tr><td style=\"white-space:nowrap\">perseducator<a name=\"cd-hcparty-perseducator\"> </a></td><td>educator</td><td/></tr><tr><td style=\"white-space:nowrap\">perslogopedist<a name=\"cd-hcparty-perslogopedist\"> </a></td><td>logopedist</td><td/></tr><tr><td style=\"white-space:nowrap\">persoccupationaltherapist<a name=\"cd-hcparty-persoccupationaltherapist\"> </a></td><td>occupational therapist</td><td/></tr><tr><td style=\"white-space:nowrap\">persorthoptist<a name=\"cd-hcparty-persorthoptist\"> </a></td><td>orthoptist</td><td/></tr><tr><td style=\"white-space:nowrap\">persoptician<a name=\"cd-hcparty-persoptician\"> </a></td><td>optician</td><td/></tr><tr><td style=\"white-space:nowrap\">perspharmacyassistant<a name=\"cd-hcparty-perspharmacyassistant\"> </a></td><td>pharmacy assistant</td><td/></tr><tr><td style=\"white-space:nowrap\">persphysiotherapist<a name=\"cd-hcparty-persphysiotherapist\"> </a></td><td>physiotherapist</td><td/></tr><tr><td style=\"white-space:nowrap\">perspodologist<a name=\"cd-hcparty-perspodologist\"> </a></td><td>podologist</td><td/></tr><tr><td style=\"white-space:nowrap\">perspracticalnurse<a name=\"cd-hcparty-perspracticalnurse\"> </a></td><td>practical nurse</td><td/></tr><tr><td style=\"white-space:nowrap\">perspsychologist<a name=\"cd-hcparty-perspsychologist\"> </a></td><td>psychologist</td><td/></tr><tr><td style=\"white-space:nowrap\">orgprimaryhealthcarecenter<a name=\"cd-hcparty-orgprimaryhealthcarecenter\"> </a></td><td>primary health care center</td><td/></tr><tr><td style=\"white-space:nowrap\">guardpost<a name=\"cd-hcparty-guardpost\"> </a></td><td>Guard post</td><td/></tr><tr><td style=\"white-space:nowrap\">groupofphysicianssameaddress<a name=\"cd-hcparty-groupofphysicianssameaddress\"> </a></td><td>Group of physicians same address</td><td/></tr><tr><td style=\"white-space:nowrap\">groupofphysiciansdifferentaddress<a name=\"cd-hcparty-groupofphysiciansdifferentaddress\"> </a></td><td>Group of physicians different address</td><td/></tr><tr><td style=\"white-space:nowrap\">groupofnurses<a name=\"cd-hcparty-groupofnurses\"> </a></td><td>Group of nurses</td><td/></tr><tr><td style=\"white-space:nowrap\">certificateholder<a name=\"cd-hcparty-certificateholder\"> </a></td><td>Certificate holder</td><td/></tr><tr><td style=\"white-space:nowrap\">perstrussmaker<a name=\"cd-hcparty-perstrussmaker\"> </a></td><td>Truss maker</td><td/></tr><tr><td style=\"white-space:nowrap\">patient<a name=\"cd-hcparty-patient\"> </a></td><td>Patient</td><td/></tr><tr><td style=\"white-space:nowrap\">persorthotist<a name=\"cd-hcparty-persorthotist\"> </a></td><td>Orthotist</td><td/></tr><tr><td style=\"white-space:nowrap\">perspatientdriver<a name=\"cd-hcparty-perspatientdriver\"> </a></td><td>Patient driver (not urgent)</td><td/></tr><tr><td style=\"white-space:nowrap\">orgprevention<a name=\"cd-hcparty-orgprevention\"> </a></td><td>Prevention organisation</td><td/></tr><tr><td style=\"white-space:nowrap\">perspharmacistclinicalbiologist<a name=\"cd-hcparty-perspharmacistclinicalbiologist\"> </a></td><td>pharmacist-clinical biologist</td><td/></tr><tr><td style=\"white-space:nowrap\">hub<a name=\"cd-hcparty-hub\"> </a></td><td>hub</td><td/></tr><tr><td style=\"white-space:nowrap\">deptnursing<a name=\"cd-hcparty-deptnursing\"> </a></td><td>nursing</td><td/></tr><tr><td style=\"white-space:nowrap\">persoraldentalhygienist<a name=\"cd-hcparty-persoraldentalhygienist\"> </a></td><td>Oral dental hygienist</td><td/></tr><tr><td style=\"white-space:nowrap\">persclinicalpsychologist<a name=\"cd-hcparty-persclinicalpsychologist\"> </a></td><td>Clinical psychologist</td><td/></tr><tr><td style=\"white-space:nowrap\">persclinicalorthopedagogist<a name=\"cd-hcparty-persclinicalorthopedagogist\"> </a></td><td>Clinical orthopedagogist</td><td/></tr><tr><td style=\"white-space:nowrap\">orgretirementhome<a name=\"cd-hcparty-orgretirementhome\"> </a></td><td>retirementhome</td><td/></tr><tr><td style=\"white-space:nowrap\">orgrevalidationcenter<a name=\"cd-hcparty-orgrevalidationcenter\"> </a></td><td>revalidation center</td><td/></tr><tr><td style=\"white-space:nowrap\">orgshelteredliving<a name=\"cd-hcparty-orgshelteredliving\"> </a></td><td>sheltered living</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpsychiatriccarehome<a name=\"cd-hcparty-orgpsychiatriccarehome\"> </a></td><td>psychiatric care home</td><td/></tr><tr><td style=\"white-space:nowrap\">orgpolyclinic<a name=\"cd-hcparty-orgpolyclinic\"> </a></td><td>polyclinic</td><td/></tr></table><p><b>Additional Language Displays</b></p><table class=\"codes\"><tr><td><b>Code</b></td><td><b>Deutsch (German, de)</b></td><td><b>English (English, en)</b></td><td><b>French (Belgium) (fr)</b></td><td><b>Nederlands (België) (Dutch (Belgium), nl)</b></td></tr><tr><td>deptanatomopathology</td><td>pathologische Anatomie</td><td>anatomopathology</td><td>anatomopathologie</td><td>anatomo-pathologie</td></tr><tr><td>deptanesthesiology</td><td>Anästhesiologe</td><td>anesthesiology</td><td>anesthésiologie</td><td>anesthesiologie</td></tr><tr><td>deptbacteriology</td><td>Bakteriologie</td><td>bacteriology</td><td>bactériologie</td><td>bacteriologie</td></tr><tr><td>deptcardiology</td><td>Kardiologie</td><td>cardiology</td><td>cardiologie</td><td>cardiologie</td></tr><tr><td>deptdermatology</td><td>Dermatologie</td><td>dermatology</td><td>dermatologie</td><td>dermatologie</td></tr><tr><td>deptdietetics</td><td>Diätetik</td><td>dietetics</td><td>diététique</td><td>diëtetiek</td></tr><tr><td>deptemergency</td><td>Notfalldienst</td><td>emergency</td><td>services d'urgence</td><td>spoeddiensten</td></tr><tr><td>deptgastroenterology</td><td>Gastroenterologie</td><td>gastroenterology</td><td>gastroentérologie</td><td>gastro-enterologie</td></tr><tr><td>deptgeneralpractice</td><td>Allgemeinmedizin</td><td>general practice</td><td>médecine générale</td><td>algemene geneeskunde</td></tr><tr><td>deptgenetics</td><td>Genetik</td><td>genetics</td><td>génétique</td><td>genetica</td></tr><tr><td>deptgeriatry</td><td>Geriatrie</td><td>geriatry</td><td>gériatrie</td><td>geriatrie</td></tr><tr><td>deptgynecology</td><td>Gynäkologie</td><td>gynecology</td><td>gynécologie</td><td>gynaecologie</td></tr><tr><td>depthematology</td><td>Hämatologie</td><td>hematology</td><td>hématologie</td><td>hematologie</td></tr><tr><td>deptintensivecare</td><td>Intensivmedizin</td><td>intensive care</td><td>soins intensifs</td><td>intensieve zorgen</td></tr><tr><td>deptkinesitherapy</td><td>Bewegungstherapie</td><td>kinesitherapy</td><td>kinésithérapie</td><td>kinesitherapie</td></tr><tr><td>deptlaboratory</td><td>Laboratorium Dienst/Abteilung in einer Organisation</td><td>Laboratory service or department within an organisation</td><td>Service / Département laboratoire au sein d'une organisation</td><td>Laboratoriumdienst of -afdeling binnen een organisatie</td></tr><tr><td>deptmedicine</td><td>Innere Medizin</td><td>internal medecine</td><td>médicine interne</td><td>interne geneeskunde</td></tr><tr><td>deptmolecularbiology</td><td>Molekularbiologie</td><td>molecular biology</td><td>biologie moléculaire</td><td>moleculaire biologie</td></tr><tr><td>deptneonatalogy</td><td>Neonatologie</td><td>neonatalogy</td><td>néonatologie</td><td>neonatologie</td></tr><tr><td>deptnephrology</td><td>Nephrologie</td><td>nephrology</td><td>néphrologie</td><td>nefrologie</td></tr><tr><td>deptneurology</td><td>Neurologie</td><td>neurology</td><td>neurologie</td><td>neurologie</td></tr><tr><td>deptnte</td><td>Otorhinolaryngologie</td><td>nose-throat-ear</td><td>oto-rhino-laryngologie</td><td>oto-rhino-laryngologie</td></tr><tr><td>deptnuclear</td><td>Nuklearmedizin</td><td>nuclear</td><td>médecine nucléaire</td><td>nucleaire geneeskunde</td></tr><tr><td>deptoncology</td><td>Onkologie</td><td>oncology</td><td>oncologie</td><td>oncologie</td></tr><tr><td>deptophtalmology</td><td>Augenheilkunde</td><td>ophtalmology</td><td>ophtalmologie</td><td>oftalmologie</td></tr><tr><td>deptpediatry</td><td>Pädiatrie</td><td>pediatry</td><td>pédiatrie</td><td>pediatrie</td></tr><tr><td>deptpharmacy</td><td>Pharmazie Dienst/Abteilung in einer Organisation</td><td>Pharmacy service or department within an organisation</td><td>Service / Département pharmacie au sein d'une organisation</td><td>Apotheekdienst of -afdeling binnen een organisatie</td></tr><tr><td>deptphysiotherapy</td><td>Physiotherapie</td><td>physiotherapy</td><td>physiothérapie</td><td>fysiotherapie</td></tr><tr><td>deptpneumology</td><td>Pulmonologie</td><td>pneumology</td><td>pneumologie</td><td>pulmonologie</td></tr><tr><td>deptpsychiatry</td><td>Psychiatrie</td><td>psychiatry</td><td>psychiatrie</td><td>psychiatrie</td></tr><tr><td>deptradiology</td><td>Radiologie</td><td>radiology</td><td>radiologie</td><td>radiologie</td></tr><tr><td>deptradiotherapy</td><td>Strahlentherapie</td><td>radiotherapy</td><td>radiothérapie</td><td>radiotherapie</td></tr><tr><td>deptstomatology</td><td>Stomatologie</td><td>stomatology</td><td>stomatologie</td><td>stomatologie</td></tr><tr><td>deptsurgery</td><td>Chirurgie</td><td>surgery</td><td>chirurgie</td><td>chirurgie</td></tr><tr><td>depttoxicology</td><td>Toxikologie</td><td>toxicology</td><td>toxicologie</td><td>toxicologie</td></tr><tr><td>depturology</td><td>Urologie</td><td>urology</td><td>urologie</td><td>urologie</td></tr><tr><td>orghospital</td><td>Krankenhaus</td><td>hospital</td><td>hôpital</td><td>ziekenhuis</td></tr><tr><td>orginsurance</td><td>Versicherung</td><td>insurance</td><td>assurance</td><td>verzekering</td></tr><tr><td>orglaboratory</td><td>Unabhängiges Laboratorium</td><td>Independent laboratory</td><td>laboratoire indépendant</td><td>Onafhankelijk laboratorium</td></tr><tr><td>orgpublichealth</td><td>Gesundheitsbehörde</td><td>public health organisation</td><td>service public de santé</td><td>openbare gezondheidsdienst</td></tr><tr><td>persbiologist</td><td>medizinischer Labortechniker</td><td>medical laboratory technician</td><td>technicien de laboratoire médical</td><td>medisch laboratoriumtechnoloog</td></tr><tr><td>persdentist</td><td>Zahnarzt</td><td>dentist</td><td>dentiste</td><td>tandarts</td></tr><tr><td>persnurse</td><td>Krankenpfleger/in</td><td>nurse</td><td>infirmier</td><td>verpleegkundige</td></tr><tr><td>persparamedical</td><td>medizinisches Hilfspersonal</td><td>paramedical</td><td>personnel paramédical</td><td>paramedisch personeel</td></tr><tr><td>perspharmacist</td><td>Apotheker</td><td>pharmacist</td><td>pharmacien</td><td>apotheker</td></tr><tr><td>persphysician</td><td>Arzt</td><td>physician</td><td>médecin</td><td>arts</td></tr><tr><td>perssocialworker</td><td>Sozialarbeiter</td><td>social worker</td><td>travailleur social</td><td>maatschappelijk werker</td></tr><tr><td>perstechnician</td><td>medizinische Bildgebung Techniker</td><td>Medical Imaging Technician</td><td>Technicien d'imagerie médicale</td><td>Technicus medische beeldvorming</td></tr><tr><td>persadministrative</td><td>Büroangestellte(r)</td><td>administrative</td><td>personnel admistratif</td><td>administratieve medewerker</td></tr><tr><td>persmidwife</td><td>Hebamme</td><td>midwife</td><td>sage-femme</td><td>vroedvrouw</td></tr><tr><td>application</td><td>Softwareapplikation</td><td>software application</td><td>application logicielle</td><td>softwaretoepassing</td></tr><tr><td>deptorthopedy</td><td>Orthopädie</td><td>orthopedy</td><td>orthopédie</td><td>orthopedie</td></tr><tr><td>orgpractice</td><td>Praxis</td><td>practice organisation</td><td>cabinet</td><td>praktijk</td></tr><tr><td>orgpharmacy</td><td>Unabhängige Apotheke</td><td>Independent pharmacy</td><td>Pharmacie indépendante</td><td>Onafhankelijke apotheek</td></tr><tr><td>deptalgology</td><td>Algologie</td><td>algology</td><td>algologie</td><td>algologie</td></tr><tr><td>deptcardiacsurgery</td><td>Herzchirurgie</td><td>cardiac surgery</td><td>chirurgie cardiaque</td><td>hartchirurgie</td></tr><tr><td>depthandsurgery</td><td>Handchirurgie</td><td>hand surgery</td><td>chirurgie de la main</td><td>handchirurgie</td></tr><tr><td>deptmaxillofacialsurgery</td><td>Mund-Kiefer-Gesichtschirurgie</td><td>maxillofacial surgery</td><td>chirurgie maxillofaciale</td><td>mond-, kaak- en aangezichtschirurgie</td></tr><tr><td>deptpediatricsurgery</td><td>Kinderchirurgie</td><td>pediatric surgery</td><td>chirurgie pédiatrique</td><td>kinderchirurgie</td></tr><tr><td>deptplasticandreparatorysurgery</td><td>plastische Chirurgie und Reparaturchirurgie</td><td>plastic and reparatory surgery</td><td>chirurgie esthétique et réparatrice</td><td>plastische en reconstructieve chirurgie</td></tr><tr><td>deptthoracicsurgery</td><td>Thoraxchirurgie</td><td>thoracic surgery</td><td>chirurgie thoracique</td><td>thoraxchirurgie</td></tr><tr><td>deptvascularsurgery</td><td>Vaskuläre Chirurgie</td><td>vascular surgery</td><td>chirurgie vasculaire</td><td>vasculaire chirurgie</td></tr><tr><td>deptvisceraldigestiveabdominalsurgery</td><td>Viszeralchirurgie/Abdominalchirurgie/Bauchchirurgie</td><td>visceral digestive abdominal surgery</td><td>chirurgie abdominale, digestive et viscérale</td><td>digestieve/viscerale chirurgie/buikchirurgie</td></tr><tr><td>deptdentistry</td><td>Zahnheilkunde</td><td>dentistry</td><td>dentisterie</td><td>tandheelkunde</td></tr><tr><td>deptdiabetology</td><td>Diabetologie</td><td>diabetology</td><td>diabétologie</td><td>diabetologie</td></tr><tr><td>deptendocrinology</td><td>Endokrinologie</td><td>endocrinology</td><td>endocrinologie</td><td>endocrinologie/hormonenleer</td></tr><tr><td>deptoccupationaltherapy</td><td>Ergotherapie</td><td>occupational therapy</td><td>ergothérapie</td><td>ergotherapie</td></tr><tr><td>deptmajorburns</td><td>Zentrum für Schwerbrandverletzte</td><td>major burns</td><td>grands brûlés</td><td>brandwondencentrum</td></tr><tr><td>deptinfectiousdisease</td><td>Infektionskrankheit</td><td>infectious disease</td><td>maladie infectieuse</td><td>infectieziekte</td></tr><tr><td>deptspeechtherapy</td><td>Sprachtherapie</td><td>speech therapy</td><td>logopédie</td><td>logopedie</td></tr><tr><td>deptsportsmedecine</td><td>Sportmedizin</td><td>sports medecine</td><td>médecine des sports</td><td>sportgeneeskunde</td></tr><tr><td>deptphysicalmedecine</td><td>physikalische Medizin</td><td>physical medecine</td><td>médecine physique</td><td>fysische geneeskunde</td></tr><tr><td>depttropicalmedecine</td><td>Tropenmedizin</td><td>tropical medecine</td><td>médecine tropicale</td><td>tropische geneeskunde</td></tr><tr><td>deptneurosurgery</td><td>Neurologie</td><td>neuro surgery</td><td>neurologie</td><td>neurologie</td></tr><tr><td>deptnutritiondietetics</td><td>Diätetik</td><td>nutrition dietetics</td><td>diététique nutritionnelle</td><td>diëtetiek</td></tr><tr><td>deptobstetrics</td><td>Geburtshilfe</td><td>obstetrics</td><td>obstétrique</td><td>verloskunde</td></tr><tr><td>deptchildandadolescentpsychiatry</td><td>Kinder-und Jugendpsychologie</td><td>child and adolescent psychiatry</td><td>psychiatrie de l'enfant et de l'adolescent</td><td>kinder- en jeugdpsychiatrie</td></tr><tr><td>deptpodiatry</td><td>Podiatrie</td><td>podiatry</td><td>podiatrie</td><td>podiatrie</td></tr><tr><td>deptpsychology</td><td>Psychologie</td><td>psychology</td><td>psychologie</td><td>psychologie</td></tr><tr><td>deptrevalidation</td><td>Rehabilitation</td><td>revalidation</td><td>rééducation</td><td>revalidatie</td></tr><tr><td>deptsenology</td><td>Senologie</td><td>senology</td><td>sénologie</td><td>senologie</td></tr><tr><td>deptsocialservice</td><td>Sozialdienst</td><td>social service</td><td>service social</td><td>sociale dienst</td></tr><tr><td>deptpediatricintensivecare</td><td>Intensivpflege für Kinder</td><td>pediatric intensive care</td><td>soins intensifs pédiatriques</td><td>intensieve zorg voor kinderen</td></tr><tr><td>deptpalliativecare</td><td>Palliativpflege</td><td>palliative care</td><td>soins palliatifs</td><td>palliatieve zorg</td></tr><tr><td>deptrheumatology</td><td>Rheumatologie</td><td>rheumatology</td><td>rhumatologie</td><td>reumatologie</td></tr><tr><td>persambulancefirstaid</td><td>Krankenwagen erste Hilfe</td><td>ambulance first aid</td><td>ambulance premier secours</td><td>ambulance eerste hulp</td></tr><tr><td>persaudician</td><td>Hörgeräteakustiker</td><td>audician</td><td>audicien</td><td>audicien</td></tr><tr><td>persaudiologist</td><td>Audiologe</td><td>audiologist</td><td>audiologue</td><td>audioloog</td></tr><tr><td>perscaregiver</td><td>Pflegeperson</td><td>caregiver</td><td>soignant informel</td><td>mantelzorger</td></tr><tr><td>persdietician</td><td>Diätist</td><td>dietician</td><td>diététicien</td><td>dietist</td></tr><tr><td>perseducator</td><td>Erzieher</td><td>educator</td><td>éducateur</td><td>opvoeder</td></tr><tr><td>perslogopedist</td><td>Logopäde</td><td>logopedist</td><td>logopède</td><td>logopedist</td></tr><tr><td>persoccupationaltherapist</td><td>Ergotherapeut</td><td>occupational therapist</td><td>ergothérapeute</td><td>ergotherapeut</td></tr><tr><td>persorthoptist</td><td>Orthoptist</td><td>orthoptist</td><td>orthoptiste</td><td>orthoptist</td></tr><tr><td>persoptician</td><td>Optiker</td><td>optician</td><td>opticien</td><td>opticien</td></tr><tr><td>perspharmacyassistant</td><td>Apothekenhelfer</td><td>pharmacy assistant</td><td>assistant en pharmacie</td><td>apothekersassistent</td></tr><tr><td>persphysiotherapist</td><td>Krankengymnast</td><td>physiotherapist</td><td>kinésithérapeute</td><td>kinesitherapeut</td></tr><tr><td>perspodologist</td><td>Podologe</td><td>podologist</td><td>podologue</td><td>podologist</td></tr><tr><td>perspracticalnurse</td><td>Pfleger</td><td>practical nurse</td><td>aide-soignante</td><td>verzorgende</td></tr><tr><td>perspsychologist</td><td>Psychologe</td><td>psychologist</td><td>psychologue</td><td>psycholoog</td></tr><tr><td>orgprimaryhealthcarecenter</td><td>Gesundheitspflege der ersten Linie</td><td>primary health care center</td><td>Maison médicale</td><td>medisch huis</td></tr><tr><td>guardpost</td><td>Wachposten</td><td>Guard post</td><td>poste de garde</td><td>wachtpost</td></tr><tr><td>groupofphysicianssameaddress</td><td>Gruppierung von Ärzten gleiche Adresse</td><td>Group of physicians same address</td><td>regroupement de médecins même adresse</td><td>groepering van artsen zelfde adres</td></tr><tr><td>groupofphysiciansdifferentaddress</td><td>Gruppierung von Ärzten andere Adresse</td><td>Group of physicians different address</td><td>Regroupement de médecins adresse différente</td><td>Groepering van artsen verschillend adres</td></tr><tr><td>groupofnurses</td><td>Krankenpflegeverein</td><td>Group of nurses</td><td>Regroupement d'infirmiers</td><td>Groepering van verplegers</td></tr><tr><td>certificateholder</td><td>Zertifikatsinhaber</td><td>Certificate holder</td><td>Titulaire du certificat</td><td>Houder van certificaat</td></tr><tr><td>perstrussmaker</td><td>Bandagist</td><td>Truss maker</td><td>Bandagiste</td><td>Bandagist</td></tr><tr><td>patient</td><td>Patient</td><td>Patient</td><td>Patient</td><td>Patient</td></tr><tr><td>persorthotist</td><td>Orthopädietechniker</td><td>Orthotist</td><td>Orthésiste/Prothésiste</td><td>Orthopedische technieker</td></tr><tr><td>perspatientdriver</td><td>Patientenfahrer (nicht dringend)</td><td>Patient driver (not urgent)</td><td>Transporteur de patient (non urgent)</td><td>Ziekenvervoerder (niet urgent)</td></tr><tr><td>orgprevention</td><td>Präventionsdienst</td><td>Prevention organisation</td><td>Service de pévention</td><td>Preventiedienst</td></tr><tr><td>perspharmacistclinicalbiologist</td><td>Apotheker-klinische Biologe</td><td>pharmacist-clinical biologist</td><td>pharmacien-biologiste clinicien</td><td>apotheker-klinisch bioloog</td></tr><tr><td>hub</td><td>hub</td><td>hub</td><td>hub</td><td>hub</td></tr><tr><td>deptnursing</td><td>Krankenpflege</td><td>nursing</td><td>soins infirmiers</td><td>verpleegkunde</td></tr><tr><td>persoraldentalhygienist</td><td>Dentalhygieniker</td><td>Oral dental hygienist</td><td>Hygiéniste bucco-dentaire</td><td>Mondhygiënist</td></tr><tr><td>persclinicalpsychologist</td><td>Klinischer Psychologe</td><td>Clinical psychologist</td><td>Psychologue clinicien</td><td>Klinisch psycholoog</td></tr><tr><td>persclinicalorthopedagogist</td><td>Klinischer Orthopädagoge</td><td>Clinical orthopedagogist</td><td>Orthopédagogue clinicien</td><td>Klinisch orthopedagoog</td></tr><tr><td>orgretirementhome</td><td>Altenheim</td><td>retirementhome</td><td>maison de repos</td><td>woonzorgcentrum</td></tr><tr><td>orgrevalidationcenter</td><td>Unfallkrankenhaus</td><td>revalidation center</td><td>centre de revalidation</td><td>revalidatiecentrum</td></tr><tr><td>orgshelteredliving</td><td>geschütztes Leben</td><td>sheltered living</td><td>initiative d’habitation protégée</td><td>initiatief voor beschut wonen</td></tr><tr><td>orgpsychiatriccarehome</td><td>psychiatrisches Pflegeheim</td><td>psychiatric care home</td><td>maison de soins psychiatriques</td><td>psychiatrische verzorgingstehuis</td></tr><tr><td>orgpolyclinic</td><td>Poliklinik</td><td>polyclinic</td><td>polyclinique</td><td>polikliniek</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-hcparty"];
-  fhir:CodeSystem.version [ fhir:value "1.0.0"];
+  fhir:CodeSystem.version [ fhir:value "1.1.0"];
   fhir:CodeSystem.name [ fhir:value "HCParty"];
-  fhir:CodeSystem.title [ fhir:value "HCParty"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:CodeSystem.date [ fhir:value "2019-12-19T09:13:57+01:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2020-09-25T13:06:43+02:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "eHealth Platform"];
   fhir:CodeSystem.contact [
      fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "eHealth Platform" ];
      fhir:ContactDetail.telecom [
        fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "other" ];
-       fhir:ContactPoint.value [ fhir:value "http://hl7.org/Special/committees/fiwg" ]
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.ehealth.fgov.be" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ContactDetail.name [ fhir:value "Message structure" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "email" ];
+       fhir:ContactPoint.value [ fhir:value "message-structure@ehealth.fgov.be" ]
      ]
   ];
   fhir:CodeSystem.description [ fhir:value "healthcare party in Belgium."];
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
-  fhir:CodeSystem.caseSensitive [ fhir:value "false"^^xsd:boolean];
   fhir:CodeSystem.content [ fhir:value "complete"];
   fhir:CodeSystem.concept [
      fhir:index 0;
@@ -713,27 +711,6 @@
      ]
   ], [
      fhir:index 32;
-     fhir:CodeSystem.concept.code [ fhir:value "deptrhumatology (deprecated)" ];
-     fhir:CodeSystem.concept.display [ fhir:value "rhumatology" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "rhumatology" ]
-     ], [
-       fhir:index 1;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "reumatologie" ]
-     ], [
-       fhir:index 2;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "rhumatologie" ]
-     ], [
-       fhir:index 3;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Rheumatologie" ]
-     ]
-  ], [
-     fhir:index 33;
      fhir:CodeSystem.concept.code [ fhir:value "deptstomatology" ];
      fhir:CodeSystem.concept.display [ fhir:value "stomatology" ];
      fhir:CodeSystem.concept.designation [
@@ -754,7 +731,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Stomatologie" ]
      ]
   ], [
-     fhir:index 34;
+     fhir:index 33;
      fhir:CodeSystem.concept.code [ fhir:value "deptsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -775,7 +752,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Chirurgie" ]
      ]
   ], [
-     fhir:index 35;
+     fhir:index 34;
      fhir:CodeSystem.concept.code [ fhir:value "depttoxicology" ];
      fhir:CodeSystem.concept.display [ fhir:value "toxicology" ];
      fhir:CodeSystem.concept.designation [
@@ -796,7 +773,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Toxikologie" ]
      ]
   ], [
-     fhir:index 36;
+     fhir:index 35;
      fhir:CodeSystem.concept.code [ fhir:value "depturology" ];
      fhir:CodeSystem.concept.display [ fhir:value "urology" ];
      fhir:CodeSystem.concept.designation [
@@ -817,7 +794,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Urologie" ]
      ]
   ], [
-     fhir:index 37;
+     fhir:index 36;
      fhir:CodeSystem.concept.code [ fhir:value "orghospital" ];
      fhir:CodeSystem.concept.display [ fhir:value "hospital" ];
      fhir:CodeSystem.concept.designation [
@@ -838,7 +815,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Krankenhaus" ]
      ]
   ], [
-     fhir:index 38;
+     fhir:index 37;
      fhir:CodeSystem.concept.code [ fhir:value "orginsurance" ];
      fhir:CodeSystem.concept.display [ fhir:value "insurance" ];
      fhir:CodeSystem.concept.designation [
@@ -859,7 +836,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Versicherung" ]
      ]
   ], [
-     fhir:index 39;
+     fhir:index 38;
      fhir:CodeSystem.concept.code [ fhir:value "orglaboratory" ];
      fhir:CodeSystem.concept.display [ fhir:value "Independent laboratory" ];
      fhir:CodeSystem.concept.designation [
@@ -880,7 +857,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Unabhängiges Laboratorium" ]
      ]
   ], [
-     fhir:index 40;
+     fhir:index 39;
      fhir:CodeSystem.concept.code [ fhir:value "orgpublichealth" ];
      fhir:CodeSystem.concept.display [ fhir:value "public health organisation" ];
      fhir:CodeSystem.concept.designation [
@@ -901,7 +878,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Gesundheitsbehörde" ]
      ]
   ], [
-     fhir:index 41;
+     fhir:index 40;
      fhir:CodeSystem.concept.code [ fhir:value "persbiologist" ];
      fhir:CodeSystem.concept.display [ fhir:value "medical laboratory technician" ];
      fhir:CodeSystem.concept.designation [
@@ -922,7 +899,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "medizinischer Labortechniker" ]
      ]
   ], [
-     fhir:index 42;
+     fhir:index 41;
      fhir:CodeSystem.concept.code [ fhir:value "persdentist" ];
      fhir:CodeSystem.concept.display [ fhir:value "dentist" ];
      fhir:CodeSystem.concept.designation [
@@ -943,7 +920,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Zahnarzt" ]
      ]
   ], [
-     fhir:index 43;
+     fhir:index 42;
      fhir:CodeSystem.concept.code [ fhir:value "persnurse" ];
      fhir:CodeSystem.concept.display [ fhir:value "nurse" ];
      fhir:CodeSystem.concept.designation [
@@ -964,7 +941,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Krankenpfleger/in" ]
      ]
   ], [
-     fhir:index 44;
+     fhir:index 43;
      fhir:CodeSystem.concept.code [ fhir:value "persparamedical" ];
      fhir:CodeSystem.concept.display [ fhir:value "paramedical" ];
      fhir:CodeSystem.concept.designation [
@@ -985,7 +962,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "medizinisches Hilfspersonal" ]
      ]
   ], [
-     fhir:index 45;
+     fhir:index 44;
      fhir:CodeSystem.concept.code [ fhir:value "perspharmacist" ];
      fhir:CodeSystem.concept.display [ fhir:value "pharmacist" ];
      fhir:CodeSystem.concept.designation [
@@ -1006,7 +983,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Apotheker" ]
      ]
   ], [
-     fhir:index 46;
+     fhir:index 45;
      fhir:CodeSystem.concept.code [ fhir:value "persphysician" ];
      fhir:CodeSystem.concept.display [ fhir:value "physician" ];
      fhir:CodeSystem.concept.designation [
@@ -1027,7 +1004,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Arzt" ]
      ]
   ], [
-     fhir:index 47;
+     fhir:index 46;
      fhir:CodeSystem.concept.code [ fhir:value "perssocialworker" ];
      fhir:CodeSystem.concept.display [ fhir:value "social worker" ];
      fhir:CodeSystem.concept.designation [
@@ -1048,7 +1025,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Sozialarbeiter" ]
      ]
   ], [
-     fhir:index 48;
+     fhir:index 47;
      fhir:CodeSystem.concept.code [ fhir:value "perstechnician" ];
      fhir:CodeSystem.concept.display [ fhir:value "Medical Imaging Technician" ];
      fhir:CodeSystem.concept.designation [
@@ -1069,7 +1046,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "medizinische Bildgebung Techniker" ]
      ]
   ], [
-     fhir:index 49;
+     fhir:index 48;
      fhir:CodeSystem.concept.code [ fhir:value "persadministrative" ];
      fhir:CodeSystem.concept.display [ fhir:value "administrative" ];
      fhir:CodeSystem.concept.designation [
@@ -1090,7 +1067,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Büroangestellte(r)" ]
      ]
   ], [
-     fhir:index 50;
+     fhir:index 49;
      fhir:CodeSystem.concept.code [ fhir:value "persmidwife" ];
      fhir:CodeSystem.concept.display [ fhir:value "midwife" ];
      fhir:CodeSystem.concept.designation [
@@ -1111,7 +1088,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Hebamme" ]
      ]
   ], [
-     fhir:index 51;
+     fhir:index 50;
      fhir:CodeSystem.concept.code [ fhir:value "application" ];
      fhir:CodeSystem.concept.display [ fhir:value "software application" ];
      fhir:CodeSystem.concept.designation [
@@ -1132,7 +1109,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Softwareapplikation" ]
      ]
   ], [
-     fhir:index 52;
+     fhir:index 51;
      fhir:CodeSystem.concept.code [ fhir:value "deptorthopedy" ];
      fhir:CodeSystem.concept.display [ fhir:value "orthopedy" ];
      fhir:CodeSystem.concept.designation [
@@ -1153,7 +1130,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopädie" ]
      ]
   ], [
-     fhir:index 53;
+     fhir:index 52;
      fhir:CodeSystem.concept.code [ fhir:value "orgpractice" ];
      fhir:CodeSystem.concept.display [ fhir:value "practice organisation" ];
      fhir:CodeSystem.concept.designation [
@@ -1174,7 +1151,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Praxis" ]
      ]
   ], [
-     fhir:index 54;
+     fhir:index 53;
      fhir:CodeSystem.concept.code [ fhir:value "orgpharmacy" ];
      fhir:CodeSystem.concept.display [ fhir:value "Independent pharmacy" ];
      fhir:CodeSystem.concept.designation [
@@ -1195,7 +1172,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Unabhängige Apotheke" ]
      ]
   ], [
-     fhir:index 55;
+     fhir:index 54;
      fhir:CodeSystem.concept.code [ fhir:value "deptalgology" ];
      fhir:CodeSystem.concept.display [ fhir:value "algology" ];
      fhir:CodeSystem.concept.designation [
@@ -1216,7 +1193,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Algologie" ]
      ]
   ], [
-     fhir:index 56;
+     fhir:index 55;
      fhir:CodeSystem.concept.code [ fhir:value "deptcardiacsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "cardiac surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1237,7 +1214,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Herzchirurgie" ]
      ]
   ], [
-     fhir:index 57;
+     fhir:index 56;
      fhir:CodeSystem.concept.code [ fhir:value "depthandsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "hand surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1258,7 +1235,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Handchirurgie" ]
      ]
   ], [
-     fhir:index 58;
+     fhir:index 57;
      fhir:CodeSystem.concept.code [ fhir:value "deptmaxillofacialsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "maxillofacial surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1279,7 +1256,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Mund-Kiefer-Gesichtschirurgie" ]
      ]
   ], [
-     fhir:index 59;
+     fhir:index 58;
      fhir:CodeSystem.concept.code [ fhir:value "deptpediatricsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "pediatric surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1300,7 +1277,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Kinderchirurgie" ]
      ]
   ], [
-     fhir:index 60;
+     fhir:index 59;
      fhir:CodeSystem.concept.code [ fhir:value "deptplasticandreparatorysurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "plastic and reparatory surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1321,7 +1298,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "plastische Chirurgie und Reparaturchirurgie" ]
      ]
   ], [
-     fhir:index 61;
+     fhir:index 60;
      fhir:CodeSystem.concept.code [ fhir:value "deptthoracicsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "thoracic surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1342,7 +1319,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Thoraxchirurgie" ]
      ]
   ], [
-     fhir:index 62;
+     fhir:index 61;
      fhir:CodeSystem.concept.code [ fhir:value "deptvascularsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "vascular surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1363,7 +1340,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Vaskuläre Chirurgie" ]
      ]
   ], [
-     fhir:index 63;
+     fhir:index 62;
      fhir:CodeSystem.concept.code [ fhir:value "deptvisceraldigestiveabdominalsurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "visceral digestive abdominal surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1384,7 +1361,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Viszeralchirurgie/Abdominalchirurgie/Bauchchirurgie" ]
      ]
   ], [
-     fhir:index 64;
+     fhir:index 63;
      fhir:CodeSystem.concept.code [ fhir:value "deptdentistry" ];
      fhir:CodeSystem.concept.display [ fhir:value "dentistry" ];
      fhir:CodeSystem.concept.designation [
@@ -1405,7 +1382,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Zahnheilkunde" ]
      ]
   ], [
-     fhir:index 65;
+     fhir:index 64;
      fhir:CodeSystem.concept.code [ fhir:value "deptdiabetology" ];
      fhir:CodeSystem.concept.display [ fhir:value "diabetology" ];
      fhir:CodeSystem.concept.designation [
@@ -1426,7 +1403,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Diabetologie" ]
      ]
   ], [
-     fhir:index 66;
+     fhir:index 65;
      fhir:CodeSystem.concept.code [ fhir:value "deptendocrinology" ];
      fhir:CodeSystem.concept.display [ fhir:value "endocrinology" ];
      fhir:CodeSystem.concept.designation [
@@ -1447,7 +1424,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Endokrinologie" ]
      ]
   ], [
-     fhir:index 67;
+     fhir:index 66;
      fhir:CodeSystem.concept.code [ fhir:value "deptoccupationaltherapy" ];
      fhir:CodeSystem.concept.display [ fhir:value "occupational therapy" ];
      fhir:CodeSystem.concept.designation [
@@ -1468,7 +1445,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Ergotherapie" ]
      ]
   ], [
-     fhir:index 68;
+     fhir:index 67;
      fhir:CodeSystem.concept.code [ fhir:value "deptmajorburns" ];
      fhir:CodeSystem.concept.display [ fhir:value "major burns" ];
      fhir:CodeSystem.concept.designation [
@@ -1489,7 +1466,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Zentrum für Schwerbrandverletzte" ]
      ]
   ], [
-     fhir:index 69;
+     fhir:index 68;
      fhir:CodeSystem.concept.code [ fhir:value "deptinfectiousdisease" ];
      fhir:CodeSystem.concept.display [ fhir:value "infectious disease" ];
      fhir:CodeSystem.concept.designation [
@@ -1510,7 +1487,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Infektionskrankheit" ]
      ]
   ], [
-     fhir:index 70;
+     fhir:index 69;
      fhir:CodeSystem.concept.code [ fhir:value "deptspeechtherapy" ];
      fhir:CodeSystem.concept.display [ fhir:value "speech therapy" ];
      fhir:CodeSystem.concept.designation [
@@ -1531,7 +1508,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Sprachtherapie" ]
      ]
   ], [
-     fhir:index 71;
+     fhir:index 70;
      fhir:CodeSystem.concept.code [ fhir:value "deptsportsmedecine" ];
      fhir:CodeSystem.concept.display [ fhir:value "sports medecine" ];
      fhir:CodeSystem.concept.designation [
@@ -1552,7 +1529,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Sportmedizin" ]
      ]
   ], [
-     fhir:index 72;
+     fhir:index 71;
      fhir:CodeSystem.concept.code [ fhir:value "deptphysicalmedecine" ];
      fhir:CodeSystem.concept.display [ fhir:value "physical medecine" ];
      fhir:CodeSystem.concept.designation [
@@ -1573,7 +1550,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "physikalische Medizin" ]
      ]
   ], [
-     fhir:index 73;
+     fhir:index 72;
      fhir:CodeSystem.concept.code [ fhir:value "depttropicalmedecine" ];
      fhir:CodeSystem.concept.display [ fhir:value "tropical medecine" ];
      fhir:CodeSystem.concept.designation [
@@ -1594,7 +1571,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Tropenmedizin" ]
      ]
   ], [
-     fhir:index 74;
+     fhir:index 73;
      fhir:CodeSystem.concept.code [ fhir:value "deptneurosurgery" ];
      fhir:CodeSystem.concept.display [ fhir:value "neuro surgery" ];
      fhir:CodeSystem.concept.designation [
@@ -1615,7 +1592,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Neurologie" ]
      ]
   ], [
-     fhir:index 75;
+     fhir:index 74;
      fhir:CodeSystem.concept.code [ fhir:value "deptnutritiondietetics" ];
      fhir:CodeSystem.concept.display [ fhir:value "nutrition dietetics" ];
      fhir:CodeSystem.concept.designation [
@@ -1636,7 +1613,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Diätetik" ]
      ]
   ], [
-     fhir:index 76;
+     fhir:index 75;
      fhir:CodeSystem.concept.code [ fhir:value "deptobstetrics" ];
      fhir:CodeSystem.concept.display [ fhir:value "obstetrics" ];
      fhir:CodeSystem.concept.designation [
@@ -1657,7 +1634,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Geburtshilfe" ]
      ]
   ], [
-     fhir:index 77;
+     fhir:index 76;
      fhir:CodeSystem.concept.code [ fhir:value "deptchildandadolescentpsychiatry" ];
      fhir:CodeSystem.concept.display [ fhir:value "child and adolescent psychiatry" ];
      fhir:CodeSystem.concept.designation [
@@ -1678,7 +1655,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Kinder-und Jugendpsychologie" ]
      ]
   ], [
-     fhir:index 78;
+     fhir:index 77;
      fhir:CodeSystem.concept.code [ fhir:value "deptpodiatry" ];
      fhir:CodeSystem.concept.display [ fhir:value "podiatry" ];
      fhir:CodeSystem.concept.designation [
@@ -1699,7 +1676,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Podiatrie" ]
      ]
   ], [
-     fhir:index 79;
+     fhir:index 78;
      fhir:CodeSystem.concept.code [ fhir:value "deptpsychology" ];
      fhir:CodeSystem.concept.display [ fhir:value "psychology" ];
      fhir:CodeSystem.concept.designation [
@@ -1720,7 +1697,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Psychologie" ]
      ]
   ], [
-     fhir:index 80;
+     fhir:index 79;
      fhir:CodeSystem.concept.code [ fhir:value "deptrevalidation" ];
      fhir:CodeSystem.concept.display [ fhir:value "revalidation" ];
      fhir:CodeSystem.concept.designation [
@@ -1741,7 +1718,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Rehabilitation" ]
      ]
   ], [
-     fhir:index 81;
+     fhir:index 80;
      fhir:CodeSystem.concept.code [ fhir:value "deptsenology" ];
      fhir:CodeSystem.concept.display [ fhir:value "senology" ];
      fhir:CodeSystem.concept.designation [
@@ -1762,7 +1739,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Senologie" ]
      ]
   ], [
-     fhir:index 82;
+     fhir:index 81;
      fhir:CodeSystem.concept.code [ fhir:value "deptsocialservice" ];
      fhir:CodeSystem.concept.display [ fhir:value "social service" ];
      fhir:CodeSystem.concept.designation [
@@ -1783,7 +1760,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Sozialdienst" ]
      ]
   ], [
-     fhir:index 83;
+     fhir:index 82;
      fhir:CodeSystem.concept.code [ fhir:value "deptpediatricintensivecare" ];
      fhir:CodeSystem.concept.display [ fhir:value "pediatric intensive care" ];
      fhir:CodeSystem.concept.designation [
@@ -1804,7 +1781,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Intensivpflege für Kinder" ]
      ]
   ], [
-     fhir:index 84;
+     fhir:index 83;
      fhir:CodeSystem.concept.code [ fhir:value "deptpalliativecare" ];
      fhir:CodeSystem.concept.display [ fhir:value "palliative care" ];
      fhir:CodeSystem.concept.designation [
@@ -1825,7 +1802,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Palliativpflege" ]
      ]
   ], [
-     fhir:index 85;
+     fhir:index 84;
      fhir:CodeSystem.concept.code [ fhir:value "deptrheumatology" ];
      fhir:CodeSystem.concept.display [ fhir:value "rheumatology" ];
      fhir:CodeSystem.concept.designation [
@@ -1846,7 +1823,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Rheumatologie" ]
      ]
   ], [
-     fhir:index 86;
+     fhir:index 85;
      fhir:CodeSystem.concept.code [ fhir:value "persambulancefirstaid" ];
      fhir:CodeSystem.concept.display [ fhir:value "ambulance first aid" ];
      fhir:CodeSystem.concept.designation [
@@ -1867,7 +1844,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Krankenwagen erste Hilfe" ]
      ]
   ], [
-     fhir:index 87;
+     fhir:index 86;
      fhir:CodeSystem.concept.code [ fhir:value "persaudician" ];
      fhir:CodeSystem.concept.display [ fhir:value "audician" ];
      fhir:CodeSystem.concept.designation [
@@ -1888,7 +1865,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Hörgeräteakustiker" ]
      ]
   ], [
-     fhir:index 88;
+     fhir:index 87;
      fhir:CodeSystem.concept.code [ fhir:value "persaudiologist" ];
      fhir:CodeSystem.concept.display [ fhir:value "audiologist" ];
      fhir:CodeSystem.concept.designation [
@@ -1909,7 +1886,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Audiologe" ]
      ]
   ], [
-     fhir:index 89;
+     fhir:index 88;
      fhir:CodeSystem.concept.code [ fhir:value "perscaregiver" ];
      fhir:CodeSystem.concept.display [ fhir:value "caregiver" ];
      fhir:CodeSystem.concept.designation [
@@ -1928,9 +1905,14 @@
        fhir:index 3;
        fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
        fhir:CodeSystem.concept.designation.value [ fhir:value "Pflegeperson" ]
+     ];
+     fhir:CodeSystem.concept.property [
+       fhir:index 0;
+       fhir:CodeSystem.concept.property.code [ fhir:value "status" ];
+       fhir:CodeSystem.concept.property.valueCode [ fhir:value "deprecated" ]
      ]
   ], [
-     fhir:index 90;
+     fhir:index 89;
      fhir:CodeSystem.concept.code [ fhir:value "persdietician" ];
      fhir:CodeSystem.concept.display [ fhir:value "dietician" ];
      fhir:CodeSystem.concept.designation [
@@ -1951,7 +1933,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Diätist" ]
      ]
   ], [
-     fhir:index 91;
+     fhir:index 90;
      fhir:CodeSystem.concept.code [ fhir:value "perseducator" ];
      fhir:CodeSystem.concept.display [ fhir:value "educator" ];
      fhir:CodeSystem.concept.designation [
@@ -1972,7 +1954,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Erzieher" ]
      ]
   ], [
-     fhir:index 92;
+     fhir:index 91;
      fhir:CodeSystem.concept.code [ fhir:value "perslogopedist" ];
      fhir:CodeSystem.concept.display [ fhir:value "logopedist" ];
      fhir:CodeSystem.concept.designation [
@@ -1993,7 +1975,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Logopäde" ]
      ]
   ], [
-     fhir:index 93;
+     fhir:index 92;
      fhir:CodeSystem.concept.code [ fhir:value "persoccupationaltherapist" ];
      fhir:CodeSystem.concept.display [ fhir:value "occupational therapist" ];
      fhir:CodeSystem.concept.designation [
@@ -2014,28 +1996,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Ergotherapeut" ]
      ]
   ], [
-     fhir:index 94;
-     fhir:CodeSystem.concept.code [ fhir:value "persorthopedist (deprecated)" ];
-     fhir:CodeSystem.concept.display [ fhir:value "orthopedist" ];
-     fhir:CodeSystem.concept.designation [
-       fhir:index 0;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "orthopedist" ]
-     ], [
-       fhir:index 1;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "orthopedist" ]
-     ], [
-       fhir:index 2;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "orthopédiste" ]
-     ], [
-       fhir:index 3;
-       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
-       fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopädist" ]
-     ]
-  ], [
-     fhir:index 95;
+     fhir:index 93;
      fhir:CodeSystem.concept.code [ fhir:value "persorthoptist" ];
      fhir:CodeSystem.concept.display [ fhir:value "orthoptist" ];
      fhir:CodeSystem.concept.designation [
@@ -2056,7 +2017,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Orthoptist" ]
      ]
   ], [
-     fhir:index 96;
+     fhir:index 94;
      fhir:CodeSystem.concept.code [ fhir:value "persoptician" ];
      fhir:CodeSystem.concept.display [ fhir:value "optician" ];
      fhir:CodeSystem.concept.designation [
@@ -2077,7 +2038,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Optiker" ]
      ]
   ], [
-     fhir:index 97;
+     fhir:index 95;
      fhir:CodeSystem.concept.code [ fhir:value "perspharmacyassistant" ];
      fhir:CodeSystem.concept.display [ fhir:value "pharmacy assistant" ];
      fhir:CodeSystem.concept.designation [
@@ -2098,7 +2059,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Apothekenhelfer" ]
      ]
   ], [
-     fhir:index 98;
+     fhir:index 96;
      fhir:CodeSystem.concept.code [ fhir:value "persphysiotherapist" ];
      fhir:CodeSystem.concept.display [ fhir:value "physiotherapist" ];
      fhir:CodeSystem.concept.designation [
@@ -2119,7 +2080,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Krankengymnast" ]
      ]
   ], [
-     fhir:index 99;
+     fhir:index 97;
      fhir:CodeSystem.concept.code [ fhir:value "perspodologist" ];
      fhir:CodeSystem.concept.display [ fhir:value "podologist" ];
      fhir:CodeSystem.concept.designation [
@@ -2140,7 +2101,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Podologe" ]
      ]
   ], [
-     fhir:index 100;
+     fhir:index 98;
      fhir:CodeSystem.concept.code [ fhir:value "perspracticalnurse" ];
      fhir:CodeSystem.concept.display [ fhir:value "practical nurse" ];
      fhir:CodeSystem.concept.designation [
@@ -2161,7 +2122,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Pfleger" ]
      ]
   ], [
-     fhir:index 101;
+     fhir:index 99;
      fhir:CodeSystem.concept.code [ fhir:value "perspsychologist" ];
      fhir:CodeSystem.concept.display [ fhir:value "psychologist" ];
      fhir:CodeSystem.concept.designation [
@@ -2182,7 +2143,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Psychologe" ]
      ]
   ], [
-     fhir:index 102;
+     fhir:index 100;
      fhir:CodeSystem.concept.code [ fhir:value "orgprimaryhealthcarecenter" ];
      fhir:CodeSystem.concept.display [ fhir:value "primary health care center" ];
      fhir:CodeSystem.concept.designation [
@@ -2203,7 +2164,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Gesundheitspflege der ersten Linie" ]
      ]
   ], [
-     fhir:index 103;
+     fhir:index 101;
      fhir:CodeSystem.concept.code [ fhir:value "guardpost" ];
      fhir:CodeSystem.concept.display [ fhir:value "Guard post" ];
      fhir:CodeSystem.concept.designation [
@@ -2224,7 +2185,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Wachposten" ]
      ]
   ], [
-     fhir:index 104;
+     fhir:index 102;
      fhir:CodeSystem.concept.code [ fhir:value "groupofphysicianssameaddress" ];
      fhir:CodeSystem.concept.display [ fhir:value "Group of physicians same address" ];
      fhir:CodeSystem.concept.designation [
@@ -2245,7 +2206,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Gruppierung von Ärzten gleiche Adresse" ]
      ]
   ], [
-     fhir:index 105;
+     fhir:index 103;
      fhir:CodeSystem.concept.code [ fhir:value "groupofphysiciansdifferentaddress" ];
      fhir:CodeSystem.concept.display [ fhir:value "Group of physicians different address" ];
      fhir:CodeSystem.concept.designation [
@@ -2266,7 +2227,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Gruppierung von Ärzten andere Adresse" ]
      ]
   ], [
-     fhir:index 106;
+     fhir:index 104;
      fhir:CodeSystem.concept.code [ fhir:value "groupofnurses" ];
      fhir:CodeSystem.concept.display [ fhir:value "Group of nurses" ];
      fhir:CodeSystem.concept.designation [
@@ -2287,7 +2248,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Krankenpflegeverein" ]
      ]
   ], [
-     fhir:index 107;
+     fhir:index 105;
      fhir:CodeSystem.concept.code [ fhir:value "certificateholder" ];
      fhir:CodeSystem.concept.display [ fhir:value "Certificate holder" ];
      fhir:CodeSystem.concept.designation [
@@ -2308,7 +2269,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Zertifikatsinhaber" ]
      ]
   ], [
-     fhir:index 108;
+     fhir:index 106;
      fhir:CodeSystem.concept.code [ fhir:value "perstrussmaker" ];
      fhir:CodeSystem.concept.display [ fhir:value "Truss maker" ];
      fhir:CodeSystem.concept.designation [
@@ -2329,7 +2290,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Bandagist" ]
      ]
   ], [
-     fhir:index 109;
+     fhir:index 107;
      fhir:CodeSystem.concept.code [ fhir:value "patient" ];
      fhir:CodeSystem.concept.display [ fhir:value "Patient" ];
      fhir:CodeSystem.concept.designation [
@@ -2350,7 +2311,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Patient" ]
      ]
   ], [
-     fhir:index 110;
+     fhir:index 108;
      fhir:CodeSystem.concept.code [ fhir:value "persorthotist" ];
      fhir:CodeSystem.concept.display [ fhir:value "Orthotist" ];
      fhir:CodeSystem.concept.designation [
@@ -2371,7 +2332,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Orthopädietechniker" ]
      ]
   ], [
-     fhir:index 111;
+     fhir:index 109;
      fhir:CodeSystem.concept.code [ fhir:value "perspatientdriver" ];
      fhir:CodeSystem.concept.display [ fhir:value "Patient driver (not urgent)" ];
      fhir:CodeSystem.concept.designation [
@@ -2392,7 +2353,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Patientenfahrer (nicht dringend)" ]
      ]
   ], [
-     fhir:index 112;
+     fhir:index 110;
      fhir:CodeSystem.concept.code [ fhir:value "orgprevention" ];
      fhir:CodeSystem.concept.display [ fhir:value "Prevention organisation" ];
      fhir:CodeSystem.concept.designation [
@@ -2413,7 +2374,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Präventionsdienst" ]
      ]
   ], [
-     fhir:index 113;
+     fhir:index 111;
      fhir:CodeSystem.concept.code [ fhir:value "perspharmacistclinicalbiologist" ];
      fhir:CodeSystem.concept.display [ fhir:value "pharmacist-clinical biologist" ];
      fhir:CodeSystem.concept.designation [
@@ -2434,7 +2395,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Apotheker-klinische Biologe" ]
      ]
   ], [
-     fhir:index 114;
+     fhir:index 112;
      fhir:CodeSystem.concept.code [ fhir:value "hub" ];
      fhir:CodeSystem.concept.display [ fhir:value "hub" ];
      fhir:CodeSystem.concept.designation [
@@ -2455,7 +2416,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "hub" ]
      ]
   ], [
-     fhir:index 115;
+     fhir:index 113;
      fhir:CodeSystem.concept.code [ fhir:value "deptnursing" ];
      fhir:CodeSystem.concept.display [ fhir:value "nursing" ];
      fhir:CodeSystem.concept.designation [
@@ -2476,7 +2437,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Krankenpflege" ]
      ]
   ], [
-     fhir:index 116;
+     fhir:index 114;
      fhir:CodeSystem.concept.code [ fhir:value "persoraldentalhygienist" ];
      fhir:CodeSystem.concept.display [ fhir:value "Oral dental hygienist" ];
      fhir:CodeSystem.concept.designation [
@@ -2497,7 +2458,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Dentalhygieniker" ]
      ]
   ], [
-     fhir:index 117;
+     fhir:index 115;
      fhir:CodeSystem.concept.code [ fhir:value "persclinicalpsychologist" ];
      fhir:CodeSystem.concept.display [ fhir:value "Clinical psychologist" ];
      fhir:CodeSystem.concept.designation [
@@ -2518,7 +2479,7 @@
        fhir:CodeSystem.concept.designation.value [ fhir:value "Klinischer Psychologe" ]
      ]
   ], [
-     fhir:index 118;
+     fhir:index 116;
      fhir:CodeSystem.concept.code [ fhir:value "persclinicalorthopedagogist" ];
      fhir:CodeSystem.concept.display [ fhir:value "Clinical orthopedagogist" ];
      fhir:CodeSystem.concept.designation [
@@ -2537,6 +2498,111 @@
        fhir:index 3;
        fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
        fhir:CodeSystem.concept.designation.value [ fhir:value "Klinischer Orthopädagoge" ]
+     ]
+  ], [
+     fhir:index 117;
+     fhir:CodeSystem.concept.code [ fhir:value "orgretirementhome" ];
+     fhir:CodeSystem.concept.display [ fhir:value "retirementhome" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "retirementhome" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "woonzorgcentrum" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "maison de repos" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Altenheim" ]
+     ]
+  ], [
+     fhir:index 118;
+     fhir:CodeSystem.concept.code [ fhir:value "orgrevalidationcenter" ];
+     fhir:CodeSystem.concept.display [ fhir:value "revalidation center" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "revalidation center" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "revalidatiecentrum" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "centre de revalidation" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Unfallkrankenhaus" ]
+     ]
+  ], [
+     fhir:index 119;
+     fhir:CodeSystem.concept.code [ fhir:value "orgshelteredliving" ];
+     fhir:CodeSystem.concept.display [ fhir:value "sheltered living" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "sheltered living" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "initiatief voor beschut wonen" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "initiative d’habitation protégée" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "geschütztes Leben" ]
+     ]
+  ], [
+     fhir:index 120;
+     fhir:CodeSystem.concept.code [ fhir:value "orgpsychiatriccarehome" ];
+     fhir:CodeSystem.concept.display [ fhir:value "psychiatric care home" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "psychiatric care home" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "psychiatrische verzorgingstehuis" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "maison de soins psychiatriques" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "psychiatrisches Pflegeheim" ]
+     ]
+  ], [
+     fhir:index 121;
+     fhir:CodeSystem.concept.code [ fhir:value "orgpolyclinic" ];
+     fhir:CodeSystem.concept.display [ fhir:value "polyclinic" ];
+     fhir:CodeSystem.concept.designation [
+       fhir:index 0;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "en" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "polyclinic" ]
+     ], [
+       fhir:index 1;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "nl-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "polikliniek" ]
+     ], [
+       fhir:index 2;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "fr-BE" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "polyclinique" ]
+     ], [
+       fhir:index 3;
+       fhir:CodeSystem.concept.designation.language [ fhir:value "de" ];
+       fhir:CodeSystem.concept.designation.value [ fhir:value "Poliklinik" ]
      ]
   ] .
 

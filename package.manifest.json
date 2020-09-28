@@ -1,6 +1,6 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "fhirVersion": "[4.0.1]",
-  "date": "20191219091328",
-  "name": "hl7.be.core"
+  "date": "20200925130628",
+  "name": "fed.be.core"
 }

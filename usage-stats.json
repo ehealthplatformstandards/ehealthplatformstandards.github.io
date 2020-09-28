@@ -1,50 +1,49 @@
 {
-  "package": "hl7.be.core",
-  "version": "1.0.0",
+  "package": "fed.be.core",
+  "version": "1.1.0",
   "fhirVersion": "4.0.1",
-  "jurisdiction": "001",
   "extensions": [],
   "profiles": {
     "AllergyIntolerance": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance",
-        "title": "BeAllergyIntolerance"
+        "title": "Allergy Intolerance core BE profile"
       }
     ],
     "Observation": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-observation",
-        "title": "BeObservation"
+        "title": "Observation core BE profile"
       }
     ],
     "Organization": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-organization",
-        "title": "BeOrganization"
+        "title": "Organization core BE profile"
       }
     ],
     "Patient": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-patient",
-        "title": "BePatient"
+        "title": "Patient core BE profile"
       }
     ],
     "Practitioner": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner",
-        "title": "BePractitioner"
+        "title": "Practitioner core BE profile"
       }
     ],
     "PractitionerRole": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitionerrole",
-        "title": "BePractitionerRole"
+        "title": "Practitioner Role core BE profile"
       }
     ],
     "Provenance": [
       {
         "url": "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-provenance",
-        "title": "BeProvenance"
+        "title": "Provenance core BE profile"
       }
     ]
   },
@@ -64,12 +63,14 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
     ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
       "Address.line",
       "Bundle.entry.resource.address.line",
       "Organization.address.line",
-      "Patient.address.line",
-      "Practitioner.address.line"
+      "Patient.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
       "Address.line"
@@ -77,15 +78,14 @@
     "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
       "Address.line",
       "Bundle.entry.resource.address.line",
-      "Organization.address.line",
-      "Patient.address.line",
-      "Practitioner.address.line"
+      "Organization.address.line"
     ],
     "http://hl7.org/fhir/StructureDefinition/language": [
       "Address",
       "Bundle.entry.resource.address",
       "Organization.address",
-      "Patient.address"
+      "Patient.address",
+      "Practitioner.address"
     ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
       "Patient"
@@ -99,23 +99,29 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-json-type": [
-      "StructureDefinition.snapshot.element.type.code"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
-      "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-rdf-type": [
-      "StructureDefinition.snapshot.element.type.code"
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
+      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-xml-type": [
-      "StructureDefinition.snapshot.element.type.code"
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"

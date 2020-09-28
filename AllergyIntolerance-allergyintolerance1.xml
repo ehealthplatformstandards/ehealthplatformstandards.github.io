@@ -1,30 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <AllergyIntolerance xmlns="http://hl7.org/fhir">
-  <id value="allergyintolerance1"/>
+  <id value="allergyIntolerance1"/>
   <meta>
-    <versionId value="1"/>
-    <lastUpdated value="2019-07-01T13:30:55.864+00:00"/>
     <profile value="https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">
-      <p>
-        <b>Generated Narrative with Details</b>
-      </p>
-      <p>
-        <b>clinicalStatus</b>: Active <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical code 'active' = 'Active', given as 'Active'})</span></p>
-      <p>
-        <b>verificationStatus</b>: Confirmed <span>(Details : {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification code 'confirmed' = 'Confirmed', given as 'Confirmed'})</span></p>
-      <p>
-        <b>type</b>: allergy</p>
-      <p>
-        <b>category</b>: food</p>
-      <p>
-        <b>criticality</b>: high</p>
-      <p>
-        <b>code</b>: Peanut <span>(Details : {SNOMED CT code '762952008' = 'Peanut (substance)', given as 'Peanut (substance)'})</span></p>
-    </div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class="grid"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>clinicalStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical active}">Active</span></p><p><b>verificationStatus</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/allergyintolerance-verification confirmed}">Confirmed</span></p><p><b>type</b>: allergy</p><p><b>category</b>: food</p><p><b>criticality</b>: high</p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 278840001}">Allergic to shrimp</span></p><p><b>patient</b>: <a href="Patient-patient1.html">Generated Summary: Social Beneficiary Identifier: 79121137740 (OFFICIAL), Medical record number: 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio (OFFICIAL); nessa.laparadisio@belgium.be, Phone: +322476792979, Phone: +3226718655, Phone: +322476799; gender: female; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}">Divorced</span></a></p><p><b>onset</b>: 2004</p><p><b>recordedDate</b>: Oct 9, 2014 5:58:00 AM</p><p><b>recorder</b>: <a href="Practitioner-practitioner1.html">Generated Summary: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL); Katherine Pulaski (OFFICIAL); katherine.pulaski@enterprisehospital.be, Phone: 022675198, Fax: 022675209; gender: female; birthDate: 1979-12-11</a></p><p><b>asserter</b>: <a href="Patient-patient1.html">Generated Summary: Social Beneficiary Identifier: 79121137740 (OFFICIAL), Medical record number: 45XXP0PA-4 (USUAL); active; Josephine Nessa La Paradisio (OFFICIAL); nessa.laparadisio@belgium.be, Phone: +322476792979, Phone: +3226718655, Phone: +322476799; gender: female; birthDate: 1979-12-11; <span title="Codes: {http://terminology.hl7.org/CodeSystem/v3-MaritalStatus D}, {https://www.ehealth.fgov.be/standards/fhir/CodeSystem/cd-civilstate 41}">Divorced</span></a></p><p><b>lastOccurrence</b>: 2012-06</p><p><b>note</b>: Some extra information can be given here.</p><h3>Reactions</h3><table class="grid"><tr><td>-</td><td><b>Manifestation</b></td><td><b>Onset</b></td><td><b>Severity</b></td></tr><tr><td>*</td><td><span title="Codes: {http://snomed.info/sct 39579001}">Anaphylactic reaction</span></td><td>2012-06-12</td><td>severe</td></tr></table></div>
   </text>
   <clinicalStatus>
     <coding>
@@ -45,21 +27,21 @@
   <code>
     <coding>
       <system value="http://snomed.info/sct"/>
-      <code value="762952008"/>
-      <display value="Peanut (substance)"/>
+      <code value="278840001"/>
+      <display value="Shrimp (substance)"/>
     </coding>
-    <text value="Allergic to peanut"/>
+    <text value="Allergic to shrimp"/>
   </code>
   <patient>
-    <reference value="Patient/example"/>
+    <reference value="Patient/patient1"/>
   </patient>
   <onsetDateTime value="2004"/>
   <recordedDate value="2014-10-09T14:58:00+11:00"/>
   <recorder>
-    <reference value="Practitioner/example"/>
+    <reference value="Practitioner/practitioner1"/>
   </recorder>
   <asserter>
-    <reference value="Patient/example"/>
+    <reference value="Patient/patient1"/>
   </asserter>
   <lastOccurrence value="2012-06"/>
   <note>

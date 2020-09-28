@@ -3,7 +3,8 @@
 <NamingSystem xmlns="http://hl7.org/fhir">
   <id value="be-ssin"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: be-ssin</p><p><b>name</b>: BeSSINNamingSystem</p><p><b>status</b>: active</p><p><b>kind</b>: identifier</p><p><b>date</b>: 05-Jun-2019 00:00:00</p><p><b>publisher</b>: eHealth Platform</p><p><b>contact</b>: </p><p><b>description</b>: NISS/INSZ</p><p><b>jurisdiction</b>: World <span style="background: LightGoldenRodYellow">(Details : {http://unstats.un.org/unsd/methods/m49/m49.htm code '001' = 'World)</span></p><blockquote><p><b>uniqueId</b></p><p><b>type</b>: uri</p><p><b>value</b>: https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin</p><p><b>preferred</b>: true</p></blockquote><blockquote><p><b>uniqueId</b></p><p><b>type</b>: oid</p><p><b>value</b>: 2.16.840.1.113883.3.6777.5.1</p><p><b>preferred</b>: false</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/be-ssin</td></tr><tr><td>Name</td><td>BeSSINNamingSystem</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>NISS/INSZ</p>
+</div></td></tr><tr><td>Publisher</td><td>eHealth Platform</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin</td><td>true</td></tr><tr><td>OID</td><td>2.16.840.1.113883.3.6777.5.1</td><td>false</td></tr></table></div>
   </text>
   <name value="BeSSINNamingSystem"/>
   <status value="active"/>
@@ -11,18 +12,20 @@
   <date value="2019-06-05T00:00:00+02:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
+    <name value="eHealth Platform"/>
     <telecom>
-      <system value="other"/>
-      <value value="http://hl7.org/Special/committees/fiwg"/>
+      <system value="url"/>
+      <value value="https://www.ehealth.fgov.be"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Message structure"/>
+    <telecom>
+      <system value="email"/>
+      <value value="message-structure@ehealth.fgov.be"/>
     </telecom>
   </contact>
   <description value="NISS/INSZ"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <uniqueId>
     <type value="uri"/>
     <value value="https://www.ehealth.fgov.be/standards/fhir/NamingSystem/ssin"/>

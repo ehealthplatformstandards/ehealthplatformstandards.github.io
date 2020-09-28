@@ -2,15 +2,13 @@
   "resourceType": "Practitioner",
   "id": "practitioner1",
   "meta": {
-    "versionId": "1",
-    "lastUpdated": "2019-07-01T13:30:55.864+00:00",
     "profile": [
       "https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-practitioner"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <div class=\"hapiHeaderText\">Katherine<b>Pulaski</b></div>\n      <table class=\"hapiPropertyTable\">\n        <tbody>\n          <tr>\n            <td>Identifier</td>\n            <td>79121137740</td>\n          </tr>\n          <tr>\n            <td>Address</td>\n            <td>\n              <span>Grimbergen</span>\n              <span>BE </span>\n            </td>\n          </tr>\n          <tr>\n            <td>Date of birth</td>\n            <td>\n              <span>11 December 1979</span>\n            </td>\n          </tr>\n        </tbody>\n      </table>\n    </div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><h3>Ids</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><h3>Meta</h3><table class=\"grid\"><tr><td>-</td></tr><tr><td>*</td></tr></table><p><b>identifier</b>: id: 79121137740 (OFFICIAL), id: 18749704477 (OFFICIAL)</p><p><b>name</b>: Katherine Pulaski (OFFICIAL)</p><p><b>telecom</b>: <a href=\"mailto:katherine.pulaski@enterprisehospital.be\">katherine.pulaski@enterprisehospital.be</a>, ph: 022675198(WORK), fax: 022675209(WORK)</p><p><b>address</b>: Jupiterlaan 5, 1853 Grimbergen(HOME)</p><p><b>gender</b>: female</p><p><b>birthDate</b>: 1979-12-11</p></div>"
   },
   "identifier": [
     {
@@ -38,13 +36,13 @@
   ],
   "telecom": [
     {
-      "system": "phone",
-      "value": "022675198",
+      "system": "email",
+      "value": "katherine.pulaski@enterprisehospital.be",
       "use": "work"
     },
     {
-      "system": "email",
-      "value": "katherine.pulaski@enterprisehospital.be",
+      "system": "phone",
+      "value": "022675198",
       "use": "work"
     },
     {
@@ -55,24 +53,16 @@
   ],
   "address": [
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "nl"
+        }
+      ],
       "use": "home",
       "text": "Jupiterlaan 5, 1853 Grimbergen",
       "line": [
         "Jupiterlaan 5"
-      ],
-      "_line": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Jupiterlaan"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "5"
-            }
-          ]
-        }
       ],
       "city": "Grimbergen",
       "postalCode": "1853",
