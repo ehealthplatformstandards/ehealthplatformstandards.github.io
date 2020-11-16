@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeProvenance"];
   fhir:StructureDefinition.title [ fhir:value "Provenance core BE profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-09-25T13:06:43+02:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2020-11-16T10:17:56+01:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1674,7 +1674,7 @@
          fhir:ElementDefinition.base.min [ fhir:value "0"^^xsd:nonNegativeInteger ];
          fhir:ElementDefinition.base.max [ fhir:value "*" ]
        ];
-       fhir:ElementDefinition.contentReference [ fhir:value "#Provenance.agent" ];
+       fhir:ElementDefinition.contentReference [ fhir:value "http://hl7.org/fhir/StructureDefinition/Provenance#Provenance.agent" ];
        fhir:ElementDefinition.constraint [
          fhir:index 0;
          fhir:ElementDefinition.constraint.key [ fhir:value "ele-1" ];

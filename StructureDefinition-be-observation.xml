@@ -23,7 +23,7 @@ Other coding systems remain allowed or MAY be preferred in specific flows (e.g. 
   <name value="BeObservation"/>
   <title value="Observation core BE profile"/>
   <status value="active"/>
-  <date value="2020-09-25T13:06:43+02:00"/>
+  <date value="2020-11-16T10:17:56+01:00"/>
   <publisher value="eHealth Platform"/>
   <contact>
     <name value="eHealth Platform"/>
@@ -2215,7 +2215,7 @@ Other coding systems remain allowed or MAY be preferred in specific flows (e.g. 
         <min value="0"/>
         <max value="*"/>
       </base>
-      <contentReference value="#Observation.referenceRange"/>
+      <contentReference value="http://hl7.org/fhir/StructureDefinition/Observation#Observation.referenceRange"/>
       <constraint>
         <key value="ele-1"/>
         <severity value="error"/>

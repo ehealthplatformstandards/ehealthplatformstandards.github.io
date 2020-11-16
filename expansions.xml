@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="99bbf6aa-ba6d-4179-bfae-1e1e4cf839d5"/>
+  <id value="265a05ab-fc7e-4154-9361-381c5ee518fb"/>
   <meta>
-    <lastUpdated value="2020-09-25T13:06:43.319+02:00"/>
+    <lastUpdated value="2020-11-16T10:17:56.507+01:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -24,7 +24,7 @@
                 <li>
                   <a href="ValueSet-be-noallergy.html">BeNoAllergy v1.0.0 (ValueSet)</a>
                 </li>
-                <li>SNOMED CT International edition 09-Mar 2020</li>
+                <li>SNOMED CT International edition 31-Jul 2020</li>
               </ul>
             </div>
             <p>All codes from system 
@@ -1236,7 +1236,7 @@
         <name value="BeAllergyIntoleranceCode"/>
         <title value="ValueSet allergy intolerance code"/>
         <status value="active"/>
-        <date value="2020-09-25T13:06:43+02:00"/>
+        <date value="2020-11-16T10:17:56+01:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -1254,8 +1254,8 @@
         </contact>
         <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
         <expansion>
-          <identifier value="urn:uuid:0d1ddf66-62ba-4582-972a-1607cf17b2a8"/>
-          <timestamp value="2020-09-25T13:07:32+02:00"/>
+          <identifier value="urn:uuid:519067a3-e2e3-4520-a463-09d2d82e5d07"/>
+          <timestamp value="2020-11-16T10:19:11+01:00"/>
           <total value="148"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1271,7 +1271,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -2207,7 +2207,7 @@
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2020-09-25T13:06:43+02:00"/>
+        <date value="2020-11-16T10:17:56+01:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -2225,8 +2225,8 @@
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:117b1d7c-3396-4806-a350-393f89db048d"/>
-          <timestamp value="2020-09-25T13:07:32+02:00"/>
+          <identifier value="urn:uuid:5512273c-5368-4ddf-89ea-288fed5e974c"/>
+          <timestamp value="2020-11-16T10:19:11+01:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2672,7 +2672,7 @@
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2020-09-25T13:06:43+02:00"/>
+        <date value="2020-11-16T10:17:56+01:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -2690,8 +2690,8 @@
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:46eabae6-96b1-47f0-a329-64d3d3ad708e"/>
-          <timestamp value="2020-09-25T13:07:32+02:00"/>
+          <identifier value="urn:uuid:1aaa1c85-dcd5-43b9-8209-def82f9074b0"/>
+          <timestamp value="2020-11-16T10:19:11+01:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2886,7 +2886,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 141 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 09-Mar 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -4037,15 +4037,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:82ef7128-a156-4630-9115-ca7bd8d6d221"/>
-          <timestamp value="2020-09-25T07:00:26.026Z"/>
+          <identifier value="urn:uuid:967a8825-5801-4adb-8219-f6a6b81a0542"/>
+          <timestamp value="2020-10-26T07:28:55.722Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -4763,7 +4763,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 09-Mar 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -4810,15 +4810,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:ab8f3155-8688-4a42-8188-1abb4e763b02"/>
-          <timestamp value="2020-09-25T07:00:33.495Z"/>
+          <identifier value="urn:uuid:24183093-8cc4-461c-b3bb-7a976ab98ed0"/>
+          <timestamp value="2020-10-26T07:29:03.378Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -4846,7 +4846,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 7 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 09-Mar 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -4925,15 +4925,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:1a3b49f2-509f-49a3-ac2d-69040b9f5b26"/>
-          <timestamp value="2020-09-25T07:00:26.198Z"/>
+          <identifier value="urn:uuid:2b8902f3-3445-4880-8c24-8876b80324b0"/>
+          <timestamp value="2020-10-26T07:28:56.112Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -4981,7 +4981,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 37 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 09-Mar 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -5300,15 +5300,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:b5692f61-0641-439e-92d1-e35abdbaa2c9"/>
-          <timestamp value="2020-09-25T07:00:36.042Z"/>
+          <identifier value="urn:uuid:453892f9-4b28-41fc-b857-92fe24104298"/>
+          <timestamp value="2020-10-26T07:29:05.909Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200309"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
