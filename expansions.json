@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "265a05ab-fc7e-4154-9361-381c5ee518fb",
+  "id" : "1b81572b-b588-43b5-b319-d687e18de0af",
   "meta" : {
-    "lastUpdated" : "2020-11-16T10:17:56.507+01:00"
+    "lastUpdated" : "2021-02-12T12:13:57.562+01:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "BeAllergyIntoleranceCode",
       "title" : "ValueSet allergy intolerance code",
       "status" : "active",
-      "date" : "2020-11-16T10:17:56+01:00",
+      "date" : "2021-02-12T12:13:57+01:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -37,8 +37,8 @@
       }],
       "description" : "Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort.",
       "expansion" : {
-        "identifier" : "urn:uuid:519067a3-e2e3-4520-a463-09d2d82e5d07",
-        "timestamp" : "2020-11-16T10:19:11+01:00",
+        "identifier" : "urn:uuid:679fcd33-ca83-4af9-abf8-e1b9c9c886eb",
+        "timestamp" : "2021-02-12T12:14:26+01:00",
         "total" : 148,
         "parameter" : [{
           "name" : "excludeNested",
@@ -817,7 +817,7 @@
       "name" : "BeCivilState",
       "title" : "ValueSet civil state",
       "status" : "active",
-      "date" : "2020-11-16T10:17:56+01:00",
+      "date" : "2021-02-12T12:13:57+01:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -835,8 +835,8 @@
       }],
       "description" : "Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. \nWhenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE \nfor the Belgian specific code.",
       "expansion" : {
-        "identifier" : "urn:uuid:5512273c-5368-4ddf-89ea-288fed5e974c",
-        "timestamp" : "2020-11-16T10:19:11+01:00",
+        "identifier" : "urn:uuid:421e25b9-6335-499a-9f30-3b931f626618",
+        "timestamp" : "2021-02-12T12:14:26+01:00",
         "total" : 15,
         "parameter" : [{
           "name" : "excludeNested",
@@ -946,7 +946,7 @@
       "name" : "BeContactPerson",
       "title" : "ValueSet contact person",
       "status" : "active",
-      "date" : "2020-11-16T10:17:56+01:00",
+      "date" : "2021-02-12T12:13:57+01:00",
       "publisher" : "eHealth Platform",
       "contact" : [{
         "name" : "eHealth Platform",
@@ -964,8 +964,8 @@
       }],
       "description" : "Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values.",
       "expansion" : {
-        "identifier" : "urn:uuid:1aaa1c85-dcd5-43b9-8209-def82f9074b0",
-        "timestamp" : "2020-11-16T10:19:11+01:00",
+        "identifier" : "urn:uuid:9135199f-681e-4f5a-a142-cfe20ff35d08",
+        "timestamp" : "2021-02-12T12:14:27+01:00",
         "total" : 34,
         "parameter" : [{
           "name" : "excludeNested",
@@ -1161,8 +1161,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:967a8825-5801-4adb-8219-f6a6b81a0542",
-        "timestamp" : "2020-10-26T07:28:55.722Z",
+        "identifier" : "urn:uuid:83c8e311-a392-4a92-8535-df4d3fc95047",
+        "timestamp" : "2021-02-12T10:53:28.486Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -1888,8 +1888,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:24183093-8cc4-461c-b3bb-7a976ab98ed0",
-        "timestamp" : "2020-10-26T07:29:03.378Z",
+        "identifier" : "urn:uuid:0c649716-3f24-4631-91e2-118dc1c6403b",
+        "timestamp" : "2021-02-12T10:53:29.533Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -1925,8 +1925,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:2b8902f3-3445-4880-8c24-8876b80324b0",
-        "timestamp" : "2020-10-26T07:28:56.112Z",
+        "identifier" : "urn:uuid:dded3085-abf7-40d4-bba8-f74cf53f2ac0",
+        "timestamp" : "2021-02-12T10:53:28.642Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true
@@ -1982,8 +1982,8 @@
       },
       "status" : "active",
       "expansion" : {
-        "identifier" : "urn:uuid:453892f9-4b28-41fc-b857-92fe24104298",
-        "timestamp" : "2020-10-26T07:29:05.909Z",
+        "identifier" : "urn:uuid:c88f737c-724f-42a8-bba0-cc270aae0244",
+        "timestamp" : "2021-02-12T10:53:30.017Z",
         "parameter" : [{
           "name" : "limitedExpansion",
           "valueBoolean" : true

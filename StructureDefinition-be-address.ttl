@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "BeAddress"];
   fhir:StructureDefinition.title [ fhir:value "Address core BE profile"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2020-11-16T10:17:56+01:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2021-02-12T12:13:57+01:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "eHealth Platform"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
