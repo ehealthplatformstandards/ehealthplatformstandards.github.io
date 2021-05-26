@@ -1,12 +1,12 @@
 ﻿TheCoreBelgianFederalFHIRProfiles : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 2
-IG Publisher Version: 1.1.59
-Generated Fri Feb 12 12:15:00 CET 2021. FHIR version 4.0.1 for fed.be.core#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
+err = 0, warn = 0, info = 3
+IG Publisher Version: 1.1.72
+Generated Wed May 26 14:32:34 CEST 2021. FHIR version 4.0.1 for fed.be.core#1.1.0 (canonical = https://www.ehealth.fgov.be/standards/fhir)
 
  Build Errors : 0 / 0 / 0
- C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0 / 1
+ C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide : 0 / 0 / 2
  C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\allergyintolerance-allergyIntolerance1 : 0 / 0 / 1
  C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\allergyintolerance-allergyIntolerance2 : 0 / 0 / 1
  C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\bundle-bundle1 : 0 / 0 / 7
@@ -49,6 +49,7 @@ Generated Fri Feb 12 12:15:00 CET 2021. FHIR version 4.0.1 for fed.be.core#1.1.0
 == n/a ==
 == C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\ImplementationGuide-BeCoreImplementationGuide.json ==
 INFORMATION: ImplementationGuide/fed.be.core: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
+INFORMATION: ImplementationGuide/fed.be.core: ImplementationGuide.title: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML withour appropraite post-processing, it may be a security risk
 == C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\AllergyIntolerance-allergyIntolerance1.json ==
 INFORMATION: AllergyIntolerance/allergyIntolerance1: AllergyIntolerance: Validate resource against profile https://www.ehealth.fgov.be/standards/fhir/StructureDefinition/be-allergyintolerance
 == C:\Users\eh068\Documents\ImplementationGuide\ehealthplatformstandards\input\examples\AllergyIntolerance-allergyIntolerance2.json ==

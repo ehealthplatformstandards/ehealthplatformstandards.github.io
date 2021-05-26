@@ -8,9 +8,9 @@
   "url": "https://www.ehealth.fgov.be/standards/fhir/ImplementationGuide/fed.be.core",
   "version": "1.1.0",
   "name": "TheCoreBelgianFederalFHIRProfiles",
-  "title": "The Core Belgian Federal FHIR Profiles",
+  "title": "This is an old version - please visit <a href='https://simplifier.net/guide/ImplementationGuideTheCoreBelgianFederalFHIRProfiles/Home'>our new IG location</a>",
   "status": "active",
-  "date": "2021-02-12T12:13:57+01:00",
+  "date": "2021-05-26T14:31:36+02:00",
   "publisher": "eHealth Platform",
   "contact": [
     {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1b81572b-b588-43b5-b319-d687e18de0af"/>
+  <id value="4dbb89fa-eaac-4f7b-8a7b-5c09fc971c09"/>
   <meta>
-    <lastUpdated value="2021-02-12T12:13:57.562+01:00"/>
+    <lastUpdated value="2021-05-26T14:31:36.728+02:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -24,7 +24,7 @@
                 <li>
                   <a href="ValueSet-be-noallergy.html">BeNoAllergy v1.0.0 (ValueSet)</a>
                 </li>
-                <li>SNOMED CT International edition 31-Jul 2020</li>
+                <li>SNOMED CT International edition 31-Jan 2021</li>
               </ul>
             </div>
             <p>All codes from system 
@@ -1236,7 +1236,7 @@
         <name value="BeAllergyIntoleranceCode"/>
         <title value="ValueSet allergy intolerance code"/>
         <status value="active"/>
-        <date value="2021-02-12T12:13:57+01:00"/>
+        <date value="2021-05-26T14:31:36+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -1254,8 +1254,8 @@
         </contact>
         <description value="Codes as communicated by NIHDI and the FOD Terminology Center differentiating types of allergy intolerance codes. This valueset supports the Belgian federal FHIR profiling effort."/>
         <expansion>
-          <identifier value="urn:uuid:679fcd33-ca83-4af9-abf8-e1b9c9c886eb"/>
-          <timestamp value="2021-02-12T12:14:26+01:00"/>
+          <identifier value="urn:uuid:e4cdb8dc-d0a2-473b-bb19-608b9b10846b"/>
+          <timestamp value="2021-05-26T14:32:00+02:00"/>
           <total value="148"/>
           <parameter>
             <name value="excludeNested"/>
@@ -1271,7 +1271,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <parameter>
             <name value="version"/>
@@ -1279,741 +1279,1037 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="52454007"/>
             <display value="Albumin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="391737006"/>
             <display value="Almond oil (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="12503006"/>
             <display value="Aluminium (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="767108006"/>
             <display value="Aluminium and aluminium compound (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="264287008"/>
             <display value="Animal dander (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="711062002"/>
             <display value="Animal protein and epidermal substance (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735215001"/>
             <display value="Apple (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="226491003"/>
             <display value="Apple juice (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="11526002"/>
             <display value="Aspartame (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="386936005"/>
             <display value="Azelaic acid (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256307007"/>
             <display value="Banana (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="288328004"/>
             <display value="Bee venom (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="91598004"/>
             <display value="Benzoyl peroxide (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="255640000"/>
             <display value="Biocide (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="412061001"/>
             <display value="Blueberries (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="261243003"/>
             <display value="Brass (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="726764009"/>
             <display value="Broad bean (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="9021002"/>
             <display value="Carbaryl (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256319004"/>
             <display value="Carrot (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260152009"/>
             <display value="Cat dander (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256326004"/>
             <display value="Celery (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="23182003"/>
             <display value="Cereal (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="102264005"/>
             <display value="Cheese (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735248001"/>
             <display value="Cherry (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="102262009"/>
             <display value="Chocolate (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="227388008"/>
             <display value="Cinnamon (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="59351004"/>
             <display value="Citrate (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="102259006"/>
             <display value="Citrus fruit (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="11894001"/>
             <display value="Clostridium botulinum toxin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="80237000"/>
             <display value="Cocoa butter (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="66925006"/>
             <display value="Copper (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="412357001"/>
             <display value="Corn (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="289122001"/>
             <display value="Cosmetic material (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="89889006"/>
             <display value="Cotton fiber (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260153004"/>
             <display value="Cow dander (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="264295007"/>
             <display value="Cow&#39;s milk protein (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="289949002"/>
             <display value="Cypress pollen (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="226760005"/>
             <display value="Dairy foods (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="396031000"/>
             <display value="Dimeticone (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="387293003"/>
             <display value="Dithranol (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260154005"/>
             <display value="Dog dander (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="61789006"/>
             <display value="Dye (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="762766007"/>
             <display value="Edible substance (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="303300008"/>
             <display value="Egg protein (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256443002"/>
             <display value="Egg white (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="102263004"/>
             <display value="Eggs (edible) (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="115589000"/>
             <display value="Ethanolamine (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="12510000"/>
             <display value="Eucalyptus oil (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="227425007"/>
             <display value="Figs (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735971005"/>
             <display value="Fish (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="406774009"/>
             <display value="Fish derived omega 3 fatty acid (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735341005"/>
             <display value="Fish oil (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="59533004"/>
             <display value="Food additive (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="80259003"/>
             <display value="Food flavoring agent (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="72511004"/>
             <display value="Fruit (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735030001"/>
             <display value="Garlic (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="57126000"/>
             <display value="Glue (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="430503006"/>
             <display value="Glutamate (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="89811004"/>
             <display value="Gluten (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="2309006"/>
             <display value="Gold (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="412145001"/>
             <display value="Hair dye (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="227374009"/>
             <display value="Herbs and spices (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256417003"/>
             <display value="Horse dander (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="128488006"/>
             <display value="House dust (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="710942001"/>
             <display value="Insect protein (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="280939008"/>
             <display value="Insect venom (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="3829006"/>
             <display value="Iron (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260176001"/>
             <display value="Kiwi fruit (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="47703008"/>
             <display value="Lactose (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="42416001"/>
             <display value="Lanolin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="736162008"/>
             <display value="Lobster (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="719108000"/>
             <display value="Lupin flour (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="710179004"/>
             <display value="Lupine seed (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735977009"/>
             <display value="Marine crustacean (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="28647000"/>
             <display value="Meat (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260177005"/>
             <display value="Melon (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="425620007"/>
             <display value="Metal (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="2799001"/>
             <display value="Methylbenzethonium chloride (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="770326002"/>
             <display value="Mollusk (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256419000"/>
             <display value="Mouse epithelium (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260156007"/>
             <display value="Mouse urine proteins (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735045008"/>
             <display value="Mushroom (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="51905005"/>
             <display value="Mustard (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="762953003"/>
             <display value="Mustard seasoning (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="33396006"/>
             <display value="Nickel (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="276310004"/>
             <display value="Non-human hair - material (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="13577000"/>
             <display value="Nut (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="230034002"/>
             <display value="Nuts and seeds (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="418504009"/>
             <display value="Oats (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735979007"/>
             <display value="Octopus (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260126003"/>
             <display value="Olive pollen (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735047000"/>
             <display value="Onion (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="116549003"/>
             <display value="Organochlorine pesticide (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="119417004"/>
             <display value="Organophosphate insecticide (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="736031006"/>
             <display value="Oyster (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="255667006"/>
             <display value="Paraffin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735049002"/>
             <display value="Peach (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="762952008"/>
             <display value="Peanut (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="410853002"/>
             <display value="Perfluorochemical (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="418785009"/>
             <display value="Perfume (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="59545008"/>
             <display value="Pesticide (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256248008"/>
             <display value="Plant material (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="387398009"/>
             <display value="Podophyllum resin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256259004"/>
             <display value="Pollen (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="83619009"/>
             <display value="Polyvinyl alcohol (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="226934003"/>
             <display value="Pork (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735053000"/>
             <display value="Potato (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="28230009"/>
             <display value="Poultry (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="227313005"/>
             <display value="Pulse vegetables (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="311846002"/>
             <display value="Pyrethroid insecticide (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="412153009"/>
             <display value="Rabbit dander (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256303006"/>
             <display value="Ragweed pollen (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="227444000"/>
             <display value="Raspberries (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="226915003"/>
             <display value="Red meat (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="67324005"/>
             <display value="Rice (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="43230003"/>
             <display value="Rubber (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="412068007"/>
             <display value="Rye (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="264337003"/>
             <display value="Seed (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="89707004"/>
             <display value="Sesame oil (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260167008"/>
             <display value="Sesame seed (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735029006"/>
             <display value="Shellfish (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="278840001"/>
             <display value="Shrimp (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="7791007"/>
             <display value="Soy protein (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256355007"/>
             <display value="Soya bean (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="735006003"/>
             <display value="Squid (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="102261002"/>
             <display value="Strawberry (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="105590001"/>
             <display value="Substance (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="373270004"/>
             <display value="Substance with penicillin structure and antibacterial mechanism of action (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="767406000"/>
             <display value="Sulfite and sulfite derivative (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="289964002"/>
             <display value="Surgical material (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="734881000"/>
             <display value="Tomato (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256305004"/>
             <display value="Tree resin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="227144008"/>
             <display value="Tuna fish (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="260118006"/>
             <display value="Wall pellitory pollen (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="256352005"/>
             <display value="Walnut - nut (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="419420009"/>
             <display value="Watermelon (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="419604006"/>
             <display value="Weed pollen (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="412071004"/>
             <display value="Wheat (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="14402002"/>
             <display value="Wood (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="772245002"/>
             <display value="Wool alcohol (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="418266005"/>
             <display value="Yellow paraffin (substance)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="716186003"/>
             <display value="No known allergy (situation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="716220001"/>
             <display value="No known animal allergy (situation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="409137002"/>
             <display value="No known drug allergy (situation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="428607008"/>
             <display value="No known environmental allergy (situation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="429625007"/>
             <display value="No known food allergy (situation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="428197003"/>
             <display value="No known insect allergy (situation)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <abstract value="false"/>
+            <inactive value="false"/>
             <code value="716184000"/>
             <display value="No known latex allergy (situation)"/>
           </contains>
@@ -2207,7 +2503,7 @@
         <name value="BeCivilState"/>
         <title value="ValueSet civil state"/>
         <status value="active"/>
-        <date value="2021-02-12T12:13:57+01:00"/>
+        <date value="2021-05-26T14:31:36+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -2225,8 +2521,8 @@
         </contact>
         <description value="Codes supported by eHealth Platform differentiating types of civil state. This valueset supports the Belgian federal FHIR profiling effort. &#xA;Whenever possible add a code from http://terminology.hl7.org/CodeSystem/v3-MaritalStatus for international interoperability but also use https://www.ehealth.fgov.be/standards/fhir/CodeSystem/CD-CIVILSTATE &#xA;for the Belgian specific code."/>
         <expansion>
-          <identifier value="urn:uuid:421e25b9-6335-499a-9f30-3b931f626618"/>
-          <timestamp value="2021-02-12T12:14:26+01:00"/>
+          <identifier value="urn:uuid:ab86ce83-bb83-44a1-8a24-08ce2c332f83"/>
+          <timestamp value="2021-05-26T14:32:00+02:00"/>
           <total value="15"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2672,7 +2968,7 @@
         <name value="BeContactPerson"/>
         <title value="ValueSet contact person"/>
         <status value="active"/>
-        <date value="2021-02-12T12:13:57+01:00"/>
+        <date value="2021-05-26T14:31:36+02:00"/>
         <publisher value="eHealth Platform"/>
         <contact>
           <name value="eHealth Platform"/>
@@ -2690,8 +2986,8 @@
         </contact>
         <description value="Maximum valuest to define category of a contact person, using the HL7 values and the Belgian CD-CONTACT-PERSON values."/>
         <expansion>
-          <identifier value="urn:uuid:9135199f-681e-4f5a-a142-cfe20ff35d08"/>
-          <timestamp value="2021-02-12T12:14:27+01:00"/>
+          <identifier value="urn:uuid:ac720437-6313-4ff2-9581-aa1d37cc5e4a"/>
+          <timestamp value="2021-05-26T14:32:00+02:00"/>
           <total value="34"/>
           <parameter>
             <name value="excludeNested"/>
@@ -2886,7 +3182,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 141 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -4037,15 +4333,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:83c8e311-a392-4a92-8535-df4d3fc95047"/>
-          <timestamp value="2021-02-12T10:53:28.486Z"/>
+          <identifier value="urn:uuid:32c5571f-cae8-4581-9c1f-10a0d0e2015e"/>
+          <timestamp value="2021-05-26T08:50:41.074Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -4763,7 +5059,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -4810,15 +5106,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:0c649716-3f24-4631-91e2-118dc1c6403b"/>
-          <timestamp value="2021-02-12T10:53:29.533Z"/>
+          <identifier value="urn:uuid:b1947ab6-8a17-44f3-b6d5-90bec4e02df3"/>
+          <timestamp value="2021-05-26T08:50:41.996Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -4846,7 +5142,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 7 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -4925,15 +5221,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:dded3085-abf7-40d4-bba8-f74cf53f2ac0"/>
-          <timestamp value="2021-02-12T10:53:28.642Z"/>
+          <identifier value="urn:uuid:a67dab26-eadc-45c8-b52e-e75894a138d7"/>
+          <timestamp value="2021-05-26T08:50:41.371Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -4981,7 +5277,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 37 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2020</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2021</p>
             <p>All codes from system 
               <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">
                 <code>http://snomed.info/sct</code>
@@ -5300,15 +5596,15 @@
         </text>
         <status value="active"/>
         <expansion>
-          <identifier value="urn:uuid:c88f737c-724f-42a8-bba0-cc270aae0244"/>
-          <timestamp value="2021-02-12T10:53:30.017Z"/>
+          <identifier value="urn:uuid:76595e38-f07d-4f42-8b4e-8461e3f50639"/>
+          <timestamp value="2021-05-26T08:50:42.512Z"/>
           <parameter>
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20200731"/>
+            <valueString value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
